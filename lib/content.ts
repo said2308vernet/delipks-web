@@ -90,30 +90,32 @@ export const featuredDishes = [
   { name: "Pollo a la mostaza" },
 ];
 
-// PLACEHOLDER — sustituir por precios reales confirmados por el negocio
 export const plans = [
   {
     id: "basico",
     label: "Plan básico",
-    meals: 5,
-    priceOneTime: 989,
-    priceSubscription: 890,
+    includes: ["5 comidas"],
+    totalMeals: 5,
+    priceOneTime: 900,
+    priceSubscription: 810,
     popular: false,
   },
   {
     id: "equilibrado",
     label: "Plan equilibrado",
-    meals: 10,
-    priceOneTime: 1767,
-    priceSubscription: 1590,
+    includes: ["5 desayunos", "5 comidas"],
+    totalMeals: 10,
+    priceOneTime: 1650,
+    priceSubscription: 1485,
     popular: true,
   },
   {
     id: "completo",
     label: "Plan completo",
-    meals: 15,
-    priceOneTime: 2433,
-    priceSubscription: 2190,
+    includes: ["5 desayunos", "5 comidas", "5 cenas"],
+    totalMeals: 15,
+    priceOneTime: 2400,
+    priceSubscription: 2160,
     popular: false,
   },
 ];

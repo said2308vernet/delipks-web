@@ -66,10 +66,15 @@ export default function Plans() {
               <p className="mb-2.5 text-xs font-medium uppercase tracking-wide text-muted">
                 {plan.label}
               </p>
-              <h3 className="mb-1 font-display text-xl font-semibold text-ink">
-                {plan.meals} comidas
+              <h3 className="mb-2 font-display text-xl font-semibold text-ink">
+                {plan.totalMeals} comidas
               </h3>
-              <p className="mb-5 text-xs text-muted">por semana</p>
+              <ul className="mb-4 space-y-1">
+                {plan.includes.map((item) => (
+                  <li key={item} className="text-[13px] text-muted">✓ {item}</li>
+                ))}
+              </ul>
+              <p className="mb-5 text-xs text-muted">Lunes a viernes</p>
               <p className="mb-6">
                 <span className="text-[13px] text-muted">desde </span>
                 <span className="font-display text-2xl font-semibold text-ink">
