@@ -79,6 +79,43 @@ export default function Footer() {
                 </span>
               </li>
             </ul>
+            <div className="mt-4 flex gap-3">
+              <a
+                href="https://instagram.com/delipks"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="flex h-8 w-8 items-center justify-center rounded-lg bg-bg text-muted transition-colors hover:text-primary"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="5" />
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href="https://facebook.com/delipks"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex h-8 w-8 items-center justify-center rounded-lg bg-bg text-muted transition-colors hover:text-primary"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2Z" />
+                </svg>
+              </a>
+              <a
+                href="https://tiktok.com/@delipks"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="flex h-8 w-8 items-center justify-center rounded-lg bg-bg text-muted transition-colors hover:text-primary"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78c.27 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 10.86 4.34A6.28 6.28 0 0 0 15.82 15V8.76a8.26 8.26 0 0 0 3.77 1.13V6.69Z" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 

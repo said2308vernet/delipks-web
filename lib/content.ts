@@ -82,7 +82,6 @@ export const goals = {
   ],
 };
 
-// PLACEHOLDER — sustituir por el menú real de DELIPKS (nombre + foto)
 export const featuredDishes = [
   { name: "Bowl mediterráneo" },
   { name: "Salmón con espárragos" },

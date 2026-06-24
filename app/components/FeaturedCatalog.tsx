@@ -24,10 +24,10 @@ export default function FeaturedCatalog() {
           </h2>
         </div>
         <a
-          href="#"
+          href="#planes"
           className="shrink-0 border-b border-ink pb-0.5 text-sm font-medium text-ink transition-opacity hover:opacity-70"
         >
-          Ver menú completo →
+          Ver planes →
         </a>
       </div>
 

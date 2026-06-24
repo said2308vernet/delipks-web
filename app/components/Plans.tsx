@@ -104,7 +104,7 @@ export default function Plans() {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Precios de referencia, sujetos a confirmación · Cancela tu suscripción cuando quieras
+        Cancela tu suscripción cuando quieras · Precios en MXN con IVA incluido
       </p>
     </section>
   );
