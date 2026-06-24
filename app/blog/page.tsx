@@ -41,8 +41,9 @@ export default function BlogPage() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {blogPosts.map((post) => (
-          <article
+          <Link
             key={post.slug}
+            href={`/blog/${post.slug}`}
             className="group overflow-hidden rounded-2xl border border-border bg-white"
           >
             <div className="aspect-[16/10] overflow-hidden bg-bg-alt">
@@ -59,12 +60,12 @@ export default function BlogPage() {
                 </span>
                 <span className="text-[11px] text-muted">{formatDate(post.date)}</span>
               </div>
-              <h2 className="mb-2 font-display text-base font-semibold leading-snug text-ink">
+              <h2 className="mb-2 font-display text-base font-semibold leading-snug text-ink group-hover:text-primary transition-colors">
                 {post.title}
               </h2>
               <p className="text-[13px] leading-relaxed text-muted">{post.excerpt}</p>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
     </main>
