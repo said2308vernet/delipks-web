@@ -5,6 +5,7 @@ import HowItWorks from "./components/HowItWorks";
 import Goals from "./components/Goals";
 import FeaturedCatalog from "./components/FeaturedCatalog";
 import Plans from "./components/Plans";
+import DelipksImpacta from "./components/DelipksImpacta";
 import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <Goals />
         <FeaturedCatalog />
         <Plans />
+        <DelipksImpacta />
         <FAQ />
         <FinalCTA />
       </main>

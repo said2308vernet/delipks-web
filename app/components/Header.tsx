@@ -6,6 +6,7 @@ export default function Header() {
     { label: "Menú", href: "#catalogo" },
     { label: "Planes", href: "#planes" },
     { label: "Objetivos", href: "#objetivos" },
+    { label: "Delipks Impacta", href: "#impacto" },
   ];
 
   return (
