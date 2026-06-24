@@ -79,16 +79,16 @@ export default function DelipksImpacta() {
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
             Un agradecimiento genuino a quienes cuidan de nosotros todos los días.{" "}
             <strong className="text-ink">15% de descuento permanente</strong> en todos nuestros
-            planes para personal médico, de enfermería, bomberos, policías, militares, protección
-            civil y servicios de emergencia. No acumulable con otras promociones.
+            planes para personal de servicios de emergencia, policías, bomberos, militares
+            y personal de la salud. No acumulable con otras promociones.
           </p>
         </div>
 
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
             <img
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80&auto=format&fit=crop"
-              alt="Equipo de profesionales de salud"
+              src="https://images.unsplash.com/photo-1582560475093-ba66accbc424?w=800&q=80&auto=format&fit=crop"
+              alt="Equipo de rescatistas y bomberos en acción"
               className="h-full w-full object-cover"
             />
           </div>
