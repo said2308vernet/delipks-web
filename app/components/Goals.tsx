@@ -36,8 +36,12 @@ export default function Goals() {
 
       {/* Categoría protagonista */}
       <div className="mb-5 grid items-center gap-8 rounded-2xl border border-border bg-white p-7 lg:grid-cols-[0.9fr_1fr] lg:p-9">
-        <div className="flex aspect-[16/10] items-center justify-center rounded-xl bg-secondary-light">
-          <span className="text-xs text-[#3B6D11]">Foto placeholder</span>
+        <div className="aspect-[16/10] overflow-hidden rounded-xl bg-secondary-light">
+          <img
+            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&auto=format&fit=crop"
+            alt="Plato saludable con ingredientes frescos"
+            className="h-full w-full object-cover"
+          />
         </div>
         <div>
           <span className="mb-3.5 block text-primary">{icons.leaf}</span>
