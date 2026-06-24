@@ -232,7 +232,7 @@ La base importa, pero el complemento también. Combina tus hojas verdes con prot
     excerpt:
       "Correr es uno de los ejercicios que más calorías quema, pero los números dependen de más factores de los que crees.",
     image:
-      "https://images.unsplash.com/photo-1461896836934-bd45ba9f084c?w=600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&q=80&auto=format&fit=crop",
     category: "Ejercicio",
     date: "2026-06-06",
     content: `Correr es una de las formas más eficientes de quemar calorías. Pero la cantidad exacta depende de varios factores: tu peso, la velocidad, el terreno y tu condición física.
@@ -434,5 +434,113 @@ Porque automatiza el balance sin que tengas que pensar. Si la mitad de tu plato 
 ## Aplícalo en tu día a día
 
 Este método funciona para desayuno, comida y cena. Un desayuno balanceado puede ser: huevos revueltos (proteína) + tortilla de maíz (carbohidrato) + nopales y salsa (vegetales) + aguacate (grasa). Simple, completo y sin contar una sola caloría.`,
+  },
+  {
+    slug: "beneficios-del-agua",
+    title: "8 beneficios de tomar suficiente agua todos los días",
+    excerpt:
+      "El hábito más simple y más ignorado. Tomar suficiente agua transforma tu energía, tu piel y tu rendimiento.",
+    image:
+      "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80&auto=format&fit=crop",
+    category: "Bienestar",
+    date: "2026-05-06",
+    content: `El agua representa más del 60% de tu cuerpo. Cada célula, tejido y órgano la necesita para funcionar. Y aun así, la mayoría de las personas no toman la suficiente.
+
+## ¿Cuánta agua necesitas?
+
+La recomendación general es entre 2 y 3 litros al día para adultos, pero varía según tu peso, actividad física y clima. En ciudades cálidas como Puebla, necesitas más. Una forma simple de medirlo: si tu orina es amarillo claro, vas bien.
+
+## Los 8 beneficios principales
+
+## 1. Más energía y menos fatiga
+
+La deshidratación leve — incluso un 1-2% de pérdida de líquidos — reduce tu energía y capacidad de concentración. Antes de buscar un café, prueba con un vaso de agua.
+
+## 2. Mejor digestión
+
+El agua ayuda a descomponer los alimentos y mover todo a través de tu sistema digestivo. Sin suficiente agua, el estreñimiento es casi inevitable.
+
+## 3. Piel más saludable
+
+La hidratación adecuada mantiene tu piel elástica y con mejor apariencia. No es una solución mágica, pero la diferencia entre piel hidratada y deshidratada es visible.
+
+## 4. Control de peso
+
+Tomar agua antes de comer te ayuda a sentirte más lleno y comer porciones adecuadas. Además, muchas veces confundimos sed con hambre.
+
+## 5. Rendimiento físico
+
+Durante el ejercicio, pierdes agua a través del sudor. Una pérdida del 2% de tu peso en agua reduce notablemente tu rendimiento. Hidratarte antes, durante y después del ejercicio es fundamental.
+
+## 6. Menos dolores de cabeza
+
+La deshidratación es una de las causas más comunes de dolor de cabeza. Antes de tomar una pastilla, toma dos vasos de agua y espera 30 minutos.
+
+## 7. Riñones más sanos
+
+Tus riñones necesitan agua para filtrar toxinas de la sangre. Una hidratación adecuada reduce el riesgo de piedras en los riñones y infecciones urinarias.
+
+## 8. Mejor humor
+
+Estudios muestran que la deshidratación leve afecta tu estado de ánimo, aumenta la irritabilidad y reduce la capacidad de pensar con claridad.
+
+## Tips para tomar más agua
+
+Lleva una botella reutilizable contigo, toma un vaso al despertar, uno antes de cada comida y uno antes de dormir. Agregar limón, pepino o menta hace que sea más fácil si no te gusta el agua sola.`,
+  },
+  {
+    slug: "errores-comunes-al-comer-saludable",
+    title: "10 errores que cometes al intentar comer saludable",
+    excerpt:
+      "Crees que comes bien pero no ves resultados. Probablemente estás cayendo en alguno de estos errores sin darte cuenta.",
+    image:
+      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-04-28",
+    content: `Muchas personas creen que están comiendo saludable pero no ven cambios en su peso, energía o bienestar. El problema no siempre es lo que comes, sino los errores invisibles que sabotean tus esfuerzos.
+
+## 1. Confundir "natural" con "saludable"
+
+Que algo sea natural no significa que sea bajo en calorías. La granola, la miel, los jugos naturales y el aceite de coco son naturales pero calóricamente densos. Úsalos con moderación.
+
+## 2. Eliminar grupos de alimentos completos
+
+Quitarte los carbohidratos, las grasas o los lácteos sin razón médica genera deficiencias nutricionales y hace tu dieta insostenible. El balance es más efectivo que la restricción.
+
+## 3. No comer suficiente proteína
+
+La proteína te mantiene saciado, protege tu músculo y acelera tu metabolismo. Si tu plato típico es arroz con verduras sin proteína, estás dejando fuera un pilar fundamental.
+
+## 4. Saltarte comidas para "compensar"
+
+Te excediste ayer y hoy no desayunas. Este patrón solo genera más hambre, peores decisiones alimenticias y un metabolismo errático. Mejor vuelve a tu rutina normal.
+
+## 5. Creer que las ensaladas siempre son saludables
+
+Una ensalada con aderezo cremoso, crutones, queso parmesano y tocino puede tener más calorías que una hamburguesa. El problema no es la ensalada, sino lo que le pones encima.
+
+## 6. Ignorar las calorías líquidas
+
+Jugos, smoothies, cafés con crema, refrescos y alcohol pueden sumar 500-800 calorías diarias sin que te des cuenta. Son las calorías más fáciles de eliminar.
+
+## 7. Comer demasiado rápido
+
+Tu cerebro tarda unos 20 minutos en registrar que estás lleno. Si comes en 5 minutos, probablemente estás comiendo de más sin sentirlo. Mastica despacio.
+
+## 8. No planificar tus comidas
+
+Sin plan, terminas pidiendo comida rápida o comiendo lo primero que encuentras. Dedicar 30 minutos el domingo a planear tu semana cambia todo.
+
+## 9. Obsesionarte con la perfección
+
+Un día "malo" no arruina una semana de buena alimentación. La consistencia del 80-90% es más importante que buscar el 100% y rendirte cuando fallas.
+
+## 10. No dormir suficiente
+
+Dormir menos de 7 horas aumenta la hormona del hambre (grelina) y reduce la hormona de saciedad (leptina). Puedes comer perfecto pero si no duermes, tu cuerpo te pedirá más comida.
+
+## El mensaje final
+
+Comer saludable no es complicado, pero requiere consciencia. Corregir estos errores uno por uno es más efectivo que cualquier dieta de moda. Empieza por el que más te identificó.`,
   },
 ];
