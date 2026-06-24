@@ -79,8 +79,8 @@ export default function DelipksImpacta() {
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
             Un agradecimiento genuino a quienes cuidan de nosotros todos los días.{" "}
             <strong className="text-ink">15% de descuento permanente</strong> en todos nuestros
-            planes para personal de servicios de emergencia, policías, bomberos, militares
-            y personal de la salud. No acumulable con otras promociones.
+            planes para <strong className="text-ink">personal de servicios de emergencia, policías, bomberos, militares
+            y personal de la salud</strong>. No acumulable con otras promociones.
           </p>
         </div>
 
