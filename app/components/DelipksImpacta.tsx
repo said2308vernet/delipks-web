@@ -87,8 +87,8 @@ export default function DelipksImpacta() {
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
           <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
             <img
-              src="https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=800&q=80&auto=format&fit=crop"
-              alt="Bomberos y rescatistas en equipo"
+              src="https://images.unsplash.com/photo-1552828488-282e3da17019?w=800&q=80&auto=format&fit=crop"
+              alt="Bomberos combatiendo un incendio en equipo"
               className="h-full w-full object-cover"
             />
           </div>
