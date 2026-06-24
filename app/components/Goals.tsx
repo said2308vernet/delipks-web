@@ -21,12 +21,26 @@ const icons: Record<string, React.ReactNode> = {
   ),
 };
 
-const supportingImages: Record<string, string> = {
-  briefcase:
-    "https://images.unsplash.com/photo-1556911073-52527ac43761?w=600&q=80&auto=format&fit=crop",
-  barbell:
-    "https://images.unsplash.com/photo-1729280924877-4750c0dba51e?w=600&q=80&auto=format&fit=crop",
-};
+const allGoals = [
+  {
+    icon: "leaf" as const,
+    title: goals.featured.title,
+    description: goals.featured.description,
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&auto=format&fit=crop",
+  },
+  {
+    icon: "briefcase" as const,
+    title: goals.supporting[0].title,
+    description: goals.supporting[0].description,
+    image: "https://images.unsplash.com/photo-1556911073-52527ac43761?w=600&q=80&auto=format&fit=crop",
+  },
+  {
+    icon: "barbell" as const,
+    title: goals.supporting[1].title,
+    description: goals.supporting[1].description,
+    image: "https://images.unsplash.com/photo-1729280924877-4750c0dba51e?w=600&q=80&auto=format&fit=crop",
+  },
+];
 
 export default function Goals() {
   return (
@@ -41,52 +55,25 @@ export default function Goals() {
         <p className="text-sm text-muted">Empezamos por lo más importante: tu salud</p>
       </div>
 
-      {/* Categoría protagonista */}
-      <div className="mb-5 grid items-center gap-8 rounded-2xl border border-border bg-white p-7 lg:grid-cols-[0.9fr_1fr] lg:p-9">
-        <div className="aspect-[16/10] overflow-hidden rounded-xl bg-secondary-light">
-          <img
-            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80&auto=format&fit=crop"
-            alt="Plato saludable con ingredientes frescos"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div>
-          <span className="mb-3.5 block text-primary">{icons.leaf}</span>
-          <h3 className="mb-2.5 font-display text-xl font-semibold text-ink lg:text-2xl">
-            {goals.featured.title}
-          </h3>
-          <p className="mb-5 max-w-md text-sm leading-relaxed text-muted">
-            {goals.featured.description}
-          </p>
-          <a
-            href="#planes"
-            className="inline-block rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
-          >
-            Ver planes
-          </a>
-        </div>
-      </div>
-
-      {/* Categorías de soporte */}
-      <div className="grid gap-5 sm:grid-cols-2">
-        {goals.supporting.map((goal) => (
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {allGoals.map((goal) => (
           <div key={goal.title} className="overflow-hidden rounded-2xl border border-border bg-white">
-            <div className="aspect-[16/9] overflow-hidden bg-bg-alt">
+            <div className="aspect-[4/3] overflow-hidden bg-bg-alt">
               <img
-                src={supportingImages[goal.icon]}
+                src={goal.image}
                 alt={goal.title}
                 className="h-full w-full object-cover"
               />
             </div>
             <div className="p-6">
-              <span className="mb-3.5 block text-muted">{icons[goal.icon]}</span>
-              <h3 className="mb-2 text-base font-semibold text-ink">{goal.title}</h3>
+              <span className="mb-3 block text-primary">{icons[goal.icon]}</span>
+              <h3 className="mb-2 font-display text-base font-semibold text-ink">{goal.title}</h3>
               <p className="mb-4 text-[13.5px] leading-relaxed text-muted">{goal.description}</p>
               <a
                 href="#planes"
-                className="border-b border-ink pb-0.5 text-[13px] font-medium text-ink transition-opacity hover:opacity-70"
+                className="inline-block rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
               >
-                Ver planes →
+                Ver planes
               </a>
             </div>
           </div>
