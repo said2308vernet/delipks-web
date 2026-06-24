@@ -2,7 +2,7 @@ import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
 
 export const metadata = {
-  title: "Blog — Delipks | Tips de alimentación saludable",
+  title: "Blog — Delipks | Vida saludable",
   description:
     "Consejos, recetas y tips de nutrición para comer mejor cada día. El blog de Delipks.",
 };
@@ -32,7 +32,7 @@ export default function BlogPage() {
           Blog
         </span>
         <h1 className="mb-2 font-display text-3xl font-semibold text-ink lg:text-4xl">
-          Tips de alimentación saludable
+          Vida saludable
         </h1>
         <p className="max-w-lg text-sm leading-relaxed text-muted">
           Consejos, recetas y todo lo que necesitas para comer mejor sin complicarte.
