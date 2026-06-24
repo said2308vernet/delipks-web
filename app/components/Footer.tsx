@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
             <div className="mt-4 flex gap-3">
               <a
-                href="https://instagram.com/delipks"
+                href="https://www.instagram.com/deli.pks/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
