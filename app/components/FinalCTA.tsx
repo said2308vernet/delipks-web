@@ -2,8 +2,8 @@ import { whatsappLink } from "@/lib/content";
 
 export default function FinalCTA() {
   return (
-    <section className="px-6 py-16 lg:px-10 lg:py-20">
-      <div className="mx-auto max-w-6xl rounded-2xl bg-primary px-6 py-16 text-center lg:py-20">
+    <section className="px-6 py-10 lg:px-10 lg:py-14">
+      <div className="mx-auto max-w-6xl rounded-2xl bg-primary px-6 py-12 text-center lg:py-16">
         <h2 className="mb-3 font-display text-3xl font-semibold text-bg lg:text-4xl">
           Tu semana, resuelta.
         </h2>

@@ -33,7 +33,7 @@ const stepIcons: Record<number, React.ReactNode> = {
 
 export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="mx-auto max-w-6xl px-6 py-16 lg:px-10 lg:py-20">
+    <section id="como-funciona" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
       <div className="mb-12 text-center">
         <span className="mb-4 inline-block rounded-full bg-secondary-light px-3 py-1.5 text-xs font-medium text-[#3B6D11]">
           Proceso

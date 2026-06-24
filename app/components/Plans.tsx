@@ -7,7 +7,7 @@ export default function Plans() {
   const [billing, setBilling] = useState<"subscription" | "oneTime">("subscription");
 
   return (
-    <section id="planes" className="mx-auto max-w-6xl px-6 py-16 lg:px-10 lg:py-20">
+    <section id="planes" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
       <div className="mb-8 text-center">
         <span className="mb-4 inline-block rounded-full bg-secondary-light px-3 py-1.5 text-xs font-medium text-[#3B6D11]">
           Planes
