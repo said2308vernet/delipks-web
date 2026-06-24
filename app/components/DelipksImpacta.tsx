@@ -29,56 +29,61 @@ export default function DelipksImpacta() {
         <span className="mb-4 inline-block rounded-full bg-secondary-light px-3 py-1.5 text-xs font-medium text-[#3B6D11]">
           Delipks Impacta
         </span>
-        <h2 className="mb-2 font-display text-2xl font-semibold text-ink lg:text-3xl">
-          Más allá de tu mesa
+        <h2 className="font-display text-2xl font-semibold text-ink lg:text-3xl">
+          Delipks Impacta
         </h2>
-        <p className="mx-auto max-w-lg text-sm leading-relaxed text-muted">
-          Cada plan que compras ayuda a generar bienestar más allá de tu mesa.
-        </p>
       </div>
 
       {/* Programa A — Huellas y Sonrisas */}
       <div className="mb-8 rounded-2xl border border-border bg-white p-7 lg:p-9">
+        <div className="mb-8 text-center">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-primary">
+            Programa de impacto social
+          </p>
+          <h3 className="mb-3 font-display text-xl font-semibold text-ink lg:text-2xl">
+            Huellas y Sonrisas
+          </h3>
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
+            No solo compras comida. También ayudas a generar bienestar.
+            Una parte de cada venta se destina a nuestro Fondo de Impacto.
+          </p>
+        </div>
+
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-primary">
-              Programa de impacto social
-            </p>
-            <h3 className="mb-3 font-display text-xl font-semibold text-ink lg:text-2xl">
-              Huellas y Sonrisas
-            </h3>
-            <p className="mb-5 text-sm leading-relaxed text-muted">
-              Una parte de cada venta se destina a nuestro Fondo de Impacto, que apoya directamente
-              a organizaciones aliadas en Puebla y Cholula.
-            </p>
-
             <blockquote className="mb-6 border-l-2 border-primary pl-4">
               <p className="text-[15px] italic leading-relaxed text-ink/80">
                 "No es solo comida. Es una cadena de bienestar que empieza contigo."
               </p>
             </blockquote>
 
-            {/* Fases */}
-            <div className="space-y-3">
-              <div className="rounded-xl bg-bg p-4">
-                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-primary">Hoy</p>
-                <p className="text-[13px] leading-relaxed text-muted">
-                  Programa recién lanzado: primeras organizaciones aliadas en Puebla — 1 refugio de mascotas
-                  y 1 casa hogar.
-                </p>
-              </div>
-              <div className="rounded-xl bg-bg p-4">
-                <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-accent">Meta 2029</p>
-                <p className="text-[13px] leading-relaxed text-muted">
-                  Apoyar a 3+ organizaciones aliadas en Puebla y Cholula, sumando un anexo al programa,
-                  con una reserva permanente para emergencias locales.
-                </p>
-              </div>
-            </div>
+            <p className="mb-4 text-sm font-medium text-ink">
+              El apoyo es fijo, pero cada mes decidimos dónde generar el mayor impacto:
+            </p>
+            <ul className="space-y-2.5">
+              {[
+                { icon: "👧", label: "Niños" },
+                { icon: "🧓", label: "Adultos mayores" },
+                { icon: "🐾", label: "Refugios de animales" },
+                { icon: "🍎", label: "Bancos de alimentos" },
+                { icon: "🤝", label: "Comunidades vulnerables" },
+              ].map((item) => (
+                <li key={item.label} className="flex items-center gap-3">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary-light text-base">
+                    {item.icon}
+                  </span>
+                  <span className="text-sm text-muted">{item.label}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <div className="flex aspect-[4/3] items-center justify-center rounded-xl bg-bg-alt">
-            <span className="text-xs text-muted">Foto — Huellas y Sonrisas</span>
+          <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
+            <img
+              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80&auto=format&fit=crop"
+              alt="Voluntarios entregando alimentos a personas"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
       </div>
