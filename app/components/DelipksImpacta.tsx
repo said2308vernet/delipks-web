@@ -30,11 +30,9 @@ export default function DelipksImpacta() {
 
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
-            <blockquote className="mb-6 border-l-2 border-primary pl-4">
-              <p className="text-[15px] italic leading-relaxed text-ink/80">
-                "No es solo comida. Es una cadena de bienestar que empieza contigo."
-              </p>
-            </blockquote>
+            <p className="mb-6 font-display text-xl font-bold italic leading-snug text-ink lg:text-2xl">
+              "No es solo comida.<br />Es una cadena de bienestar que empieza contigo."
+            </p>
 
             <p className="mb-4 text-sm font-medium text-ink">
               El apoyo es fijo, pero cada mes decidimos dónde generar el mayor impacto:
