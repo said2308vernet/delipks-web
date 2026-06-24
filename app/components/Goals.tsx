@@ -21,6 +21,13 @@ const icons: Record<string, React.ReactNode> = {
   ),
 };
 
+const supportingImages: Record<string, string> = {
+  briefcase:
+    "https://images.unsplash.com/photo-1556911073-52527ac43761?w=600&q=80&auto=format&fit=crop",
+  barbell:
+    "https://images.unsplash.com/photo-1729280924877-4750c0dba51e?w=600&q=80&auto=format&fit=crop",
+};
+
 export default function Goals() {
   return (
     <section id="objetivos" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
@@ -63,16 +70,25 @@ export default function Goals() {
       {/* Categorías de soporte */}
       <div className="grid gap-5 sm:grid-cols-2">
         {goals.supporting.map((goal) => (
-          <div key={goal.title} className="rounded-2xl border border-border bg-white p-6">
-            <span className="mb-3.5 block text-muted">{icons[goal.icon]}</span>
-            <h3 className="mb-2 text-base font-semibold text-ink">{goal.title}</h3>
-            <p className="mb-4 text-[13.5px] leading-relaxed text-muted">{goal.description}</p>
-            <a
-              href="#planes"
-              className="border-b border-ink pb-0.5 text-[13px] font-medium text-ink transition-opacity hover:opacity-70"
-            >
-              Ver planes →
-            </a>
+          <div key={goal.title} className="overflow-hidden rounded-2xl border border-border bg-white">
+            <div className="aspect-[16/9] overflow-hidden bg-bg-alt">
+              <img
+                src={supportingImages[goal.icon]}
+                alt={goal.title}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <span className="mb-3.5 block text-muted">{icons[goal.icon]}</span>
+              <h3 className="mb-2 text-base font-semibold text-ink">{goal.title}</h3>
+              <p className="mb-4 text-[13.5px] leading-relaxed text-muted">{goal.description}</p>
+              <a
+                href="#planes"
+                className="border-b border-ink pb-0.5 text-[13px] font-medium text-ink transition-opacity hover:opacity-70"
+              >
+                Ver planes →
+              </a>
+            </div>
           </div>
         ))}
       </div>
