@@ -1,3 +1,8 @@
+export interface BlogSource {
+  name: string;
+  url: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -6,6 +11,7 @@ export interface BlogPost {
   category: string;
   date: string;
   content: string;
+  sources: BlogSource[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -57,6 +63,11 @@ No por sí solo. Lo que importa es qué pan eliges, cuánto comes y con qué lo 
 ## Cómo incluir pan en tu alimentación
 
 El pan puede ser un excelente vehículo de nutrientes. Úsalo para armar desayunos y comidas balanceadas: combínalo con proteína (huevo, pollo, queso fresco), grasa saludable (aguacate, aceite de oliva) y vegetales. La clave no es eliminar el pan, sino elegir el correcto.`,
+    sources: [
+      { name: "Harvard T.H. Chan School of Public Health — Whole Grains", url: "https://www.hsph.harvard.edu/nutritionsource/whole-grains/" },
+      { name: "American Heart Association — Whole Grains & Fiber", url: "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/whole-grains-refined-grains-and-dietary-fiber" },
+      { name: "Mayo Clinic — Whole Grains: Hearty Options", url: "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/whole-grains/art-20047826" },
+    ],
   },
   {
     slug: "meal-prep-alto-en-proteina",
@@ -104,6 +115,11 @@ No variar las fuentes de proteína, olvidar las grasas saludables en el plato, n
 ## La alternativa más fácil
 
 Si no tienes tiempo para cocinar, los planes de Delipks están diseñados con el balance de proteína que necesitas. Cada platillo incluye una porción calculada de proteína, carbohidratos y vegetales, listos para comer.`,
+    sources: [
+      { name: "Harvard Health — How much protein do you need?", url: "https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096" },
+      { name: "Academy of Nutrition and Dietetics — Protein", url: "https://www.eatright.org/food/nutrition/dietary-guidelines-and-myplate/how-much-protein-should-i-eat" },
+      { name: "USDA — Dietary Guidelines for Americans", url: "https://www.dietaryguidelines.gov/" },
+    ],
   },
   {
     slug: "frutas-permitidas-en-keto",
@@ -153,6 +169,11 @@ El truco está en elegir frutas con alto contenido de fibra y bajo contenido de 
 ## Consejos prácticos
 
 Come las frutas permitidas como parte de un platillo (en ensaladas, con yogur griego, en smoothies con grasa) en lugar de solas. Esto ayuda a moderar la respuesta glucémica y mantiene tu estado de cetosis.`,
+    sources: [
+      { name: "Harvard T.H. Chan — Diet Review: Ketogenic Diet", url: "https://www.hsph.harvard.edu/nutritionsource/healthy-weight/diet-reviews/ketogenic-diet/" },
+      { name: "USDA FoodData Central — Nutrient Database", url: "https://fdc.nal.usda.gov/" },
+      { name: "Mayo Clinic — Low-carb diet", url: "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/low-carb-diet/art-20045831" },
+    ],
   },
   {
     slug: "pavo-vs-res-molida",
@@ -190,6 +211,11 @@ Ambas son excelentes fuentes de proteína completa. La res tiene una ligera vent
 ## El veredicto
 
 No hay un ganador absoluto. Lo ideal es alternar entre ambas durante la semana para obtener la variedad de nutrientes que cada una ofrece. Lo que realmente importa es la calidad del producto y cómo lo preparas.`,
+    sources: [
+      { name: "USDA FoodData Central — Ground Turkey & Ground Beef", url: "https://fdc.nal.usda.gov/" },
+      { name: "Harvard Health — Red meat and heart disease", url: "https://www.health.harvard.edu/staying-healthy/red-meat-and-heart-disease" },
+      { name: "American Heart Association — Meat, Poultry & Fish", url: "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/nutrition-basics/meat-poultry-and-fish" },
+    ],
   },
   {
     slug: "tipos-de-lechuga",
@@ -225,6 +251,11 @@ No hay un ganador absoluto. Lo ideal es alternar entre ambas durante la semana p
 ## Cómo armar una ensalada nutritiva
 
 La base importa, pero el complemento también. Combina tus hojas verdes con proteína (pollo, huevo, atún, garbanzos), grasa saludable (aguacate, nueces, aceite de oliva) y un carbohidrato complejo (quinoa, camote, elote). Así transformas una ensalada aburrida en una comida completa.`,
+    sources: [
+      { name: "USDA FoodData Central — Leafy Greens Nutrition", url: "https://fdc.nal.usda.gov/" },
+      { name: "Harvard T.H. Chan — Vegetables and Fruits", url: "https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/" },
+      { name: "NIH — Vitamin K Fact Sheet", url: "https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/" },
+    ],
   },
   {
     slug: "calorias-al-correr",
@@ -266,6 +297,11 @@ Correr no solo quema grasa. También mejora tu salud cardiovascular, aumenta tu 
 Lo que comes antes y después de correr importa tanto como la carrera misma. Antes: un snack ligero con carbohidratos (un plátano, una barra de avena). Después: proteína y carbohidratos para recuperar (pollo con arroz, un smoothie con proteína).
 
 Un plan de alimentación bien diseñado potencia tus resultados al correr. No se trata solo de quemar, sino de nutrir tu cuerpo para que rinda.`,
+    sources: [
+      { name: "Harvard Health — Calories burned in 30 minutes", url: "https://www.health.harvard.edu/diet-and-weight-loss/calories-burned-in-30-minutes-of-leisure-and-routine-activities" },
+      { name: "Mayo Clinic — Exercise for weight loss", url: "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/exercise/art-20050999" },
+      { name: "American Council on Exercise — Calorie Expenditure", url: "https://www.acefitness.org/resources/everyone/tools-calculators/physical-activity-calorie-counter/" },
+    ],
   },
   {
     slug: "deficit-calorico-para-bajar-de-peso",
@@ -307,6 +343,11 @@ Como referencia general, un déficit de 300 a 500 calorías al día permite una 
 ## La clave es la consistencia
 
 No necesitas ser perfecto cada día. Necesitas ser consistente la mayoría de los días. Un déficit moderado y sostenido es infinitamente más efectivo que una dieta extrema que abandonas en dos semanas.`,
+    sources: [
+      { name: "NIH — Calorie Deficit and Weight Loss", url: "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment" },
+      { name: "Mayo Clinic — Counting calories", url: "https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/calories/art-20048065" },
+      { name: "Harvard Health — Calorie counting made easy", url: "https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy" },
+    ],
   },
   {
     slug: "pollo-vs-pescado",
@@ -346,6 +387,11 @@ El pollo gana ligeramente por su mayor contenido de proteína por caloría. Pero
 ## El veredicto
 
 No elijas uno sobre el otro — alterna ambos durante la semana. Come pollo 3-4 veces y pescado 2-3 veces para obtener lo mejor de ambos mundos. Tu cuerpo necesita tanto la proteína magra del pollo como los omega-3 del pescado.`,
+    sources: [
+      { name: "USDA FoodData Central — Chicken & Fish Nutrition", url: "https://fdc.nal.usda.gov/" },
+      { name: "American Heart Association — Fish and Omega-3 Fatty Acids", url: "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/fish-and-omega-3-fatty-acids" },
+      { name: "Harvard T.H. Chan — Fish: Friend or Foe?", url: "https://www.hsph.harvard.edu/nutritionsource/fish/" },
+    ],
   },
   {
     slug: "tips-para-correr-mas-rapido",
@@ -393,6 +439,11 @@ Correr con alguien — un amigo, un grupo, o incluso siguiendo un plan virtual �
 ## 9. Aprende a respirar
 
 Respira con el diafragma, no solo con el pecho. Un patrón común es inhalar durante 3 pasos y exhalar durante 2. Esto mantiene un flujo de oxígeno constante y evita el típico dolor de costado.`,
+    sources: [
+      { name: "American College of Sports Medicine — Running Tips", url: "https://www.acsm.org/education-resources/trending-topics-resources/physical-activity-guidelines" },
+      { name: "Mayo Clinic — Running: How to get started", url: "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/running/art-20546886" },
+      { name: "NIH — Benefits of Physical Activity", url: "https://www.nhlbi.nih.gov/health/heart/physical-activity/benefits" },
+    ],
   },
   {
     slug: "plato-balanceado-sin-contar-calorias",
@@ -434,6 +485,11 @@ Porque automatiza el balance sin que tengas que pensar. Si la mitad de tu plato 
 ## Aplícalo en tu día a día
 
 Este método funciona para desayuno, comida y cena. Un desayuno balanceado puede ser: huevos revueltos (proteína) + tortilla de maíz (carbohidrato) + nopales y salsa (vegetales) + aguacate (grasa). Simple, completo y sin contar una sola caloría.`,
+    sources: [
+      { name: "Harvard T.H. Chan — Healthy Eating Plate", url: "https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/" },
+      { name: "USDA — MyPlate", url: "https://www.myplate.gov/" },
+      { name: "WHO — Healthy Diet Fact Sheet", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+    ],
   },
   {
     slug: "beneficios-del-agua",
@@ -487,6 +543,11 @@ Estudios muestran que la deshidratación leve afecta tu estado de ánimo, aument
 ## Tips para tomar más agua
 
 Lleva una botella reutilizable contigo, toma un vaso al despertar, uno antes de cada comida y uno antes de dormir. Agregar limón, pepino o menta hace que sea más fácil si no te gusta el agua sola.`,
+    sources: [
+      { name: "Mayo Clinic — Water: How much should you drink?", url: "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/water/art-20044256" },
+      { name: "Harvard Health — How much water should you drink?", url: "https://www.health.harvard.edu/staying-healthy/how-much-water-should-you-drink" },
+      { name: "NIH — Water & Nutrition", url: "https://www.nhlbi.nih.gov/health/educational/wecan/eat-right/water.htm" },
+    ],
   },
   {
     slug: "errores-comunes-al-comer-saludable",
@@ -542,5 +603,10 @@ Dormir menos de 7 horas aumenta la hormona del hambre (grelina) y reduce la horm
 ## El mensaje final
 
 Comer saludable no es complicado, pero requiere consciencia. Corregir estos errores uno por uno es más efectivo que cualquier dieta de moda. Empieza por el que más te identificó.`,
+    sources: [
+      { name: "Harvard T.H. Chan — Mindful Eating", url: "https://www.hsph.harvard.edu/nutritionsource/mindful-eating/" },
+      { name: "NIH — Sleep and Obesity", url: "https://www.niddk.nih.gov/health-information/professionals/clinical-tools-patient-management/overweight-obesity/health-risks" },
+      { name: "WHO — Healthy Diet", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+    ],
   },
 ];

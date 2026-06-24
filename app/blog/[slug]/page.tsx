@@ -110,7 +110,27 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         })}
       </article>
 
-      <div className="mt-10 border-t border-border pt-6">
+      {post.sources.length > 0 && (
+        <div className="mt-10 rounded-xl bg-bg p-5">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-ink">Fuentes</p>
+          <ul className="space-y-1.5">
+            {post.sources.map((source) => (
+              <li key={source.url}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] text-primary transition-opacity hover:opacity-70"
+                >
+                  {source.name} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      <div className="mt-6 border-t border-border pt-6">
         <Link
           href="/blog"
           className="text-sm font-medium text-primary transition-opacity hover:opacity-70"
