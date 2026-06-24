@@ -30,7 +30,7 @@ export default function TerminosCondiciones() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">2. Descripción del servicio</h2>
           <p>
-            Delipks es un servicio de preparación y entrega de alimentos saludables (&quot;meal prep&quot;) que opera en Puebla y Cholula, México. Ofrecemos planes semanales de alimentación que incluyen desayunos, comidas y/o cenas, según el plan seleccionado, entregados directamente en el domicilio del cliente.
+            Delipks, operado por Antonio Said Ramírez Vernet (RFC: RAVA890825350), es un servicio de preparación y entrega de alimentos saludables (&quot;meal prep&quot;) que opera en Puebla y Cholula, México. Ofrecemos planes semanales de alimentación que incluyen desayunos, comidas y/o cenas, según el plan seleccionado, entregados directamente en el domicilio del cliente.
           </p>
         </section>
 
@@ -131,7 +131,7 @@ export default function TerminosCondiciones() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">16. Contacto</h2>
           <p>
-            Para cualquier duda, queja o aclaración sobre estos términos, contáctanos por WhatsApp o a través de los medios disponibles en nuestro sitio web. Conforme a la Ley Federal de Protección al Consumidor, también puedes acudir a la Procuraduría Federal del Consumidor (PROFECO) — <span className="text-ink">www.gob.mx/profeco</span>.
+            Para cualquier duda, queja o aclaración sobre estos términos, contáctanos por WhatsApp o al correo <span className="text-ink">hola@delipks.com</span>. Conforme a la Ley Federal de Protección al Consumidor, también puedes acudir a la Procuraduría Federal del Consumidor (PROFECO) — <span className="text-ink">www.gob.mx/profeco</span>.
           </p>
         </section>
       </div>

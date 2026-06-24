@@ -23,7 +23,7 @@ export default function PoliticasServicio() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">1. Zonas de cobertura</h2>
           <p>
-            Actualmente, Delipks realiza entregas en las zonas metropolitanas de Puebla y Cholula, estado de Puebla, México. Las zonas de cobertura pueden ampliarse o modificarse. Al momento de confirmar tu pedido por WhatsApp, validaremos que tu dirección se encuentre dentro de nuestra área de servicio. Si tu domicilio queda fuera de cobertura, te lo informaremos antes de procesar cualquier cobro.
+            Delipks, operado por Antonio Said Ramírez Vernet (RFC: RAVA890825350), con correo de contacto <span className="text-ink">hola@delipks.com</span>, actualmente realiza entregas en las zonas metropolitanas de Puebla y Cholula, estado de Puebla, México. Las zonas de cobertura pueden ampliarse o modificarse. Al momento de confirmar tu pedido por WhatsApp, validaremos que tu dirección se encuentre dentro de nuestra área de servicio. Si tu domicilio queda fuera de cobertura, te lo informaremos antes de procesar cualquier cobro.
           </p>
         </section>
 
@@ -134,7 +134,7 @@ export default function PoliticasServicio() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">15. Contacto y quejas</h2>
           <p>
-            Para dudas, quejas o sugerencias sobre nuestro servicio, contáctanos por WhatsApp o a través de los medios disponibles en nuestro sitio web. Tu opinión nos ayuda a mejorar. Si no logramos resolver tu queja de forma satisfactoria, puedes acudir a la Procuraduría Federal del Consumidor (PROFECO) al teléfono 55 5568 8722 o en <span className="text-ink">www.gob.mx/profeco</span>.
+            Para dudas, quejas o sugerencias sobre nuestro servicio, contáctanos por WhatsApp o al correo <span className="text-ink">hola@delipks.com</span>. Tu opinión nos ayuda a mejorar. Si no logramos resolver tu queja de forma satisfactoria, puedes acudir a la Procuraduría Federal del Consumidor (PROFECO) al teléfono 55 5568 8722 o en <span className="text-ink">www.gob.mx/profeco</span>.
           </p>
         </section>
       </div>

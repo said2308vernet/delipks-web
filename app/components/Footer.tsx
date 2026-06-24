@@ -66,6 +66,14 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  href="mailto:hola@delipks.com"
+                  className="text-[13px] text-muted transition-opacity hover:opacity-70"
+                >
+                  hola@delipks.com
+                </a>
+              </li>
+              <li>
                 <span className="text-[13px] text-muted">
                   {site.deliveryZones.join(", ")} · México
                 </span>

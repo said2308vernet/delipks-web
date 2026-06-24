@@ -23,7 +23,7 @@ export default function AvisoPrivacidad() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">1. Identidad del responsable</h2>
           <p>
-            Delipks, con domicilio en Puebla, Puebla, México (en adelante &quot;Delipks&quot;, &quot;nosotros&quot; o &quot;la empresa&quot;), es responsable del tratamiento de los datos personales que nos proporcione, de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento.
+            Delipks, operado por Antonio Said Ramírez Vernet, con RFC: RAVA890825350, con domicilio en Puebla, Puebla, México (en adelante &quot;Delipks&quot;, &quot;nosotros&quot; o &quot;la empresa&quot;), es responsable del tratamiento de los datos personales que nos proporcione, de conformidad con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento. Correo de contacto: <span className="text-ink">hola@delipks.com</span>.
           </p>
         </section>
 
@@ -61,7 +61,7 @@ export default function AvisoPrivacidad() {
             <li>Elaborar estadísticas internas (de forma anonimizada)</li>
           </ul>
           <p className="mt-2">
-            Si no deseas que tus datos sean tratados para finalidades secundarias, puedes comunicarlo al correo indicado en la sección de contacto. La negativa no afectará tu relación con Delipks.
+            Si no deseas que tus datos sean tratados para finalidades secundarias, puedes comunicarlo al correo <span className="text-ink">hola@delipks.com</span>. La negativa no afectará tu relación con Delipks.
           </p>
         </section>
 
@@ -113,7 +113,7 @@ export default function AvisoPrivacidad() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">10. Contacto</h2>
           <p>
-            Para cualquier asunto relacionado con el tratamiento de tus datos personales, puedes contactarnos a través de WhatsApp o al correo electrónico que pondremos a tu disposición. Si consideras que tu derecho a la protección de datos personales ha sido vulnerado, puedes acudir al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) — <span className="text-ink">www.inai.org.mx</span>.
+            Para cualquier asunto relacionado con el tratamiento de tus datos personales, puedes contactarnos a través de WhatsApp o al correo electrónico <span className="text-ink">hola@delipks.com</span>. Si consideras que tu derecho a la protección de datos personales ha sido vulnerado, puedes acudir al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI) — <span className="text-ink">www.inai.org.mx</span>.
           </p>
         </section>
 
