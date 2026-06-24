@@ -84,7 +84,7 @@ export default function Plans() {
               </p>
               <a
                 href={whatsappLink(
-                  `Hola, quiero el ${plan.label} (${plan.meals} comidas/semana) — ${
+                  `Hola, quiero el ${plan.label} (${plan.totalMeals} comidas/semana) — ${
                     billing === "subscription" ? "suscripción" : "compra puntual"
                   }`
                 )}
