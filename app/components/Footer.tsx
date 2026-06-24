@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Menú", href: "#catalogo" },
   { label: "Planes", href: "#planes" },
   { label: "Objetivos", href: "#objetivos" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog de la vida saludable", href: "/blog" },
 ];
 
 export default function Footer() {
