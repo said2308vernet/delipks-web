@@ -10,7 +10,7 @@ export default function Hero() {
             Entregas en {site.deliveryZones.join(" y ")}
           </span>
 
-          <h1 className="mb-4 max-w-[460px] font-display text-4xl font-semibold leading-tight tracking-tight text-ink lg:text-5xl">
+          <h1 className="mb-4 max-w-[540px] font-display text-4xl font-semibold leading-tight tracking-tight text-ink lg:text-5xl">
             Comida saludable y lista, sin preocupaciones
           </h1>
 
