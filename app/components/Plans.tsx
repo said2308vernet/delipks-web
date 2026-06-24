@@ -19,9 +19,11 @@ export default function Plans() {
       </div>
 
       <div className="mb-10 flex justify-center">
-        <div className="inline-flex rounded-[10px] border border-border bg-white p-1">
+        <div className="inline-flex rounded-[10px] border border-border bg-white p-1" role="tablist" aria-label="Tipo de compra">
           <button
             type="button"
+            role="tab"
+            aria-selected={billing === "oneTime"}
             onClick={() => setBilling("oneTime")}
             className={`rounded-[7px] px-5 py-2.5 text-[13px] font-medium transition-colors ${
               billing === "oneTime" ? "bg-primary text-bg" : "text-muted"
@@ -31,6 +33,8 @@ export default function Plans() {
           </button>
           <button
             type="button"
+            role="tab"
+            aria-selected={billing === "subscription"}
             onClick={() => setBilling("subscription")}
             className={`flex items-center gap-1.5 rounded-[7px] px-5 py-2.5 text-[13px] font-medium transition-colors ${
               billing === "subscription" ? "bg-primary text-bg" : "text-muted"

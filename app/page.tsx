@@ -67,7 +67,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
-      <main className="flex-1">
+      <main id="contenido-principal" className="flex-1">
         <Hero />
         <TrustBar />
         <HowItWorks />

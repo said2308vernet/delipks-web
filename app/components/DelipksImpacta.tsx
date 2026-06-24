@@ -59,7 +59,7 @@ export default function DelipksImpacta() {
             <img
               src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80&auto=format&fit=crop"
               alt="Niños sonriendo junto a un perro"
-              className="h-full w-full object-cover"
+              loading="lazy" className="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -87,7 +87,7 @@ export default function DelipksImpacta() {
             <img
               src="https://images.unsplash.com/photo-1552828488-282e3da17019?w=800&q=80&auto=format&fit=crop"
               alt="Bomberos combatiendo un incendio en equipo"
-              className="h-full w-full object-cover"
+              loading="lazy" className="h-full w-full object-cover"
             />
           </div>
 

@@ -62,7 +62,7 @@ export default function Goals() {
               <img
                 src={goal.image}
                 alt={goal.title}
-                className="h-full w-full object-cover"
+                loading="lazy" className="h-full w-full object-cover"
               />
             </div>
             <div className="p-6">

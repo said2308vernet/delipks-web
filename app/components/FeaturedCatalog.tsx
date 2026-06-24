@@ -38,7 +38,7 @@ export default function FeaturedCatalog() {
               <img
                 src={dishImages[dish.name]}
                 alt={dish.name}
-                className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                loading="lazy" className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
             <div className="p-3.5">
