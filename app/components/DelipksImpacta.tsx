@@ -59,8 +59,8 @@ export default function DelipksImpacta() {
 
           <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
             <img
-              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80&auto=format&fit=crop"
-              alt="Voluntarios entregando alimentos a personas"
+              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80&auto=format&fit=crop"
+              alt="Niños sonriendo junto a un perro"
               className="h-full w-full object-cover"
             />
           </div>
