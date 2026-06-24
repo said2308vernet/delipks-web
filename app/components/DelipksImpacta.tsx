@@ -93,12 +93,10 @@ export default function DelipksImpacta() {
             />
           </div>
 
-          <div className="text-center lg:text-left">
-            <blockquote className="mb-6 border-l-2 border-primary pl-4 text-left">
-              <p className="text-[15px] italic leading-relaxed text-ink/80">
-                "Ustedes cuidan de todos. Nosotros queremos cuidar de ustedes."
-              </p>
-            </blockquote>
+          <div className="flex flex-col items-center text-center">
+            <p className="mb-8 font-display text-xl font-bold italic leading-snug text-ink lg:text-2xl">
+              "Ustedes cuidan de todos.<br />Nosotros queremos cuidar de ustedes."
+            </p>
 
             <a
               href={whatsappLink("Hola, soy profesional de salud/emergencias y quiero activar mi descuento Delipks Reconoce")}
