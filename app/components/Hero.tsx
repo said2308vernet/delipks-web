@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site, whatsappLink } from "@/lib/content";
 
 export default function Hero() {
@@ -36,11 +37,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt">
-          <img
-            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=80&auto=format&fit=crop"
-            alt="Bowl saludable con vegetales frescos"
-            className="h-full w-full object-cover"
+        <div className="aspect-[4/5] relative overflow-hidden rounded-2xl bg-bg-alt">
+          <Image
+            src="/hero-delipks.jpg"
+            alt="Mujer con meal prep Delipks"
+            fill
+            sizes="(min-width: 1024px) 35vw, 100vw"
+            className="object-cover"
           />
         </div>
       </div>
