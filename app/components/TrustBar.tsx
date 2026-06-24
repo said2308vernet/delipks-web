@@ -35,8 +35,8 @@ export default function TrustBar() {
     <section className="border-y border-border bg-white py-10">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-7 px-6 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
         {trustItems.map((item) => (
-          <div key={item.title} className="flex items-start gap-3.5">
-            <span className="mt-0.5 shrink-0 text-primary">{icons[item.icon]}</span>
+          <div key={item.title} className="flex flex-col items-center text-center gap-2">
+            <span className="text-primary">{icons[item.icon]}</span>
             <div>
               <p className="text-sm font-medium text-ink">{item.title}</p>
               <p className="mt-0.5 text-[13px] leading-snug text-muted">{item.description}</p>
