@@ -1,26 +1,5 @@
 import { whatsappLink } from "@/lib/content";
 
-const reconoceSteps = [
-  {
-    number: 1,
-    title: "Envía tu credencial",
-    description:
-      'Manda por WhatsApp una foto de tu credencial en modo "Ver una vez". Tapa tu número de placa o folio — solo necesitamos tu nombre e institución.',
-  },
-  {
-    number: 2,
-    title: "Aprobación única",
-    description:
-      "Verificamos una sola vez y el 15% de descuento queda ligado a tu cuenta para siempre.",
-  },
-  {
-    number: 3,
-    title: "Confirma en cada entrega",
-    description:
-      "En cada pedido, confirmamos que esté a tu nombre. Listo, disfruta tu comida.",
-  },
-];
-
 export default function DelipksImpacta() {
   return (
     <section id="impacto" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
@@ -90,42 +69,46 @@ export default function DelipksImpacta() {
 
       {/* Programa B — Delipks Reconoce */}
       <div className="rounded-2xl border border-border bg-white p-7 lg:p-9">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-primary">
             Programa de agradecimiento
           </p>
           <h3 className="mb-3 font-display text-xl font-semibold text-ink lg:text-2xl">
             Delipks Reconoce
           </h3>
-          <p className="max-w-2xl text-sm leading-relaxed text-muted">
-            Un agradecimiento genuino al personal de salud — médicos, enfermeras, paramédicos — y
-            emergencias — policías, bomberos, Cruz Roja. <strong className="text-ink">15% de descuento
-            permanente</strong> en todos nuestros planes, no acumulable con otras promociones.
+          <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
+            Un agradecimiento genuino a quienes cuidan de nosotros todos los días.{" "}
+            <strong className="text-ink">15% de descuento permanente</strong> en todos nuestros
+            planes para personal médico, de enfermería, bomberos, policías, militares, protección
+            civil y servicios de emergencia. No acumulable con otras promociones.
           </p>
         </div>
 
-        {/* Pasos de verificación */}
-        <div className="grid gap-5 sm:grid-cols-3">
-          {reconoceSteps.map((step) => (
-            <div key={step.number} className="rounded-xl bg-bg p-5">
-              <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-semibold text-bg">
-                {step.number}
-              </div>
-              <p className="mb-1.5 text-sm font-medium text-ink">{step.title}</p>
-              <p className="text-[13px] leading-relaxed text-muted">{step.description}</p>
-            </div>
-          ))}
-        </div>
+        <div className="grid items-center gap-8 lg:grid-cols-[1fr_1fr]">
+          <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
+            <img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80&auto=format&fit=crop"
+              alt="Equipo de profesionales de salud"
+              className="h-full w-full object-cover"
+            />
+          </div>
 
-        <div className="mt-6 text-center">
-          <a
-            href={whatsappLink("Hola, soy personal de salud/emergencias y quiero activar mi descuento Delipks Reconoce")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block rounded-lg bg-primary px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
-          >
-            Activar mi descuento
-          </a>
+          <div className="text-center lg:text-left">
+            <blockquote className="mb-6 border-l-2 border-primary pl-4 text-left">
+              <p className="text-[15px] italic leading-relaxed text-ink/80">
+                "Ustedes cuidan de todos. Nosotros queremos cuidar de ustedes."
+              </p>
+            </blockquote>
+
+            <a
+              href={whatsappLink("Hola, soy profesional de salud/emergencias y quiero activar mi descuento Delipks Reconoce")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-primary px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
+            >
+              Activar mi descuento
+            </a>
+          </div>
         </div>
       </div>
     </section>
