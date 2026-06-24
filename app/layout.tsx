@@ -28,11 +28,13 @@ export const metadata: Metadata = {
     siteName: "Delipks",
     locale: "es_MX",
     type: "website",
+    images: [{ url: "/og-logo.png", alt: "Delipks logo" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "DELIPKS — Comida saludable y lista",
     description: "Platillos frescos, balanceados y preparados por nutriólogos. Entregamos en Puebla y Cholula.",
+    images: ["/og-logo.png"],
   },
   robots: {
     index: true,
