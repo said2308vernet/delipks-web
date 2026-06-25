@@ -1,10 +1,6 @@
-// Contenido central del sitio DELIPKS.
-// Los campos marcados como PLACEHOLDER deben sustituirse por información real
-// antes de publicar el sitio en producción.
-
 export const site = {
   name: "delipks",
-  whatsappNumber: "527775550000", // PLACEHOLDER — número real de WhatsApp con código de país
+  whatsappNumber: "522216544335",
   deliveryZones: ["Puebla", "Cholula"],
 };
 
