@@ -17,7 +17,7 @@ const localBusinessJsonLd = {
   name: "Delipks",
   description: "Servicio de meal prep y comida saludable en Puebla y Cholula.",
   url: "https://delipks.com",
-  telephone: "+527775550000",
+  telephone: "+522216544335",
   email: "hola@delipks.com",
   address: {
     "@type": "PostalAddress",
@@ -35,9 +35,9 @@ const localBusinessJsonLd = {
     "@type": "OfferCatalog",
     name: "Planes de alimentación",
     itemListElement: [
-      { "@type": "Offer", name: "Plan Básico", price: "900", priceCurrency: "MXN", description: "5 comidas, lunes a viernes" },
-      { "@type": "Offer", name: "Plan Equilibrado", price: "1650", priceCurrency: "MXN", description: "5 desayunos + 5 comidas, lunes a viernes" },
-      { "@type": "Offer", name: "Plan Completo", price: "2400", priceCurrency: "MXN", description: "5 desayunos + 5 comidas + 5 cenas, lunes a viernes" },
+      { "@type": "Offer", name: "Plan Básico", price: "810", priceCurrency: "MXN", description: "5 comidas, lunes a viernes, suscripción semanal" },
+      { "@type": "Offer", name: "Plan Equilibrado", price: "1485", priceCurrency: "MXN", description: "5 desayunos + 5 comidas, lunes a viernes, suscripción semanal" },
+      { "@type": "Offer", name: "Plan Completo", price: "2160", priceCurrency: "MXN", description: "5 desayunos + 5 comidas + 5 cenas, lunes a viernes, suscripción semanal" },
     ],
   },
 };

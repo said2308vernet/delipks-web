@@ -4,7 +4,7 @@ import { useState } from "react";
 import { faqs } from "@/lib/content";
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(1);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
