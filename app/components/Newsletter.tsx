@@ -50,13 +50,13 @@ export default function Newsletter() {
           <form
             action={MAILCHIMP_URL}
             method="post"
-            target="_blank"
-            onSubmit={() => setTimeout(() => setSubmitted(true), 500)}
+            target="mc-hidden"
+            onSubmit={() => setTimeout(() => setSubmitted(true), 1000)}
             className="space-y-4"
           >
             <div>
               <label htmlFor="nl-name" className="mb-1.5 block text-[13px] font-medium text-ink">
-                Nombre
+                Nombre *
               </label>
               <input
                 type="text"
@@ -70,7 +70,7 @@ export default function Newsletter() {
 
             <div>
               <label htmlFor="nl-lname" className="mb-1.5 block text-[13px] font-medium text-ink">
-                Apellidos
+                Apellidos *
               </label>
               <input
                 type="text"
@@ -84,7 +84,7 @@ export default function Newsletter() {
 
             <div>
               <label htmlFor="nl-email" className="mb-1.5 block text-[13px] font-medium text-ink">
-                Email
+                Email *
               </label>
               <input
                 type="email"
@@ -98,7 +98,7 @@ export default function Newsletter() {
 
             <div>
               <label htmlFor="nl-phone" className="mb-1.5 block text-[13px] font-medium text-ink">
-                Celular
+                Celular *
               </label>
               <input
                 type="tel"
@@ -117,7 +117,7 @@ export default function Newsletter() {
                   <label key={obj} className="flex cursor-pointer items-center gap-2.5 rounded-lg border border-border px-3.5 py-2.5 text-sm text-muted transition-colors hover:border-primary hover:text-ink">
                     <input
                       type="radio"
-                      name="MMERGE6"
+                      name="OBJECTIVE"
                       value={obj}
                       required
                       className="accent-primary"
@@ -144,6 +144,8 @@ export default function Newsletter() {
               Sin spam · Cancela cuando quieras · Tus datos están protegidos
             </p>
           </form>
+
+          <iframe name="mc-hidden" style={{ display: "none" }} />
         </div>
       </div>
     </section>
