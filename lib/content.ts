@@ -18,7 +18,7 @@ export const trustItems = [
   {
     icon: "stethoscope",
     title: "Supervisión nutricional",
-    description: "Menús diseñados con nutriólogos",
+    description: "Menús diseñados por nutriólogos",
   },
   {
     icon: "box",
