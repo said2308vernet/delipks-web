@@ -69,6 +69,20 @@ export default function Newsletter() {
             </div>
 
             <div>
+              <label htmlFor="nl-lname" className="mb-1.5 block text-[13px] font-medium text-ink">
+                Apellidos
+              </label>
+              <input
+                type="text"
+                name="LNAME"
+                id="nl-lname"
+                required
+                placeholder="Tus apellidos"
+                className="w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+              />
+            </div>
+
+            <div>
               <label htmlFor="nl-email" className="mb-1.5 block text-[13px] font-medium text-ink">
                 Email
               </label>
@@ -90,13 +104,14 @@ export default function Newsletter() {
                 type="tel"
                 name="PHONE"
                 id="nl-phone"
+                required
                 placeholder="221 000 0000"
                 className="w-full rounded-lg border border-border bg-bg px-4 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
               />
             </div>
 
             <fieldset>
-              <legend className="mb-2 text-[13px] font-medium text-ink">¿Cuál es tu objetivo?</legend>
+              <legend className="mb-2 text-[13px] font-medium text-ink">¿Cuál es tu objetivo? *</legend>
               <div className="space-y-2">
                 {objectives.map((obj) => (
                   <label key={obj} className="flex cursor-pointer items-center gap-2.5 rounded-lg border border-border px-3.5 py-2.5 text-sm text-muted transition-colors hover:border-primary hover:text-ink">
@@ -104,6 +119,7 @@ export default function Newsletter() {
                       type="radio"
                       name="MMERGE6"
                       value={obj}
+                      required
                       className="accent-primary"
                     />
                     {obj}
