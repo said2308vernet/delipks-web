@@ -51,7 +51,7 @@ export default function Newsletter() {
             action={MAILCHIMP_URL}
             method="post"
             target="_blank"
-            onSubmit={() => setSubmitted(true)}
+            onSubmit={() => setTimeout(() => setSubmitted(true), 500)}
             className="space-y-4"
           >
             <div>
