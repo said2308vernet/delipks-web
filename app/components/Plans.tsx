@@ -15,7 +15,7 @@ export default function Plans() {
         <h2 className="mb-2 font-display text-2xl font-semibold text-ink lg:text-3xl">
           Elige cuántas comidas necesitas
         </h2>
-        <p className="text-sm text-muted">Compra puntual o suscríbete y ahorra</p>
+        <p className="text-sm text-muted">1 semana o suscríbete mensual y ahorra</p>
       </div>
 
       <div className="mb-10 flex justify-center">
@@ -79,12 +79,15 @@ export default function Plans() {
                 ))}
               </ul>
               <p className="mb-5 text-xs text-muted">Lunes a viernes</p>
-              <p className="mb-6">
+              <p className="mb-1">
                 <span className="text-[13px] text-muted">desde </span>
                 <span className="font-display text-2xl font-semibold text-ink">
                   ${price.toLocaleString("es-MX")}
                 </span>
                 <span className="text-[13px] text-muted">/semana</span>
+              </p>
+              <p className="mb-6 text-[11px] text-muted">
+                {billing === "subscription" ? "Suscripción mensual · 4 semanas" : "Compra por 1 semana"}
               </p>
               <a
                 href={whatsappLink(
@@ -108,7 +111,7 @@ export default function Plans() {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Cancela tu suscripción cuando quieras · Precios en MXN con IVA incluido
+        Compra puntual: 1 semana (lun-vie) · Suscripción: compromiso mensual de 4 semanas con -10% · Cancela cuando quieras · MXN con IVA
       </p>
     </section>
   );
