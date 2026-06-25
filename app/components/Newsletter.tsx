@@ -50,8 +50,6 @@ export default function Newsletter() {
           <form
             action={MAILCHIMP_URL}
             method="post"
-            target="mc-hidden"
-            onSubmit={() => setTimeout(() => setSubmitted(true), 1000)}
             className="space-y-4"
           >
             <div>
@@ -145,7 +143,6 @@ export default function Newsletter() {
             </p>
           </form>
 
-          <iframe name="mc-hidden" style={{ display: "none" }} />
         </div>
       </div>
     </section>
