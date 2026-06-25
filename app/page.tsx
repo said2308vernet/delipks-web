@@ -7,6 +7,7 @@ import FeaturedCatalog from "./components/FeaturedCatalog";
 import Plans from "./components/Plans";
 import DelipksImpacta from "./components/DelipksImpacta";
 import FAQ from "./components/FAQ";
+import Newsletter from "./components/Newsletter";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import { faqs } from "@/lib/content";
@@ -76,6 +77,7 @@ export default function Home() {
         <Plans />
         <DelipksImpacta />
         <FAQ />
+        <Newsletter />
         <FinalCTA />
       </main>
       <Footer />
