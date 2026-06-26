@@ -101,19 +101,7 @@ export default function SuscribirsePage() {
           <label className="mb-1.5 block text-[13px] font-medium text-ink">
             Fecha de nacimiento *
           </label>
-          <div className="grid grid-cols-3 gap-3">
-            <select
-              name="BIRTHDAY[day]"
-              required
-              className="w-full rounded-lg border border-border bg-bg px-3 py-2.5 text-sm text-ink outline-none transition-colors focus:border-primary"
-            >
-              <option value="">Día</option>
-              {Array.from({ length: 31 }, (_, i) => (
-                <option key={i + 1} value={String(i + 1).padStart(2, "0")}>
-                  {i + 1}
-                </option>
-              ))}
-            </select>
+          <div className="grid grid-cols-2 gap-3">
             <select
               name="BIRTHDAY[month]"
               required
@@ -126,15 +114,18 @@ export default function SuscribirsePage() {
                 </option>
               ))}
             </select>
-            <input
-              type="number"
-              name="BIRTHDAY[year]"
+            <select
+              name="BIRTHDAY[day]"
               required
-              placeholder="Año"
-              min="1940"
-              max="2010"
-              className="w-full rounded-lg border border-border bg-bg px-3 py-2.5 text-sm text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
-            />
+              className="w-full rounded-lg border border-border bg-bg px-3 py-2.5 text-sm text-ink outline-none transition-colors focus:border-primary"
+            >
+              <option value="">Día</option>
+              {Array.from({ length: 31 }, (_, i) => (
+                <option key={i + 1} value={String(i + 1).padStart(2, "0")}>
+                  {i + 1}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
 
