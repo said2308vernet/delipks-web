@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { whatsappLink } from "@/lib/content";
 
 export default function DelipksImpacta() {
@@ -53,6 +54,13 @@ export default function DelipksImpacta() {
                 </li>
               ))}
             </ul>
+
+            <Link
+              href="/impacto"
+              className="mt-6 inline-block rounded-lg bg-primary px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
+            >
+              Ver nuestras acciones
+            </Link>
           </div>
 
           <div className="aspect-[4/3] overflow-hidden rounded-xl bg-bg-alt">
