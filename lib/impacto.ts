@@ -10,21 +10,21 @@ export interface ImpactoPost {
 export const impactoPosts: ImpactoPost[] = [
   {
     slug: "visita-refugio-animal-puebla",
-    title: "Llevamos alimento y cariño al Refugio Animal Puebla",
+    title: "Donación de alimento y campaña de esterilización en Refugio Animal Puebla",
     excerpt:
-      "Nuestra primera acción con Huellas y Sonrisas: entrega de alimento y tiempo de calidad con los peludos que esperan un hogar.",
+      "Nuestra primera acción con Huellas y Sonrisas: donación de costales de croquetas y una campaña de esterilización para los peludos que esperan un hogar.",
     image:
-      "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80&auto=format&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1679523690081-f94a0f8ae62a?w=600&q=80&auto=format&fit=crop",
     date: "2026-06-20",
     content: `El programa Huellas y Sonrisas nació con un propósito claro: que cada plan que compras genere bienestar más allá de tu mesa. Y nuestra primera acción fue visitar el Refugio Animal Puebla.
 
 ## Lo que hicimos
 
-Entregamos alimento para perros y gatos rescatados, junto con artículos de limpieza y cobijas que el refugio necesitaba. Pero más allá de lo material, dedicamos tiempo a convivir con los animales — pasearlos, jugar con ellos y darles la atención que tanto necesitan.
+Donamos costales de croquetas para perros y gatos rescatados, asegurando su alimentación durante varias semanas. Además, organizamos una campaña de esterilización en conjunto con el refugio para ayudar a controlar la sobrepoblación animal y mejorar la calidad de vida de los peludos que ahí viven.
 
 ## Por qué importa
 
-En Puebla hay miles de animales en situación de calle. Los refugios hacen un trabajo increíble pero operan con recursos limitados. Con una parte de cada venta de Delipks, queremos ser un apoyo constante para estas organizaciones.
+En Puebla hay miles de animales en situación de calle. Los refugios hacen un trabajo increíble pero operan con recursos limitados — el alimento y las esterilizaciones son de los gastos más fuertes que enfrentan. Con una parte de cada venta de Delipks, queremos ser un apoyo constante para estas organizaciones.
 
 ## Lo que sigue
 
@@ -36,7 +36,7 @@ Este es solo el primer paso. Cada mes elegimos dónde generar el mayor impacto, 
     excerpt:
       "Visitamos un asilo en Puebla para compartir alimentos y sobre todo, tiempo de calidad con nuestros adultos mayores.",
     image:
-      "https://images.unsplash.com/photo-1516307365426-bea591f05011?w=600&q=80&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?w=600&q=80&auto=format&fit=crop",
     date: "2026-06-15",
     content: `Los adultos mayores son uno de los grupos más vulnerables y muchas veces los más olvidados. En Delipks creemos que el bienestar no tiene edad, y por eso llevamos nuestra segunda acción de Huellas y Sonrisas a un asilo en Puebla.
 
