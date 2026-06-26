@@ -21,7 +21,7 @@ export default function Hero() {
 
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={whatsappLink("Hola, quiero pedir mi meal prep con delipks")}
+              href={whatsappLink("Hola, me interesa conocer más sobre los planes de Delipks")}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg bg-primary px-6 py-3.5 text-center text-sm font-medium text-bg transition-colors hover:bg-primary-dark"

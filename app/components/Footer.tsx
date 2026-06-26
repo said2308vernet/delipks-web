@@ -57,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href={whatsappLink("Hola, tengo una pregunta sobre delipks")}
+                  href={whatsappLink("Hola, me interesa conocer más sobre Delipks")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[13px] text-muted transition-opacity hover:opacity-70"

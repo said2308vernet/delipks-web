@@ -13,7 +13,7 @@ export default function FinalCTA() {
 
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
-            href={whatsappLink("Hola, quiero pedir mi meal prep con delipks")}
+            href={whatsappLink("Hola, me interesa conocer más sobre los planes de Delipks")}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-bg px-7 py-3.5 text-sm font-medium text-primary transition-opacity hover:opacity-90"

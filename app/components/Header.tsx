@@ -33,7 +33,7 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href={whatsappLink("Hola, quiero pedir mi meal prep con delipks")}
+            href={whatsappLink("Hola, me interesa conocer más sobre los planes de Delipks")}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden rounded-lg bg-primary px-5 py-2 text-sm font-medium text-bg transition-colors hover:bg-primary-dark sm:block"
@@ -76,7 +76,7 @@ export default function Header() {
             ))}
           </nav>
           <a
-            href={whatsappLink("Hola, quiero pedir mi meal prep con delipks")}
+            href={whatsappLink("Hola, me interesa conocer más sobre los planes de Delipks")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
