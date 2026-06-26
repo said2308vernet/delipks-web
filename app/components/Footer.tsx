@@ -11,7 +11,9 @@ const navLinks = [
   { label: "Menú", href: "#catalogo" },
   { label: "Planes", href: "#planes" },
   { label: "Objetivos", href: "#objetivos" },
+  { label: "Delipks Impacta", href: "#impacto" },
   { label: "Blog de la vida saludable", href: "/blog" },
+  { label: "Suscribirse", href: "/suscribirse" },
 ];
 
 export default function Footer() {
