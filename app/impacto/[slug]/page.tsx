@@ -87,7 +87,7 @@ export default async function ImpactoPostPage({ params }: { params: Promise<{ sl
           href="/impacto"
           className="text-sm font-medium text-primary transition-opacity hover:opacity-70"
         >
-          ← Ver todas las acciones
+          ← Conoce más historias de impacto
         </Link>
       </div>
     </main>

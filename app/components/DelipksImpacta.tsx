@@ -59,7 +59,7 @@ export default function DelipksImpacta() {
               href="/impacto"
               className="mt-6 inline-block rounded-lg bg-primary px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
             >
-              Ver nuestras acciones
+              Conoce a quienes apoyamos
             </Link>
           </div>
 

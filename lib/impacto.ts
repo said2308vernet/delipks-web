@@ -9,69 +9,69 @@ export interface ImpactoPost {
 
 export const impactoPosts: ImpactoPost[] = [
   {
-    slug: "visita-refugio-animal-puebla",
-    title: "Donación de alimento y campaña de esterilización en Refugio Animal Puebla",
+    slug: "refugio-animal-puebla",
+    title: "Alimento y esterilización para el Refugio Animal Puebla",
     excerpt:
-      "Nuestra primera acción con Huellas y Sonrisas: donación de costales de croquetas y una campaña de esterilización para los peludos que esperan un hogar.",
+      "Costales de croquetas y una campaña de esterilización para los peludos que esperan un hogar. Ellos también merecen bienestar.",
     image:
       "https://plus.unsplash.com/premium_photo-1679523690081-f94a0f8ae62a?w=600&q=80&auto=format&fit=crop",
     date: "2026-06-20",
-    content: `El programa Huellas y Sonrisas nació con un propósito claro: que cada plan que compras genere bienestar más allá de tu mesa. Y nuestra primera acción fue visitar el Refugio Animal Puebla.
+    content: `Huellas y Sonrisas existe porque creemos que el bienestar no se queda en un plato de comida. Gracias a cada persona que elige un plan Delipks, fue posible llevar apoyo al Refugio Animal Puebla.
 
-## Lo que hicimos
+## El apoyo
 
-Donamos costales de croquetas para perros y gatos rescatados, asegurando su alimentación durante varias semanas. Además, organizamos una campaña de esterilización en conjunto con el refugio para ayudar a controlar la sobrepoblación animal y mejorar la calidad de vida de los peludos que ahí viven.
+Se entregaron costales de croquetas para perros y gatos rescatados, garantizando su alimentación por varias semanas. También se realizó una campaña de esterilización junto con el refugio, ayudando a controlar la sobrepoblación animal y mejorar la calidad de vida de los peludos que ahí viven.
 
-## Por qué importa
+## Por qué es importante
 
-En Puebla hay miles de animales en situación de calle. Los refugios hacen un trabajo increíble pero operan con recursos limitados — el alimento y las esterilizaciones son de los gastos más fuertes que enfrentan. Con una parte de cada venta de Delipks, queremos ser un apoyo constante para estas organizaciones.
+En Puebla hay miles de animales en situación de calle. Los refugios hacen un trabajo admirable pero operan con recursos muy limitados — el alimento y las esterilizaciones son de los gastos más fuertes que enfrentan. Cada granito de apoyo cuenta.
 
-## Lo que sigue
+## Seguimos adelante
 
-Este es solo el primer paso. Cada mes elegimos dónde generar el mayor impacto, y los refugios de animales siempre serán parte de nuestra misión.`,
+Los refugios de animales siempre serán parte de esta misión. Mientras más personas se sumen a Delipks, más lejos llega el impacto.`,
   },
   {
-    slug: "visita-asilo-puebla",
-    title: "Un día de compañía en la Casa del Abuelo",
+    slug: "asilo-casa-del-abuelo",
+    title: "Compañía y alimentos en la Casa del Abuelo",
     excerpt:
-      "Visitamos un asilo en Puebla para compartir alimentos y sobre todo, tiempo de calidad con nuestros adultos mayores.",
+      "Un día dedicado a nuestros adultos mayores: compartir alimentos, escuchar historias y recordarles que no están solos.",
     image:
       "https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?w=600&q=80&auto=format&fit=crop",
     date: "2026-06-15",
-    content: `Los adultos mayores son uno de los grupos más vulnerables y muchas veces los más olvidados. En Delipks creemos que el bienestar no tiene edad, y por eso llevamos nuestra segunda acción de Huellas y Sonrisas a un asilo en Puebla.
+    content: `Los adultos mayores son uno de los grupos más vulnerables y muchas veces los más olvidados. El bienestar no tiene edad, y gracias al Fondo de Impacto de Huellas y Sonrisas fue posible visitar un asilo en Puebla.
 
-## Lo que hicimos
+## El apoyo
 
-Preparamos alimentos especiales pensados en las necesidades nutricionales de los adultos mayores y los compartimos directamente con ellos. Pero lo más valioso fue el tiempo: escuchar sus historias, conversar y hacerles sentir que alguien está ahí.
+Se compartieron alimentos pensados en las necesidades nutricionales de los adultos mayores. Pero lo más valioso fue el tiempo: escuchar sus historias, conversar y hacerles sentir que alguien está ahí para ellos.
 
-## Por qué importa
+## Por qué es importante
 
-Muchos adultos mayores en asilos no reciben visitas frecuentes. La soledad afecta tanto como una mala alimentación. Nuestro programa busca atender ambas cosas: nutrición y compañía.
+Muchos adultos mayores en asilos no reciben visitas frecuentes. La soledad afecta tanto como una mala alimentación. Con este tipo de acciones se busca atender ambas cosas: nutrición y compañía.
 
-## Lo que sigue
+## Seguimos adelante
 
-Queremos hacer de estas visitas algo regular. No se trata solo de un día, sino de construir una relación de apoyo continuo con las casas de asistencia en Puebla y Cholula.`,
+El objetivo es construir una relación de apoyo continuo con las casas de asistencia en Puebla y Cholula. No se trata de un solo día, sino de estar presentes de forma constante.`,
   },
   {
-    slug: "apoyo-comedor-infantil",
-    title: "Alimentando sonrisas en un comedor infantil",
+    slug: "comedor-infantil-puebla",
+    title: "Alimentos nutritivos para un comedor infantil",
     excerpt:
-      "Llevamos comida nutritiva a un comedor infantil comunitario. Porque ningún niño debería preocuparse por su siguiente comida.",
+      "Ningún niño debería preocuparse por su siguiente comida. Gracias al Fondo de Impacto, más niños acceden a alimentación nutritiva.",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80&auto=format&fit=crop",
     date: "2026-06-10",
-    content: `La alimentación infantil es una de las causas que más nos mueve. En esta acción de Huellas y Sonrisas, visitamos un comedor infantil comunitario en Puebla para apoyar con alimentos nutritivos.
+    content: `La alimentación infantil es una de las causas que más importan. Gracias a quienes eligen un plan Delipks, fue posible llevar apoyo a un comedor infantil comunitario en Puebla.
 
-## Lo que hicimos
+## El apoyo
 
-Preparamos platillos balanceados y los entregamos directamente en el comedor. Los niños recibieron desayunos completos con proteína, frutas y vegetales — muchos de ellos siendo su comida más nutritiva de la semana.
+Se entregaron platillos balanceados directamente en el comedor. Los niños recibieron desayunos completos con proteína, frutas y vegetales — para muchos de ellos, la comida más nutritiva de la semana.
 
-## Por qué importa
+## Por qué es importante
 
-En México, millones de niños viven en inseguridad alimentaria. Un comedor comunitario puede ser la diferencia entre un niño que come bien y uno que no. Con el Fondo de Impacto de Delipks, queremos ser parte de esa diferencia.
+En México, millones de niños viven en inseguridad alimentaria. Un comedor comunitario puede ser la diferencia entre un niño que come bien y uno que no. Cada plan que alguien compra en Delipks contribuye a que más niños tengan acceso a comida nutritiva.
 
-## Lo que sigue
+## Seguimos adelante
 
-Los comedores infantiles serán un destino recurrente de nuestro programa. Cada plan que compras en Delipks contribuye directamente a que más niños tengan acceso a comida nutritiva.`,
+Los comedores infantiles son un destino permanente del programa Huellas y Sonrisas. Mientras más personas se sumen, más niños se benefician.`,
   },
 ];

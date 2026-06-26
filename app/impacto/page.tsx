@@ -35,8 +35,8 @@ export default function ImpactoPage() {
           Delipks Impacta
         </h1>
         <p className="max-w-lg text-sm leading-relaxed text-muted">
-          Cada plan que compras genera bienestar más allá de tu mesa. Aquí compartimos las acciones
-          que hacemos gracias a ti.
+          Cada plan que alguien elige genera bienestar más allá de su mesa. Aquí compartimos
+          a quienes se ha podido apoyar gracias a esta comunidad.
         </p>
       </div>
 
