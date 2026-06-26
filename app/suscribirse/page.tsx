@@ -99,7 +99,7 @@ export default function SuscribirsePage() {
 
         <div>
           <label className="mb-1.5 block text-[13px] font-medium text-ink">
-            Fecha de nacimiento *
+            Cumpleaños *
           </label>
           <div className="grid grid-cols-2 gap-3">
             <select
