@@ -8,11 +8,14 @@ export default function Newsletter() {
           Newsletter
         </span>
         <h2 className="mb-2 font-display text-2xl font-semibold text-ink lg:text-3xl">
-          Recibe tips, recetas y ofertas
+          Tips de vida saludable y ofertas exclusivas
         </h2>
-        <p className="mx-auto mb-6 max-w-lg text-sm leading-relaxed text-muted">
-          Suscríbete y cada semana te enviamos contenido sobre alimentación saludable y
-          promociones exclusivas para suscriptores. Sin spam, cancela cuando quieras.
+        <p className="mx-auto mb-2 max-w-lg text-sm leading-relaxed text-muted">
+          Suscríbete y recibe contenido sobre vida saludable, bienestar, artículos de nuestro
+          blog y promociones exclusivas para suscriptores.
+        </p>
+        <p className="mx-auto mb-6 max-w-lg text-[11px] text-muted">
+          Sin spam. Cancela cuando quieras.
         </p>
         <Link
           href="/suscribirse"
