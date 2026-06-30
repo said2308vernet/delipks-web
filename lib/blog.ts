@@ -88,9 +88,9 @@ El Yokoi Ke no es perfeccionismo. No te pide una casa de revista ni una rutina i
 
 Empieza con uno. Solo uno. El que más te resonó. Practica ese hábito durante tres semanas y observa qué cambia. No en la sala — en ti.`,
     sources: [
-      { name: "National Geographic — The Okinawa Diet and Hara Hachi Bu", url: "https://www.nationalgeographic.com/magazine/article/the-secrets-of-long-life" },
-      { name: "Harvard Health — The health benefits of a clean and organized home", url: "https://www.health.harvard.edu/blog/the-new-science-of-stress-reduction" },
-      { name: "NIH — Mindfulness and stress reduction", url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3679190/" },
+      { name: "Blue Zones — Hara Hachi Bu: comer hasta el 80%", url: "https://www.bluezones.com/2022/06/wear-blue-as-a-reminder-to-hara-hachi-bu/" },
+      { name: "Harvard Health — Understanding the stress response", url: "https://www.health.harvard.edu/staying-healthy/understanding-the-stress-response" },
+      { name: "NCCIH (NIH) — Meditation and Mindfulness: Effectiveness and Safety", url: "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety" },
     ],
   },
   {
