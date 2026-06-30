@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { site, whatsappLink } from "@/lib/content";
+﻿import { site, whatsappLink } from "@/lib/content";
 
 export default function Hero() {
   return (
@@ -37,13 +36,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="aspect-[4/5] relative overflow-hidden rounded-2xl bg-bg-alt">
-          <Image
+        <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt">
+          <img
             src="/hero-delipks.jpg"
             alt="Mujer con meal prep Delipks"
-            fill
-            sizes="(min-width: 1024px) 35vw, 100vw"
-            className="object-cover"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>
