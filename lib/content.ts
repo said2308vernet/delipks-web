@@ -128,6 +128,11 @@ export const faqs = [
     answer: `Entregamos en ${site.deliveryZones.join(" y ")}. Escríbenos por WhatsApp para confirmar tu colonia.`,
   },
   {
+    question: "¿Qué días entregan?",
+    answer:
+      "Entregamos los domingos y miércoles. La entrega del domingo cubre tus platillos de inicio de semana y la del miércoles el resto, completando tu plan de lunes a viernes.",
+  },
+  {
     question: "¿Puedo cancelar mi suscripción cuando quiera?",
     answer:
       "Sí. Puedes cancelar o pausar tu suscripción en cualquier momento escribiéndonos por WhatsApp.",

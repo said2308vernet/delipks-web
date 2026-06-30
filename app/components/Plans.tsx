@@ -78,7 +78,8 @@ export default function Plans() {
                   <li key={item} className="text-[13px] text-muted">✓ {item}</li>
                 ))}
               </ul>
-              <p className="mb-5 text-xs text-muted">Lunes a viernes</p>
+              <p className="mb-1 text-xs text-muted">Lunes a viernes</p>
+              <p className="mb-5 text-[11px] text-muted">Entregas: domingo y miércoles</p>
               <p className="mb-1">
                 <span className="text-[13px] text-muted">desde </span>
                 <span className="font-display text-2xl font-semibold text-ink">
@@ -111,7 +112,7 @@ export default function Plans() {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Compra puntual: 1 semana (lun-vie) · Suscripción: compromiso mensual de 4 semanas con -10% · Cancela cuando quieras · MXN con IVA
+        Entregas los domingos y miércoles · Compra puntual: 1 semana (lun-vie) · Suscripción: compromiso mensual de 4 semanas con -10% · Cancela cuando quieras · MXN con IVA
       </p>
     </section>
   );

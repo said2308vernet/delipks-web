@@ -32,6 +32,13 @@ const localBusinessJsonLd = {
   ],
   priceRange: "$$",
   servesCuisine: "Comida saludable",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday", "Wednesday"],
+      description: "Días de entrega",
+    },
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Planes de alimentación",
