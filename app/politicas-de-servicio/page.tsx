@@ -30,7 +30,7 @@ export default function PoliticasServicio() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">2. Horarios de entrega</h2>
           <p>
-            Las entregas se realizan únicamente los días <strong className="text-ink">domingo y miércoles</strong>, en horarios acordados con el cliente al momento de la confirmación del pedido. La entrega del domingo cubre los platillos para inicio de semana y la del miércoles para el resto de la semana, completando el plan de lunes a viernes. Los horarios específicos dependen de la zona y la logística del día. En caso de que Delipks no pueda cumplir con el horario pactado, te notificaremos por WhatsApp con la mayor anticipación posible para reagendar.
+            Las entregas se realizan únicamente los días <strong className="text-ink">domingo y miércoles</strong>, en horarios acordados con el cliente al momento de la confirmación del pedido. Tu plan alimenticio corresponde a <strong className="text-ink">lunes a viernes</strong>: la entrega del domingo cubre los platillos de inicio de semana y la del miércoles los del resto de la semana. Los horarios específicos dependen de la zona y la logística del día. En caso de que Delipks no pueda cumplir con el horario pactado, te notificaremos por WhatsApp con la mayor anticipación posible para reagendar.
           </p>
         </section>
 
