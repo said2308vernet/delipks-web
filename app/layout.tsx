@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import WhatsAppFloat from "./components/WhatsAppFloat";
+import PixelEvents from "./components/PixelEvents";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -92,6 +93,7 @@ export default function RootLayout({
         </a>
         {children}
         <WhatsAppFloat />
+        <PixelEvents />
       </body>
     </html>
   );
