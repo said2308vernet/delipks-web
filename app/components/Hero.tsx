@@ -36,11 +36,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt">
+        <div className="animate-float aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt shadow-lg">
           <img
             src="/hero-delipks.jpg"
             alt="Mujer con meal prep Delipks"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
           />
         </div>
       </div>

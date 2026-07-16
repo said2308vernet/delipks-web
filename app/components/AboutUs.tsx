@@ -14,7 +14,7 @@ export default function AboutUs() {
       <div className="mx-auto max-w-6xl px-6 py-14 lg:px-10 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 lg:items-center">
 
-          <div>
+          <div data-reveal="" style={{ transitionDelay: "0ms" }}>
             <span className="mb-5 inline-block rounded-full bg-secondary-light px-3 py-1.5 text-xs font-medium text-[#3B6D11]">
               Nuestra historia
             </span>
@@ -44,7 +44,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-7">
+          <div data-reveal="" style={{ transitionDelay: "150ms" }} className="flex flex-col gap-7">
             <div className="rounded-2xl bg-white p-7 shadow-sm">
               <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted">Visión</p>
               <p className="text-[15px] leading-relaxed text-ink">

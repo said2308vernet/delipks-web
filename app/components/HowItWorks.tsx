@@ -46,9 +46,14 @@ export default function HowItWorks() {
       {/* Desktop: stepper horizontal con línea conectora */}
       <div className="relative hidden grid-cols-4 gap-6 lg:grid">
         <div className="absolute left-[12.5%] right-[12.5%] top-7 h-px bg-border" />
-        {steps.map((step) => (
-          <div key={step.number} className="relative z-10 text-center">
-            <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-bg shadow-md">
+        {steps.map((step, i) => (
+          <div
+            key={step.number}
+            data-reveal=""
+            style={{ transitionDelay: `${i * 100}ms` }}
+            className="relative z-10 text-center"
+          >
+            <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-bg shadow-md transition-transform duration-300 hover:scale-110">
               {stepIcons[step.number]}
             </div>
             <p className="mb-1.5 text-[15px] font-medium text-ink">{step.title}</p>
@@ -60,7 +65,12 @@ export default function HowItWorks() {
       {/* Mobile: stepper vertical con línea conectora */}
       <div className="flex flex-col lg:hidden">
         {steps.map((step, i) => (
-          <div key={step.number} className="flex gap-4">
+          <div
+            key={step.number}
+            data-reveal=""
+            style={{ transitionDelay: `${i * 100}ms` }}
+            className="flex gap-4"
+          >
             <div className="flex flex-col items-center">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary text-bg shadow-md">
                 {stepIcons[step.number]}

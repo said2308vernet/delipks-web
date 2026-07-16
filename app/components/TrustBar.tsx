@@ -34,9 +34,14 @@ export default function TrustBar() {
   return (
     <section className="border-y border-border bg-white py-10">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-7 px-6 sm:grid-cols-2 lg:grid-cols-4 lg:px-10">
-        {trustItems.map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center gap-3">
-            <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary-light text-primary">
+        {trustItems.map((item, i) => (
+          <div
+            key={item.title}
+            data-reveal=""
+            style={{ transitionDelay: `${i * 90}ms` }}
+            className="flex flex-col items-center text-center gap-3"
+          >
+            <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary-light text-primary transition-transform duration-300 hover:scale-110">
               {icons[item.icon]}
             </span>
             <div>

@@ -56,8 +56,13 @@ export default function Goals() {
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {allGoals.map((goal) => (
-          <div key={goal.title} className="overflow-hidden rounded-2xl border border-border bg-white">
+        {allGoals.map((goal, i) => (
+          <div
+            key={goal.title}
+            data-reveal=""
+            style={{ transitionDelay: `${i * 100}ms` }}
+            className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow duration-300 hover:shadow-md"
+          >
             <div className="aspect-[4/3] overflow-hidden bg-bg-alt">
               <img
                 src={goal.image}

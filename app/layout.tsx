@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import PixelEvents from "./components/PixelEvents";
+import ScrollReveal from "./components/ScrollReveal";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -91,6 +92,7 @@ export default function RootLayout({
           Ir al contenido principal
         </a>
         {children}
+        <ScrollReveal />
         <PixelEvents />
       </body>
     </html>

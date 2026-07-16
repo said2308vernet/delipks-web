@@ -38,3 +38,36 @@ body {
 h1, h2, h3, .font-display {
   font-family: var(--font-display), Arial, Helvetica, sans-serif;
 }
+
+/* ─── Scroll reveal ─────────────────────────────────────────── */
+/* Only activates after JS sets the class, so SSR content stays visible */
+.js-reveal [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+}
+.js-reveal [data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Float animation (hero image) ──────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* ─── Respect reduced-motion preference ─────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-float {
+    animation: none;
+  }
+}

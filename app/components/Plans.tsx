@@ -53,12 +53,14 @@ export default function Plans() {
       </div>
 
       <div className="grid gap-5 lg:grid-cols-3">
-        {plans.map((plan) => {
+        {plans.map((plan, i) => {
           const price = billing === "subscription" ? plan.priceSubscription : plan.priceOneTime;
           return (
             <div
               key={plan.id}
-              className={`relative rounded-2xl bg-white p-7 text-center ${
+              data-reveal=""
+              style={{ transitionDelay: `${i * 100}ms` }}
+              className={`relative rounded-2xl bg-white p-7 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                 plan.popular ? "border-2 border-primary" : "border border-border"
               }`}
             >

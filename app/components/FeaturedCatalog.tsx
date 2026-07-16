@@ -32,8 +32,13 @@ export default function FeaturedCatalog() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
-        {featuredDishes.map((dish) => (
-          <div key={dish.name} className="overflow-hidden rounded-2xl border border-border bg-white">
+        {featuredDishes.map((dish, i) => (
+          <div
+            key={dish.name}
+            data-reveal=""
+            style={{ transitionDelay: `${i * 75}ms` }}
+            className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow duration-300 hover:shadow-md"
+          >
             <div className="aspect-[4/5] overflow-hidden bg-bg-alt">
               <img
                 src={dishImages[dish.name]}
