@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import PixelEvents from "./components/PixelEvents";
 import ScrollReveal from "./components/ScrollReveal";
 import "./globals.css";
@@ -94,6 +95,7 @@ export default function RootLayout({
         {children}
         <ScrollReveal />
         <PixelEvents />
+        <SpeedInsights />
       </body>
     </html>
   );
