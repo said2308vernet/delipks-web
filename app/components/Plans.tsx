@@ -60,7 +60,7 @@ export default function Plans() {
               key={plan.id}
               data-reveal=""
               style={{ transitionDelay: `${i * 100}ms` }}
-              className={`relative rounded-2xl bg-white p-7 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
+              className={`relative flex flex-col rounded-2xl bg-white p-7 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
                 plan.popular ? "border-2 border-primary" : "border border-border"
               }`}
             >
@@ -69,45 +69,53 @@ export default function Plans() {
                   Más popular
                 </span>
               )}
-              <p className="mb-2.5 text-xs font-medium uppercase tracking-wide text-muted">
-                {plan.label}
-              </p>
-              <h3 className="mb-2 font-display text-xl font-semibold text-ink">
-                {plan.totalMeals} comidas
-              </h3>
-              <ul className="mb-4 space-y-1">
-                {plan.includes.map((item) => (
-                  <li key={item} className="text-[13px] text-muted">✓ {item}</li>
-                ))}
-              </ul>
-              <p className="mb-1 text-xs text-muted">Lunes a viernes</p>
-              <p className="mb-5 text-[11px] text-muted">Entregas: domingo y miércoles</p>
-              <p className="mb-1">
-                <span className="text-[13px] text-muted">desde </span>
-                <span className="font-display text-2xl font-semibold text-ink">
-                  ${price.toLocaleString("es-MX")}
-                </span>
-                <span className="text-[13px] text-muted">/semana</span>
-              </p>
-              <p className="mb-6 text-[11px] text-muted">
-                {billing === "subscription" ? "Suscripción mensual · 4 semanas" : "Compra por 1 semana"}
-              </p>
-              <a
-                href={whatsappLink(
-                  `Hola, quiero el ${plan.label} (${plan.totalMeals} comidas/semana) — ${
-                    billing === "subscription" ? "suscripción" : "compra puntual"
-                  }`
-                )}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`block rounded-lg px-5 py-2.5 text-sm font-medium transition-colors ${
-                  plan.popular
-                    ? "bg-primary text-bg hover:bg-primary-dark"
-                    : "border border-ink text-ink hover:bg-ink hover:text-bg"
-                }`}
-              >
-                Elegir plan
-              </a>
+
+              {/* Variable-height content */}
+              <div className="flex-1">
+                <p className="mb-2.5 text-xs font-medium uppercase tracking-wide text-muted">
+                  {plan.label}
+                </p>
+                <h3 className="mb-2 font-display text-xl font-semibold text-ink">
+                  {plan.totalMeals} comidas
+                </h3>
+                <ul className="mb-4 space-y-1">
+                  {plan.includes.map((item) => (
+                    <li key={item} className="text-[13px] text-muted">✓ {item}</li>
+                  ))}
+                </ul>
+                <p className="mb-1 text-xs text-muted">Lunes a viernes</p>
+                <p className="text-[11px] text-muted">Entregas: domingo y miércoles</p>
+              </div>
+
+              {/* Fixed-position bottom: price + button always aligned */}
+              <div className="mt-auto pt-5">
+                <p className="mb-1">
+                  <span className="text-[13px] text-muted">desde </span>
+                  <span className="font-display text-2xl font-semibold text-ink">
+                    ${price.toLocaleString("es-MX")}
+                  </span>
+                  <span className="text-[13px] text-muted">/semana</span>
+                </p>
+                <p className="mb-5 text-[11px] text-muted">
+                  {billing === "subscription" ? "Suscripción mensual · 4 semanas" : "Compra por 1 semana"}
+                </p>
+                <a
+                  href={whatsappLink(
+                    `Hola, quiero el ${plan.label} (${plan.totalMeals} comidas/semana) — ${
+                      billing === "subscription" ? "suscripción" : "compra puntual"
+                    }`
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block rounded-lg px-5 py-2.5 text-sm font-medium transition-colors ${
+                    plan.popular
+                      ? "bg-primary text-bg hover:bg-primary-dark"
+                      : "border border-ink text-ink hover:bg-ink hover:text-bg"
+                  }`}
+                >
+                  Elegir plan
+                </a>
+              </div>
             </div>
           );
         })}
