@@ -5,6 +5,8 @@ import HowItWorks from "./components/HowItWorks";
 import Goals from "./components/Goals";
 import FeaturedCatalog from "./components/FeaturedCatalog";
 import Plans from "./components/Plans";
+import Testimonials from "./components/Testimonials";
+import AboutUs from "./components/AboutUs";
 import DelipksImpacta from "./components/DelipksImpacta";
 import FAQ from "./components/FAQ";
 import Newsletter from "./components/Newsletter";
@@ -82,6 +84,8 @@ export default function Home() {
         <Goals />
         <FeaturedCatalog />
         <Plans />
+        <Testimonials />
+        <AboutUs />
         <DelipksImpacta />
         <FAQ />
         <Newsletter />

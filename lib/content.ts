@@ -121,11 +121,16 @@ export const faqs = [
   {
     question: "¿Cómo hago mi pedido?",
     answer:
-      "Elige tu plan en el sitio y confírmalo por WhatsApp. Nuestro equipo te ayuda a definir fechas y entrega.",
+      "Elige tu plan en el sitio y confírmalo por WhatsApp. Nuestro equipo te ayuda a definir tu plan, fecha de inicio y zona de entrega.",
+  },
+  {
+    question: "¿Cuándo debo hacer mi pedido?",
+    answer:
+      "El cierre de pedidos es cada viernes a las 8pm para la semana siguiente. Te recomendamos confirmar antes para asegurar tu lugar.",
   },
   {
     question: "¿En qué zonas entregan?",
-    answer: `Entregamos en ${site.deliveryZones.join(" y ")}. Escríbenos por WhatsApp para confirmar tu colonia.`,
+    answer: `Entregamos en ${site.deliveryZones.join(" y ")}. Escríbenos por WhatsApp para confirmar si llegamos a tu colonia.`,
   },
   {
     question: "¿Qué días entregan?",
@@ -133,13 +138,43 @@ export const faqs = [
       "Entregamos los domingos y miércoles. La entrega del domingo cubre tus platillos de inicio de semana y la del miércoles el resto, completando tu plan de lunes a viernes.",
   },
   {
-    question: "¿Puedo cancelar mi suscripción cuando quiera?",
+    question: "¿El precio incluye la entrega a domicilio?",
     answer:
-      "Sí. Puedes cancelar o pausar tu suscripción en cualquier momento escribiéndonos por WhatsApp.",
+      "Sí, la entrega está incluida en todos los planes. No hay costo adicional por el envío dentro de nuestra zona de cobertura.",
+  },
+  {
+    question: "¿Los precios incluyen IVA?",
+    answer:
+      "Sí. Todos los precios publicados ya incluyen IVA. Sin cargos ocultos.",
+  },
+  {
+    question: "¿Cómo llega empacada la comida?",
+    answer:
+      "En una caja organizada y etiquetada por día. Cada platillo viene en recipiente sellado listo para refrigerar. No necesitas ningún contenedor adicional.",
+  },
+  {
+    question: "¿Tengo que calentar la comida o viene lista para comer?",
+    answer:
+      "La mayoría de los platillos son listos para comer o solo requieren un calentamiento rápido de 2 a 3 minutos en microondas. Todo viene indicado en la etiqueta.",
+  },
+  {
+    question: "¿Qué pasa si tengo alguna alergia o intolerancia?",
+    answer:
+      "Escríbenos por WhatsApp antes de confirmar tu pedido. Hacemos lo posible por adaptar tu menú o indicarte qué platillos evitar según tu caso.",
+  },
+  {
+    question: "¿Puedo cancelar o pausar mi suscripción?",
+    answer:
+      "Sí. Puedes cancelar o pausar tu suscripción en cualquier momento escribiéndonos por WhatsApp. Sin penalizaciones ni trámites complicados.",
+  },
+  {
+    question: "¿Qué pasa si no estoy en casa cuando llegue la entrega?",
+    answer:
+      "Coordinamos contigo previamente el horario de entrega. Si surge algún imprevisto, te avisamos antes de llegar para encontrar la mejor solución.",
   },
   {
     question: "¿Cuánto dura fresca la comida?",
     answer:
-      "Nuestros platillos conservan su frescura varios días en refrigeración gracias a nuestro empaque especializado.",
+      "Nuestros platillos conservan su frescura varios días en refrigeración gracias a nuestro empaque especializado. Entregamos dos veces por semana precisamente para garantizar que siempre comas fresco.",
   },
 ];

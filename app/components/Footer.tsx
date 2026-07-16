@@ -22,8 +22,8 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-10 lg:px-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <span className="font-display text-lg font-semibold text-ink">{site.name}</span>
-            <p className="mt-2 text-[13px] leading-relaxed text-muted">
+            <img src="/logo-delipks.png" alt="Delipks — Comida saludable" className="h-8" />
+            <p className="mt-3 text-[13px] leading-relaxed text-muted">
               Comida saludable y lista, entregada en {site.deliveryZones.join(" y ")}.
             </p>
           </div>
