@@ -104,6 +104,8 @@ export default function DeliverySystem() {
                 "Horarios claros — siempre sabes cuándo llega",
                 "Cancela cuando quieras, sin penalizaciones",
                 "Atención directa y personalizada por WhatsApp",
+                "Con cada compra apoyas a niños, adultos mayores y refugios de animales 🤝",
+                "15% de descuento permanente para personal de salud y emergencias 💚",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-0.5 shrink-0 font-semibold text-primary">✓</span>
