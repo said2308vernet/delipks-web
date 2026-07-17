@@ -71,7 +71,7 @@ export default function Plans() {
               )}
 
               {/* Variable-height content */}
-              <div className="flex-1">
+              <div>
                 <p className="mb-2.5 text-xs font-medium uppercase tracking-wide text-muted">
                   {plan.label}
                 </p>
@@ -87,7 +87,7 @@ export default function Plans() {
                 <p className="text-[11px] text-muted">Entregas: domingo y miércoles</p>
               </div>
 
-              {/* Fixed-position bottom: price + button always aligned */}
+              {/* mt-auto empuja este bloque al fondo de la card */}
               <div className="mt-auto pt-5">
                 <p className="mb-1">
                   <span className="text-[13px] text-muted">desde </span>
