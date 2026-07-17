@@ -47,7 +47,15 @@ export default function FeaturedCatalog() {
               />
             </div>
             <div className="p-3.5">
-              <p className="text-sm font-medium text-ink">{dish.name}</p>
+              <p className="mb-1.5 text-sm font-medium text-ink">{dish.name}</p>
+              <div className="flex gap-2">
+                <span className="rounded-full bg-secondary-light px-2 py-0.5 text-[11px] font-medium text-[#3B6D11]">
+                  {dish.kcal} kcal
+                </span>
+                <span className="rounded-full bg-bg px-2 py-0.5 text-[11px] text-muted">
+                  {dish.protein}g prot
+                </span>
+              </div>
             </div>
           </div>
         ))}

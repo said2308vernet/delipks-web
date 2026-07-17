@@ -79,10 +79,10 @@ export const goals = {
 };
 
 export const featuredDishes = [
-  { name: "Bowl mediterráneo" },
-  { name: "Salmón con espárragos" },
-  { name: "Buddha bowl de garbanzo" },
-  { name: "Pollo a la mostaza" },
+  { name: "Bowl mediterráneo",        kcal: 420, protein: 22 },
+  { name: "Salmón con espárragos",    kcal: 380, protein: 38 },
+  { name: "Buddha bowl de garbanzo",  kcal: 450, protein: 18 },
+  { name: "Pollo a la mostaza",       kcal: 410, protein: 42 },
 ];
 
 export const plans = [
@@ -94,6 +94,8 @@ export const plans = [
     priceOneTime: 900,
     priceSubscription: 810,
     popular: false,
+    // Estimado nutricional por comida (se actualizará con recetas reales)
+    nutrition: { label: "por comida aprox.", kcal: "~500 kcal", protein: "~35g prot" },
   },
   {
     id: "equilibrado",
@@ -103,6 +105,7 @@ export const plans = [
     priceOneTime: 1650,
     priceSubscription: 1485,
     popular: true,
+    nutrition: { label: "por día aprox.", kcal: "~880 kcal", protein: "~57g prot" },
   },
   {
     id: "completo",
@@ -112,6 +115,7 @@ export const plans = [
     priceOneTime: 2400,
     priceSubscription: 2160,
     popular: false,
+    nutrition: { label: "por día aprox.", kcal: "~1,240 kcal", protein: "~85g prot" },
   },
 ];
 

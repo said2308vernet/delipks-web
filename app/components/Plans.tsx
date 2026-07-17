@@ -83,8 +83,17 @@ export default function Plans() {
                     <li key={item} className="text-[13px] text-muted">✓ {item}</li>
                   ))}
                 </ul>
-                <p className="mb-1 text-xs text-muted">Lunes a viernes</p>
-                <p className="text-[11px] text-muted">Entregas: domingo y miércoles</p>
+                <p className="mb-3 text-xs text-muted">Lunes a viernes · entregas dom y mié</p>
+                {/* Nutritional estimate */}
+                <div className="flex items-center justify-center gap-2 rounded-lg bg-secondary-light px-3 py-2">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-3.5 w-3.5 shrink-0 text-primary">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 5 20 3c0 8.5-2.5 12.7-8 14a4.5 4.5 0 0 1-1 3Z"/><path d="M2 21c0-9 4-13 8-15"/>
+                  </svg>
+                  <span className="text-[11px] font-medium text-[#3B6D11]">
+                    {plan.nutrition.kcal} · {plan.nutrition.protein}
+                  </span>
+                  <span className="text-[10px] text-[#3B6D11]/70">{plan.nutrition.label}</span>
+                </div>
               </div>
 
               {/* mt-auto empuja este bloque al fondo de la card */}

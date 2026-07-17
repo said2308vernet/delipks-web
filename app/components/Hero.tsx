@@ -1,4 +1,5 @@
 ﻿import { site, whatsappLink } from "@/lib/content";
+import ZoneChecker from "./ZoneChecker";
 
 export default function Hero() {
   return (
@@ -34,6 +35,7 @@ export default function Hero() {
               Ver menú
             </a>
           </div>
+          <ZoneChecker />
         </div>
 
         <div className="animate-float aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt shadow-lg">
