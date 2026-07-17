@@ -1,8 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import TrustBar from "./components/TrustBar";
+import WhyDelipks from "./components/WhyDelipks";
 import HowItWorks from "./components/HowItWorks";
-import DeliverySystem from "./components/DeliverySystem";
 import Goals from "./components/Goals";
 import FeaturedCatalog from "./components/FeaturedCatalog";
 import Plans from "./components/Plans";
@@ -80,9 +79,8 @@ export default function Home() {
       <Header />
       <main id="contenido-principal" className="flex-1">
         <Hero />
-        <TrustBar />
+        <WhyDelipks />
         <HowItWorks />
-        <DeliverySystem />
         <Goals />
         <FeaturedCatalog />
         <Plans />
