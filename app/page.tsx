@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
 import HowItWorks from "./components/HowItWorks";
+import DeliverySystem from "./components/DeliverySystem";
 import Goals from "./components/Goals";
 import FeaturedCatalog from "./components/FeaturedCatalog";
 import Plans from "./components/Plans";
@@ -81,6 +82,7 @@ export default function Home() {
         <Hero />
         <TrustBar />
         <HowItWorks />
+        <DeliverySystem />
         <Goals />
         <FeaturedCatalog />
         <Plans />
