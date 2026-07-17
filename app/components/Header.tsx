@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { whatsappLink } from "@/lib/content";
+import CartIcon from "./CartIcon";
 
 const navItems = [
   { label: "Cómo funciona", href: "#como-funciona" },
@@ -30,7 +31,8 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          <CartIcon />
           <a
             href={whatsappLink("Hola, me interesa conocer más sobre los planes de Delipks")}
             target="_blank"

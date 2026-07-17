@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { plans, subscriptionDiscountLabel, whatsappLink } from "@/lib/content";
+import { plans, subscriptionDiscountLabel } from "@/lib/content";
+import { useCart } from "@/context/CartContext";
 
 export default function Plans() {
   const [billing, setBilling] = useState<"subscription" | "oneTime">("subscription");
+  const { addToCart } = useCart();
 
   return (
     <section id="planes" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
@@ -108,22 +110,17 @@ export default function Plans() {
                 <p className="mb-5 text-[11px] text-muted">
                   {billing === "subscription" ? "Suscripción mensual · 4 semanas" : "Compra por 1 semana"}
                 </p>
-                <a
-                  href={whatsappLink(
-                    `Hola, quiero el ${plan.label} (${plan.totalMeals} comidas/semana) — ${
-                      billing === "subscription" ? "suscripción" : "compra puntual"
-                    }`
-                  )}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`block rounded-lg px-5 py-2.5 text-sm font-medium transition-colors ${
+                <button
+                  type="button"
+                  onClick={() => addToCart(plan.id, billing)}
+                  className={`w-full rounded-lg px-5 py-2.5 text-sm font-medium transition-colors ${
                     plan.popular
                       ? "bg-primary text-bg hover:bg-primary-dark"
                       : "border border-ink text-ink hover:bg-ink hover:text-bg"
                   }`}
                 >
                   Elegir plan
-                </a>
+                </button>
               </div>
             </div>
           );
