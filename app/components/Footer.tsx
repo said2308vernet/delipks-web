@@ -124,12 +124,18 @@ export default function Footer() {
           <p className="text-xs text-muted">
             © {new Date().getFullYear()} delipks. Todos los derechos reservados.
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap items-center gap-4">
             {legalLinks.map((link) => (
               <a key={link.href} href={link.href} className="text-[11px] text-muted transition-opacity hover:opacity-70">
                 {link.label}
               </a>
             ))}
+            <a
+              href="https://admin.delipks.com"
+              className="text-[11px] text-muted/50 transition-opacity hover:opacity-70"
+            >
+              Acceso
+            </a>
           </div>
         </div>
       </div>
