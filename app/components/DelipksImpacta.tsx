@@ -83,10 +83,10 @@ export default function DelipksImpacta() {
             Delipks Reconoce
           </h3>
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-muted">
-            Un agradecimiento genuino a quienes cuidan de nosotros todos los días.{" "}
-            <strong className="text-ink">15% de descuento permanente</strong> en todos nuestros
-            planes para <strong className="text-ink">personal de servicios de emergencia, policías, bomberos, militares
-            y personal de la salud</strong>. No acumulable con otras promociones.
+            A quienes cuidan de nosotros todos los días, nosotros también queremos cuidarlos.
+            Si eres <strong className="text-ink">personal de servicios de emergencia, policía, bombero, militar
+            o personal de la salud</strong>, tienes un lugar permanente en Delipks Reconoce{" "}
+            <strong className="text-ink">(15% menos en todos los planes, de por vida)</strong>. No acumulable con otras promociones.
           </p>
         </div>
 
@@ -105,12 +105,12 @@ export default function DelipksImpacta() {
             </p>
 
             <a
-              href={whatsappLink("Hola, soy profesional de salud/emergencias y quiero activar mi descuento Delipks Reconoce")}
+              href={whatsappLink("Hola, soy profesional de salud/emergencias y quiero solicitar mi lugar en Delipks Reconoce")}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-lg bg-primary px-6 py-3 text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
             >
-              Activar mi descuento
+              Solicitar mi reconocimiento
             </a>
           </div>
         </div>
