@@ -85,7 +85,7 @@ export default function Plans() {
                     <li key={item} className="text-[13px] text-muted">✓ {item}</li>
                   ))}
                 </ul>
-                <p className="mb-3 text-xs text-muted">Lunes a viernes · entregas dom y mié</p>
+                <p className="mb-3 text-xs text-muted">Lunes a viernes · entrega domingo</p>
                 {/* Nutritional estimate */}
                 <div className="flex items-center justify-center gap-2 rounded-lg bg-secondary-light px-3 py-2">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-3.5 w-3.5 shrink-0 text-primary">

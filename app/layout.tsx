@@ -3,6 +3,7 @@ import { Manrope, Inter } from "next/font/google";
 import PixelEvents from "./components/PixelEvents";
 import ScrollReveal from "./components/ScrollReveal";
 import Providers from "./components/Providers";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -95,6 +96,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <WhatsAppFloat />
         <ScrollReveal />
         <PixelEvents />
       </body>
