@@ -128,7 +128,7 @@ export default function Plans() {
       </div>
 
       <p className="mt-6 text-center text-xs text-muted">
-        Entregas los domingos y miércoles · Compra puntual: 1 semana (lun-vie) · Suscripción: compromiso mensual de 4 semanas con -10% · Cancela cuando quieras · MXN con IVA
+        Entrega única los domingos (semana completa lun-vie) · Compra puntual: 1 semana (lun-vie) · Suscripción: compromiso mensual de 4 semanas con -10% · Cancela cuando quieras · MXN con IVA
       </p>
     </section>
   );

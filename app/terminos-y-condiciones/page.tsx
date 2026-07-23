@@ -68,7 +68,7 @@ export default function TerminosCondiciones() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">7. Entregas</h2>
           <p>
-            Las entregas se realizan únicamente los días domingo y miércoles, en los horarios acordados al momento de la confirmación del pedido, dentro de las zonas de cobertura establecidas (Puebla y Cholula). El cliente es responsable de proporcionar una dirección correcta y estar disponible para recibir el pedido en el horario acordado. Si el cliente no se encuentra disponible, Delipks intentará contactarlo vía WhatsApp. Delipks no se hace responsable por retrasos ocasionados por causas de fuerza mayor (clima, tráfico, contingencias).
+            Las entregas se realizan únicamente los días domingo, en los horarios acordados al momento de la confirmación del pedido, dentro de las zonas de cobertura establecidas (Puebla y Cholula). El cliente es responsable de proporcionar una dirección correcta y estar disponible para recibir el pedido en el horario acordado. Si el cliente no se encuentra disponible, Delipks intentará contactarlo vía WhatsApp. Delipks no se hace responsable por retrasos ocasionados por causas de fuerza mayor (clima, tráfico, contingencias).
           </p>
         </section>
 

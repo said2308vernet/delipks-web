@@ -2,7 +2,7 @@
 
 # CLAUDE.md — Delipks Web Project
 # Contexto estratégico y de marca para Claude Code en VS Code
-# Versión: 1.0 · Julio 2026
+# Versión: 1.1 · Julio 2026
 # Fuente: Sistema de Documentación Corporativa Delipks (Docs 00–14)
 
 ---
@@ -10,7 +10,7 @@
 ## 🌿 QUÉ ES DELIPKS
 
 Delipks es un servicio de **meal prep semanal** con base en **Puebla de Zaragoza, México**.
-Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y cenas) y la entregamos a domicilio **dos veces por semana**, lista para consumir sin cocinar ni planear.
+Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y cenas) y la entregamos a domicilio en **una sola entrega semanal (domingo)**, lista para consumir sin cocinar ni planear.
 
 **Sitio web:** www.delipks.com  
 **Lanzamiento oficial:** 1 de agosto de 2026  
@@ -55,7 +55,7 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 
 *Suscripción: compromiso mensual (4 semanas) con −10% · Precios con IVA*
 
-**Entregas:** 2 veces por semana. **Cierre de pedidos:** viernes 8pm para la semana siguiente.
+**Entregas:** 1 vez por semana (domingo), cubre lunes a viernes completo. **Producción:** sábado (día previo a la entrega). **Cierre de pedidos:** viernes 8pm para la semana siguiente.
 
 ---
 
@@ -166,9 +166,10 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 |---|---|
 | Precios de los 3 planes | ✅ Confirmados (ver tabla de planes) |
 | Fotos reales de platillos | ⏳ Pendiente del chef |
-| Menú real de la semana | ⏳ Pendiente recetas finales |
+| Catálogo de recetas | ✅ 41 platillos definidos y aprobados por el Comité Delipks (Doc 04 v2.0) |
+| Menú real de la semana | ⏳ Catálogo listo; falta armar las 4 semanas rotativas a partir de él |
 | Zonas exactas de entrega | ⏳ Confirmar colonias |
-| Días exactos de entrega | ⏳ Domingo/miércoles o lunes/jueves |
+| Días exactos de entrega | ✅ Domingo (entrega única, cubre lunes-viernes) |
 
 ---
 

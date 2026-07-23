@@ -13,7 +13,7 @@ export const trustItems = [
   {
     icon: "leaf",
     title: "Ingredientes frescos",
-    description: "Preparados a diario, sin congelar",
+    description: "Cocinados semanalmente, conservación validada para toda la semana",
   },
   {
     icon: "stethoscope",
@@ -139,7 +139,7 @@ export const faqs = [
   {
     question: "¿Qué días entregan?",
     answer:
-      "Entregamos los domingos y miércoles. La entrega del domingo cubre tus platillos de inicio de semana y la del miércoles el resto, completando tu plan de lunes a viernes.",
+      "Entregamos una vez por semana, los domingos, con toda tu semana de lunes a viernes lista de una sola vez.",
   },
   {
     question: "¿El precio incluye la entrega a domicilio?",
@@ -179,6 +179,6 @@ export const faqs = [
   {
     question: "¿Cuánto dura fresca la comida?",
     answer:
-      "Nuestros platillos conservan su frescura varios días en refrigeración gracias a nuestro empaque especializado. Entregamos dos veces por semana precisamente para garantizar que siempre comas fresco.",
+      "Nuestros platillos conservan su frescura toda la semana gracias a nuestro empaque especializado y nuestro proceso de conservación. Los primeros días se mantienen refrigerados y los de jueves-viernes se ultracongelan justo después de prepararse, para que los recibas siempre en su punto óptimo.",
   },
 ];

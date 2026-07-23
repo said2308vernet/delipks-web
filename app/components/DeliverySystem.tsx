@@ -48,8 +48,8 @@ export default function DeliverySystem() {
             <div className="space-y-3 text-sm">
               <p className="text-muted">
                 Operamos con{" "}
-                <span className="font-semibold text-primary">2 días fijos de entrega</span>:{" "}
-                <span className="font-semibold text-primary">domingo y miércoles</span>.
+                <span className="font-semibold text-primary">una entrega semanal fija</span>:{" "}
+                <span className="font-semibold text-primary">domingo</span>, con tu semana completa de lunes a viernes.
               </p>
               <p className="text-muted">
                 El horario estimado es de{" "}

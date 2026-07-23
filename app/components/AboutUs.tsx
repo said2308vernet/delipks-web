@@ -28,7 +28,7 @@ export default function AboutUs() {
             </p>
             <p className="mb-5 text-[15px] leading-relaxed text-muted">
               La idea evolucionó de entregar comida preparada a construir un sistema completo de
-              alimentación semanal: organizado, etiquetado por día, entregado dos veces a la semana
+              alimentación semanal: organizado, etiquetado por día, entregado en una sola visita semanal
               y listo para consumir. Delipks no resuelve solo el hambre del momento — resuelve la
               semana completa.
             </p>

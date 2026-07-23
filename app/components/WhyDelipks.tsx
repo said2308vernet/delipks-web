@@ -17,7 +17,7 @@ const logistics = [
       </svg>
     ),
     label: "Entregas",
-    detail: "Domingo y miércoles · horario 10am–2pm",
+    detail: "Domingo · horario 10am–2pm",
   },
   {
     icon: (

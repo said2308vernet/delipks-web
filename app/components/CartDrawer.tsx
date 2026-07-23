@@ -126,7 +126,7 @@ export default function CartDrawer() {
 
               {/* Delivery info */}
               <div className="rounded-lg border border-border px-4 py-3 text-[12px] text-muted">
-                🚚 Entregas domingo y miércoles · Pedidos antes del viernes 8pm
+                🚚 Entrega domingo (semana completa lun-vie) · Pedidos antes del viernes 8pm
               </div>
             </div>
           ) : (
