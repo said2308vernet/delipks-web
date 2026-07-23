@@ -1,16 +1,5 @@
 import { featuredDishes } from "@/lib/content";
 
-const dishImages: Record<string, string> = {
-  "Bowl mediterráneo":
-    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&auto=format&fit=crop",
-  "Salmón con espárragos":
-    "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80&auto=format&fit=crop",
-  "Buddha bowl de garbanzo":
-    "https://images.unsplash.com/photo-1540914124281-342587941389?w=600&q=80&auto=format&fit=crop",
-  "Pollo a la mostaza":
-    "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&q=80&auto=format&fit=crop",
-};
-
 export default function FeaturedCatalog() {
   return (
     <section id="catalogo" className="mx-auto max-w-6xl px-6 py-10 lg:px-10 lg:py-14">
@@ -41,7 +30,7 @@ export default function FeaturedCatalog() {
           >
             <div className="aspect-[4/5] overflow-hidden bg-bg-alt">
               <img
-                src={dishImages[dish.name]}
+                src={`/platillos/${dish.image}.webp`}
                 alt={dish.name}
                 loading="lazy" className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
               />

@@ -79,10 +79,14 @@ export const goals = {
 };
 
 export const featuredDishes = [
-  { name: "Bowl mediterráneo",        kcal: 420, protein: 22 },
-  { name: "Salmón con espárragos",    kcal: 380, protein: 38 },
-  { name: "Buddha bowl de garbanzo",  kcal: 450, protein: 18 },
-  { name: "Pollo a la mostaza",       kcal: 410, protein: 42 },
+  { name: "Pollo a la plancha con quinoa y verduras asadas", image: "pollo-a-la-plancha", kcal: 430, protein: 42 },
+  { name: "Salmón horneado en costra de hierbas", image: "salmon-horneado", kcal: 520, protein: 34 },
+  { name: "Tazón de tofu al horno estilo cajún", image: "tazon-de-tofu-cajun", kcal: 430, protein: 20 },
+  { name: "Pollo en salsa verde con arroz y verduras", image: "pollo-en-salsa-verde", kcal: 480, protein: 38 },
+  { name: "Albóndigas de pollo en salsa de jitomate y parmesano", image: "albondigas-de-pollo", kcal: 500, protein: 36 },
+  { name: "Ensalada mediterránea de garbanzo", image: "ensalada-mediterranea", kcal: 340, protein: 13 },
+  { name: "Burrito horneado de huevo y frijol", image: "burrito-huevo-frijol", kcal: 655, protein: 39 },
+  { name: "Parfait de yogurt con granola y fruta", image: "parfait-yogurt", kcal: 380, protein: 12 },
 ];
 
 export const plans = [
