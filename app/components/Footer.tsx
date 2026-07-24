@@ -13,6 +13,7 @@ const navLinks = [
   { label: "Objetivos", href: "#objetivos" },
   { label: "Delipks Impacta", href: "#impacto" },
   { label: "Blog de la vida saludable", href: "/blog" },
+  { label: "Preguntas frecuentes", href: "/preguntas-frecuentes" },
 ];
 
 export default function Footer() {

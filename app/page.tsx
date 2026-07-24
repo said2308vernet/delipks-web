@@ -8,11 +8,9 @@ import Plans from "./components/Plans";
 import Testimonials from "./components/Testimonials";
 import AboutUs from "./components/AboutUs";
 import DelipksImpacta from "./components/DelipksImpacta";
-import FAQ from "./components/FAQ";
 import Newsletter from "./components/Newsletter";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
-import { faqs } from "@/lib/content";
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
@@ -52,29 +50,12 @@ const localBusinessJsonLd = {
   },
 };
 
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((faq) => ({
-    "@type": "Question",
-    name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
-  })),
-};
-
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Header />
       <main id="contenido-principal" className="flex-1">
@@ -87,7 +68,6 @@ export default function Home() {
         <Testimonials />
         <AboutUs />
         <DelipksImpacta />
-        <FAQ />
         <Newsletter />
         <FinalCTA />
       </main>
