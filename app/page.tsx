@@ -8,8 +8,6 @@ import Plans from "./components/Plans";
 import Testimonials from "./components/Testimonials";
 import AboutUs from "./components/AboutUs";
 import DelipksImpacta from "./components/DelipksImpacta";
-import Newsletter from "./components/Newsletter";
-import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
 const localBusinessJsonLd = {
@@ -68,8 +66,6 @@ export default function Home() {
         <Testimonials />
         <AboutUs />
         <DelipksImpacta />
-        <Newsletter />
-        <FinalCTA />
       </main>
       <Footer />
     </>
