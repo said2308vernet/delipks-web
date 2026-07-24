@@ -26,19 +26,19 @@ const allGoals = [
     icon: "leaf" as const,
     title: goals.featured.title,
     description: goals.featured.description,
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80&auto=format&fit=crop",
+    image: "/goal-saludable.webp",
   },
   {
     icon: "briefcase" as const,
     title: goals.supporting[0].title,
     description: goals.supporting[0].description,
-    image: "https://images.unsplash.com/photo-1556911073-52527ac43761?w=600&q=80&auto=format&fit=crop",
+    image: "/goal-semana.webp",
   },
   {
     icon: "barbell" as const,
     title: goals.supporting[1].title,
     description: goals.supporting[1].description,
-    image: "https://images.unsplash.com/photo-1729280924877-4750c0dba51e?w=600&q=80&auto=format&fit=crop",
+    image: "/goal-rendimiento.webp",
   },
 ];
 

@@ -51,8 +51,8 @@ export default function WhyDelipks() {
           className="relative hidden lg:block"
         >
           <img
-            src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=900&q=80&auto=format&fit=crop"
-            alt="Variedad de verduras y proteínas frescas en contenedores listos para tu semana"
+            src="/why-delipks.webp"
+            alt="Contenedores de vidrio Delipks con pollo, salmón y verduras frescas listos para tu semana"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/10" />
@@ -67,8 +67,8 @@ export default function WhyDelipks() {
           {/* Imagen en móvil */}
           <div className="mb-8 aspect-[16/7] overflow-hidden rounded-xl lg:hidden">
             <img
-              src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=900&q=80&auto=format&fit=crop"
-              alt="Preparación de comida saludable lista para entregar"
+              src="/why-delipks.webp"
+              alt="Contenedores de vidrio Delipks con pollo, salmón y verduras frescas listos para tu semana"
               className="h-full w-full object-cover"
             />
           </div>
