@@ -177,7 +177,7 @@ export const recetas: Receta[] = [
       "carbohidratos": 12,
       "grasa": 11
     },
-    "destacado": false
+    "destacado": true
   },
   {
     "slug": "ensalada-mediterranea-de-garbanzo-con-verduras-frescas",
@@ -241,7 +241,7 @@ export const recetas: Receta[] = [
       "carbohidratos": 45,
       "grasa": 20
     },
-    "destacado": false
+    "destacado": true
   },
   {
     "slug": "molletes-horneados-de-frijol-con-queso-oaxaca",
@@ -305,7 +305,7 @@ export const recetas: Receta[] = [
       "carbohidratos": 90,
       "grasa": 14
     },
-    "destacado": false
+    "destacado": true
   },
   {
     "slug": "panque-horneado-de-avena-y-platano-con-nuez",
@@ -481,7 +481,7 @@ export const recetas: Receta[] = [
       "carbohidratos": 48,
       "grasa": 12
     },
-    "destacado": false
+    "destacado": true
   },
   {
     "slug": "tamal-de-frijol-o-rajas-con-queso",
