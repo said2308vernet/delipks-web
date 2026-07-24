@@ -25,7 +25,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Albóndigas de pollo suaves con un toque verde de espinaca, bañadas en una salsa casera de jitomate y coronadas con parmesano que se funde al calentarlas en casa.",
+    "introduccion": "Jugosas albóndigas de pollo con un toque verde de espinaca, bañadas en una salsa casera de jitomate y coronadas con parmesano que se derrite justo al calentarlas: reconfortante desde el primer bocado.",
     "image": "/recetas/albondigas-de-pollo-en-salsa-de-jitomate-parmesano-y-espinacas.webp",
     "nutricion": {
       "calorias": 500,
@@ -41,7 +41,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Albóndigas jugosas de res bañadas en una salsa de jitomate con un toque de chile guajillo, servidas sobre arroz blanco.",
+    "introduccion": "Una jugosa mezcla de albóndigas de res bañadas en una salsa profunda de jitomate y chile guajillo, servidas sobre arroz blanco esponjado: sabor de casa en cada cucharada.",
     "image": "/recetas/albondigas-de-res-en-salsa-de-jitomate-y-guajillo-con-arroz.webp",
     "nutricion": {
       "calorias": 490,
@@ -57,7 +57,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Cubos de pollo jugoso marinados en achiote, naranja y limón, con ese sabor yucateco que despierta el apetito, acompañados de arroz blanco y verduras salteadas.",
+    "introduccion": "Cubos de pollo jugoso marinados en achiote, naranja y limón —ese sabor yucateco que despierta el antojo—, acompañados de arroz blanco y verduras salteadas al punto.",
     "image": "/recetas/brochetas-de-pollo-marinadas-en-achiote-y-citricos-con-arroz.webp",
     "nutricion": {
       "calorias": 480,
@@ -73,7 +73,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Tortilla rellena de huevo horneado bien cuajado, frijol y queso Oaxaca fundido, envuelta y horneada para sellar todo el sabor: un desayuno contundente que aguanta perfecto hasta jueves o viernes.",
+    "introduccion": "Una generosa tortilla rellena de huevo esponjoso, frijol cremoso y queso Oaxaca bien fundido, horneada para sellar todo el sabor: el desayuno contundente que se te va a antojar entre semana.",
     "image": "/recetas/burrito-horneado-de-huevo-y-frijol.webp",
     "nutricion": {
       "calorias": 655,
@@ -89,7 +89,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Cerdo guisado al estilo a la mexicana —jitomate, cebolla y chile fresco— acompañado de puré de papa cremoso y ensalada de col crujiente.",
+    "introduccion": "Cerdo tierno guisado a la mexicana con jitomate, cebolla y chile fresco, acompañado de un cremoso puré de papa y una ensalada de col bien crujiente: el combo perfecto de suave y crocante.",
     "image": "/recetas/cerdo-a-la-mexicana-con-pure-de-papa-y-ensalada-de-col.webp",
     "nutricion": {
       "calorias": 520,
@@ -105,7 +105,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Cerdo bañado en un adobo profundo de chiles guajillo y ancho, con el toque justo de vinagre, acompañado de arroz y verduras de raíz suaves.",
+    "introduccion": "Cerdo bañado en un adobo profundo de chiles guajillo y ancho con el toque justo de vinagre, acompañado de arroz suelto y verduras de raíz tiernas: sabor que se queda contigo.",
     "image": "/recetas/cerdo-en-adobo-con-arroz-y-verduras.webp",
     "nutricion": {
       "calorias": 500,
@@ -121,7 +121,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Cerdo deshebrado bañado en un adobo de chiles secos, acompañado de arroz esponjoso y verduras salteadas. Formato ligero, distinto del plato fuerte.",
+    "introduccion": "Cerdo deshebrado y jugoso, bañado en un adobo casero de chiles secos, acompañado de arroz esponjoso y verduras salteadas: una versión más ligera, igual de sabrosa.",
     "image": "/recetas/cerdo-en-adobo-deshebrado-con-arroz-y-verduras.webp",
     "nutricion": {
       "calorias": 420,
@@ -137,7 +137,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Empanadas de masa dorada al horno, rellenas de un picadillo de res sazonado y bien reducido, con papa, zanahoria y chícharo.",
+    "introduccion": "Empanadas de masa dorada y crujiente, rellenas de un picadillo de res bien sazonado con papa, zanahoria y chícharo: el antojo casero que se come con las manos.",
     "image": "/recetas/empanadas-horneadas-de-picadillo-de-res.webp",
     "nutricion": {
       "calorias": 480,
@@ -153,7 +153,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Enchiladas caseras bañadas en salsa, rellenas de frijol cremoso y queso que se derrite justo al calentarlas en casa, acompañadas de arroz.",
+    "introduccion": "Una deliciosa mezcla de frijol cremoso y queso derretido envuelta en tortillas bañadas en salsa casera, acompañada de arroz: comfort food que sabe a hecho en casa.",
     "image": "/recetas/enchiladas-de-frijol-y-queso-con-arroz.webp",
     "nutricion": {
       "calorias": 480,
@@ -169,7 +169,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Camarón cocido a punto justo, pepino y jitomate recién cortados, con un toque cítrico que refresca al final del día. Una cena ligera y fresca para arrancar la semana.",
+    "introduccion": "Una refrescante mezcla de camarón cocido en su punto, pepino y jitomate recién cortados, bañada en una vinagreta cítrica: ligera, jugosa y perfecta para arrancar la semana.",
     "image": "/recetas/ensalada-de-camarones-con-vinagreta-citrica-y-pepino-jitomate.webp",
     "nutricion": {
       "calorias": 260,
@@ -185,7 +185,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Garbanzo, verduras crujientes, aceitunas y un toque de queso fresco, bañados en una vinagreta de hierbas.",
+    "introduccion": "Una fresca mezcla de garbanzo, verduras crujientes, aceitunas y queso fresco, bañada en una vinagreta de hierbas: colorida, ligera y llena de sabor mediterráneo.",
     "image": "/recetas/ensalada-mediterranea-de-garbanzo-con-verduras-frescas.webp",
     "nutricion": {
       "calorias": 340,
@@ -201,7 +201,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Huevo horneado con calabacita, granos de elote y un toque de rajas de poblano, coronado con cotija: sabores mexicanos que le dan personalidad propia.",
+    "introduccion": "Huevo esponjoso horneado con calabacita, granos de elote y un toque de rajas de poblano, coronado con cotija: sabores mexicanos con personalidad propia en cada bocado.",
     "image": "/recetas/frittata-individual-de-huevo-con-calabacita-y-elote.webp",
     "nutricion": {
       "calorias": 415,
@@ -217,7 +217,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Capas de pasta suave, carne de res guisada en salsa de jitomate casera y queso que se funde justo cuando la calientas en casa.",
+    "introduccion": "Capas de pasta suave, carne de res guisada en una salsa de jitomate casera y queso gratinado que se funde justo al calentarla: reconfortante de principio a fin.",
     "image": "/recetas/lasana-de-res-con-salsa-de-jitomate-y-queso.webp",
     "nutricion": {
       "calorias": 560,
@@ -233,7 +233,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Milanesa de pollo empanizada y horneada hasta quedar doradita, sin necesidad de fritura, acompañada de puré de camote naturalmente dulce y ensalada fresca.",
+    "introduccion": "Milanesa de pollo empanizada y horneada hasta quedar dorada y crujiente por fuera, jugosa por dentro, acompañada de un puré de camote naturalmente dulce y ensalada fresca.",
     "image": "/recetas/milanesa-de-pollo-horneada-con-pure-de-camote-y-ensalada.webp",
     "nutricion": {
       "calorias": 540,
@@ -249,7 +249,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Pan horneado con una capa generosa de frijoles y queso Oaxaca, listo para gratinar en casa hasta quedar dorado y derretido. Se acompaña con pico de gallo fresco.",
+    "introduccion": "Pan crujiente con una capa generosa de frijoles cremosos y queso Oaxaca, listo para gratinar en casa hasta quedar dorado y derretido, acompañado de pico de gallo fresco.",
     "image": "/recetas/molletes-horneados-de-frijol-con-queso-oaxaca.webp",
     "nutricion": {
       "calorias": 470,
@@ -265,7 +265,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Huevo esponjoso horneado con espinaca fresca y champiñones salteados: un clásico reconfortante, con toque de queso, perfecto para un desayuno salado y satisfactorio.",
+    "introduccion": "Huevo esponjoso horneado con espinaca fresca, champiñones salteados y un toque de queso derretido: un clásico reconfortante para arrancar el día bien satisfecho.",
     "image": "/recetas/omelette-horneado-individual-de-espinaca-y-champinon.webp",
     "nutricion": {
       "calorias": 430,
@@ -281,7 +281,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Avena reposada toda la noche con manzana en cubitos y un toque cálido de canela: cremosa, dulce de forma natural y lista para disfrutarse fría.",
+    "introduccion": "Una cremosa mezcla de avena, manzana en cubitos y un toque cálido de canela, reposada toda la noche: dulce de forma natural, lista para disfrutarse fría.",
     "image": "/recetas/overnight-oats-con-manzana-y-canela.webp",
     "nutricion": {
       "calorias": 440,
@@ -297,7 +297,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "La versión chocolatosa de nuestra avena favorita: cremosa, con cacao real, plátano y chispas de chocolate semiamargo. Se siente como postre, pero empieza bien el día.",
+    "introduccion": "La versión chocolatosa de nuestra avena favorita: cremosa, con cacao real, plátano y chispas de chocolate semiamargo derritiéndose encima. Se antoja como postre, alimenta como desayuno.",
     "image": "/recetas/overnight-oats-de-chocolate-con-cacao-y-chispas-de-chocolate.webp",
     "nutricion": {
       "calorias": 520,
@@ -313,7 +313,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Un panqué casero, húmedo y ligeramente dulce, hecho con avena, plátano maduro y nuez, acompañado de fruta fresca.",
+    "introduccion": "Un panqué casero, húmedo y ligeramente dulce, con avena, plátano maduro y nuez tostada, acompañado de fruta fresca: como recién salido del horno de la abuela.",
     "image": "/recetas/panque-horneado-de-avena-y-platano-con-nuez.webp",
     "nutricion": {
       "calorias": 690,
@@ -329,7 +329,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Capas de yogurt cremoso, granola tostada con nuez y fruta fresca de temporada: un desayuno ligero, refrescante y listo en segundos, ideal para arrancar el día sin encender la estufa.",
+    "introduccion": "Capas de yogurt cremoso, granola tostada con nuez y fruta fresca de temporada: fresco, crujiente y listo en segundos para arrancar el día sin encender la estufa.",
     "image": "/recetas/parfait-de-yogurt-con-granola-y-fruta-de-temporada.webp",
     "nutricion": {
       "calorias": 380,
@@ -345,7 +345,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Carne molida de res guisada con jitomate y un toque ahumado de chipotle, con zanahoria y chícharo, servida sobre arroz blanco.",
+    "introduccion": "Carne molida de res guisada en jitomate con un toque ahumado de chipotle, zanahoria y chícharo, servida sobre arroz blanco esponjado: sabor casero con un puntito picosito.",
     "image": "/recetas/picadillo-de-res-enchipotlado-con-arroz-y-verduras.webp",
     "nutricion": {
       "calorias": 510,
@@ -361,7 +361,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Pechuga sellada a la plancha con hierbas y limón, acompañada de quinoa esponjada y verduras asadas coloridas.",
+    "introduccion": "Pechuga jugosa sellada a la plancha con hierbas frescas y limón, acompañada de quinoa esponjada y un colorido mix de verduras asadas: simple, fresco y lleno de sabor.",
     "image": "/recetas/pollo-a-la-plancha-con-quinoa-y-verduras-asadas.webp",
     "nutricion": {
       "calorias": 430,
@@ -377,7 +377,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Pechuga jugosa bañada en una salsa verde fresca de tomatillo y chile serrano, acompañada de arroz suelto y un mix de verduras asadas con un toque ahumado.",
+    "introduccion": "Pechuga jugosa bañada en una salsa verde fresca de tomatillo y chile serrano, acompañada de arroz suelto y un mix de verduras asadas con ese toque ahumado que se antoja.",
     "image": "/recetas/pollo-en-salsa-verde-con-arroz-y-verduras-asadas.webp",
     "nutricion": {
       "calorias": 480,
@@ -393,7 +393,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Tortilla dorada rellena de rajas de poblano, elote y abundante queso Oaxaca derretido: el antojo mexicano de siempre, convertido en desayuno práctico.",
+    "introduccion": "Tortilla dorada y crujiente rellena de rajas de poblano, elote y abundante queso Oaxaca bien derretido: el antojo mexicano de siempre, ahora como desayuno práctico.",
     "image": "/recetas/quesadilla-de-desayuno-de-rajas-y-queso-oaxaca.webp",
     "nutricion": {
       "calorias": 670,
@@ -409,7 +409,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Tortilla doblada y rellena de tinga de pollo jugosa con queso Oaxaca, lista para dorar en casa hasta quedar crujiente y derretida por dentro.",
+    "introduccion": "Tortilla rellena de tinga de pollo jugosa y queso Oaxaca, lista para dorar en casa hasta quedar crujiente por fuera y derretida por dentro: se antoja solo de leerlo.",
     "image": "/recetas/quesadillas-de-tinga-de-pollo-con-queso-oaxaca.webp",
     "nutricion": {
       "calorias": 460,
@@ -425,7 +425,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Un filete jugoso bajo una costra dorada de hierbas frescas, acompañado de quinoa esponjosa y verduras asadas con un toque dulce. Un platillo que se siente de restaurante.",
+    "introduccion": "Un filete jugoso bajo una costra dorada de hierbas frescas, acompañado de quinoa esponjosa y verduras asadas con un toque dulce: se siente (y sabe) a platillo de restaurante.",
     "image": "/recetas/salmon-horneado-en-costra-de-hierbas-con-quinoa-y-verduras.webp",
     "nutricion": {
       "calorias": 520,
@@ -441,7 +441,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Una sopa reconfortante de garbanzo con un fondo ahumado que recuerda los sabores de Puebla.",
+    "introduccion": "Una sopa cremosa y reconfortante de garbanzo con un fondo ahumado que recuerda los sabores de Puebla: el abrazo tibio que se antoja cualquier día de la semana.",
     "image": "/recetas/sopa-de-garbanzo-ahumada-estilo-poblano.webp",
     "nutricion": {
       "calorias": 230,
@@ -457,7 +457,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Lentejas suaves en un caldo aromático, con el toque dulce y reconfortante del plátano macho.",
+    "introduccion": "Lentejas suaves en un caldo aromático y reconfortante, con el toque dulce del plátano macho: sencilla, casera y de esas que se antojan repetir.",
     "image": "/recetas/sopa-de-lentejas-con-platano-macho.webp",
     "nutricion": {
       "calorias": 290,
@@ -473,7 +473,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Coliflor asada hasta dorar sus bordes, acompañada de frijoles cremosos y una salsa verde fresca. Una cena vegetariana ligera y llena de sabor tostado.",
+    "introduccion": "Coliflor asada hasta dorar sus bordes, acompañada de frijoles cremosos y una salsa verde bien fresca: una cena vegetariana ligera con ese sabor tostado que engancha.",
     "image": "/recetas/tacos-de-coliflor-asada-con-frijoles-y-salsa-verde.webp",
     "nutricion": {
       "calorias": 340,
@@ -489,7 +489,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "desayuno"
     ],
-    "introduccion": "Masa de maíz suave y esponjada al vapor, rellena de frijol o rajas con queso Oaxaca: el sabor tradicional mexicano de siempre, listo para descongelar entre semana.",
+    "introduccion": "Masa de maíz suave y esponjada al vapor, rellena de frijol cremoso o rajas con queso Oaxaca derretido: el sabor tradicional mexicano de siempre, listo para antojarte entre semana.",
     "image": "/recetas/tamal-de-frijol-o-rajas-con-queso.webp",
     "nutricion": {
       "calorias": 675,
@@ -505,7 +505,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Taquitos enrollados a mano, rellenos de tinga de pollo jugosa y horneados hasta quedar dorados y crujientes por fuera. Se acompañan de col morada y crema ligera aparte.",
+    "introduccion": "Taquitos enrollados a mano, rellenos de tinga de pollo jugosa y horneados hasta quedar dorados y crujientes por fuera, acompañados de col morada fresca y crema ligera: el antojo de siempre, más ligero.",
     "image": "/recetas/taquitos-dorados-al-horno-de-tinga-de-pollo-con-col-y-crema-ligera.webp",
     "nutricion": {
       "calorias": 430,
@@ -521,7 +521,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Cubos de tofu horneado (no frito) con especias cajún que despiertan el paladar, sobre una cama de arroz integral y verduras asadas coloridas.",
+    "introduccion": "Cubos de tofu dorados al horno con especias cajún que despiertan el paladar, sobre una cama de arroz integral y un colorido mix de verduras asadas: sabor con mucha personalidad.",
     "image": "/recetas/tazon-de-tofu-al-horno-estilo-cajun-con-arroz-integral-y-verduras-asadas.webp",
     "nutricion": {
       "calorias": 430,
@@ -537,7 +537,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Una terrina rústica de lentejas horneadas con hierbas, especias y un toque ahumado, bañada en salsa de jitomate. Firme, sustanciosa y llena de sabor de cocina de casa.",
+    "introduccion": "Una deliciosa mezcla de lentejas horneadas con hierbas, especias y un toque ahumado, bañada en salsa de jitomate: firme, sustanciosa y con ese sabor de cocina de casa que reconforta.",
     "image": "/recetas/terrina-de-lentejas-al-horno-con-hierbas-y-especias.webp",
     "nutricion": {
       "calorias": 410,
@@ -553,7 +553,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Pollo deshebrado en un guisado ahumado de jitomate y chipotle, con la frescura del arroz integral y ejotes salteados.",
+    "introduccion": "Pollo deshebrado y jugoso en un guisado ahumado de jitomate y chipotle, acompañado de arroz integral y ejotes salteados: sabor casero con el picorcito justo.",
     "image": "/recetas/tinga-de-pollo-con-arroz-integral-y-ejotes-salteados.webp",
     "nutricion": {
       "calorias": 460,
@@ -569,7 +569,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "comida"
     ],
-    "introduccion": "Un wrap fresco y ligero, relleno de atún sazonado con una vinagreta cítrica que despierta el paladar, acompañado de una ensalada crujiente.",
+    "introduccion": "Una fresca mezcla de atún sazonado con vinagreta cítrica y verduras crujientes, envuelta en un wrap ligero: rápido, sabroso y muy satisfactorio.",
     "image": "/recetas/wrap-de-atun-con-vinagreta-citrica-y-verduras.webp",
     "nutricion": {
       "calorias": 420,
@@ -585,7 +585,7 @@ export const recetas: Receta[] = [
     "tipos": [
       "cena"
     ],
-    "introduccion": "Pechuga de pollo deshebrada y cocinada lentamente en salsa verde, envuelta junto con verduras salteadas en una tortilla suave.",
+    "introduccion": "Pechuga de pollo deshebrada y jugosa, cocinada lentamente en salsa verde, envuelta junto con verduras salteadas en una tortilla suave: práctico y lleno de sabor casero.",
     "image": "/recetas/wrap-de-pollo-en-salsa-verde-con-verduras.webp",
     "nutricion": {
       "calorias": 380,
