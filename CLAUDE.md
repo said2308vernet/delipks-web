@@ -115,7 +115,7 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 ### Obligatorias antes del 25 de julio 2026:
 1. **Hero** — tagline + CTA primario + imagen apetitosa
 2. **Cómo funciona** — 3-4 pasos (pide → preparamos → entregamos → disfruta)
-3. **Los 3 planes** — Básico, Intermedio, Completo con descripción y precio
+3. **Los 3 planes** — Básico, Equilibrado, Completo con descripción y precio
 4. **Muestra del menú** — ejemplo semana típica (fotos pendientes del chef)
 5. **Formulario Mailchimp** — lista de espera / pedidos
 6. **Botón WhatsApp** — flotante, siempre visible en móvil y desktop
@@ -175,10 +175,10 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 
 ## 🛠️ REGLAS PARA CLAUDE CODE AL EDITAR ESTE PROYECTO
 
-1. Los planes son siempre **Básico / Intermedio / Completo** — nunca otra variante
+1. Los planes son siempre **Básico / Equilibrado / Completo** — nunca otra variante
 2. No hardcodear precios hasta tener confirmación del Doc 05
 3. Tono en tuteo — sin "usted", sin lenguaje médico
-4. CTAs de alta conversión en verde primario `#007a3d` (color oficial del sitio)
+4. Colores: todos se rigen por el manual de marca oficial (Doc 02 — Identidad de Marca). CTAs principales en verde primario `#005C31`; CTAs de precio/urgencia (ej. "Pedir ahora") en naranja `#F5812D` — ver paleta completa arriba
 5. Botón WhatsApp debe ser visible y funcional en todo momento
 6. Verificar que el formulario Mailchimp esté conectado antes del lanzamiento
 7. Meta Pixel en el `<head>` de todas las páginas
