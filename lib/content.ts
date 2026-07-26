@@ -81,7 +81,7 @@ export const goals = {
 export const plans = [
   {
     id: "basico",
-    label: "Plan básico",
+    label: "Plan Básico",
     includes: ["5 comidas"],
     totalMeals: 5,
     priceOneTime: 900,
@@ -92,7 +92,7 @@ export const plans = [
   },
   {
     id: "equilibrado",
-    label: "Plan equilibrado",
+    label: "Plan Equilibrado",
     includes: ["5 desayunos", "5 comidas"],
     totalMeals: 10,
     priceOneTime: 1650,
@@ -102,7 +102,7 @@ export const plans = [
   },
   {
     id: "completo",
-    label: "Plan completo",
+    label: "Plan Completo",
     includes: ["5 desayunos", "5 comidas", "5 cenas"],
     totalMeals: 15,
     priceOneTime: 2400,
