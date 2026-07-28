@@ -104,7 +104,7 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 | Facebook | Comunidad y anuncios pagados |
 | TikTok | Videos cortos |
 | WhatsApp | Ventas directas, atención al cliente |
-| Email | Captura de leads via Mailchimp |
+| Email | Sin formulario de suscripción en la web. Los correos se recaban conforme los clientes compran (vía WhatsApp) y los envíos se hacen manualmente desde el correo de Delipks |
 
 **Horario de atención:** L–V 8am–8pm · Sáb 9am–3pm · Respuesta máx. 30 min
 
@@ -117,12 +117,11 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 2. **Cómo funciona** — 3-4 pasos (pide → preparamos → entregamos → disfruta)
 3. **Los 3 planes** — Básico, Equilibrado, Completo con descripción y precio
 4. **Muestra del menú** — ejemplo semana típica (fotos pendientes del chef)
-5. **Formulario Mailchimp** — lista de espera / pedidos
-6. **Botón WhatsApp** — flotante, siempre visible en móvil y desktop
-7. **Footer** — logo, redes, horarios, zona de entrega, aviso de privacidad
+5. **Botón WhatsApp** — flotante, siempre visible en móvil y desktop
+6. **Footer** — logo, redes, horarios, zona de entrega, aviso de privacidad
 
 ### Post-lanzamiento:
-8. Testimonios · 9. Sobre nosotros · 10. FAQ · 11. Blog/Recetas
+7. Testimonios · 8. Sobre nosotros · 9. FAQ · 10. Blog/Recetas
 
 ---
 
@@ -147,7 +146,6 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 | **Next.js** | Framework web |
 | **Vercel** | Hosting y despliegue automático |
 | **GitHub** | Control de versiones |
-| **Mailchimp** | Formulario de captura de leads |
 | **Meta Pixel** | Tracking de conversiones — debe estar en `<head>` de todas las páginas |
 
 ---
@@ -180,7 +178,7 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 3. Tono en tuteo — sin "usted", sin lenguaje médico
 4. Colores: todos se rigen por el manual de marca oficial (Doc 02 — Identidad de Marca). CTAs principales en verde primario `#005C31`; CTAs de precio/urgencia (ej. "Pedir ahora") en naranja `#F5812D` — ver paleta completa arriba
 5. Botón WhatsApp debe ser visible y funcional en todo momento
-6. Verificar que el formulario Mailchimp esté conectado antes del lanzamiento
+6. No agregar formularios de suscripción/captura de leads (Mailchimp u otros) — la web no ofrece ningún punto de suscripción; los correos de clientes se recaban al comprar (WhatsApp) y los envíos se hacen manualmente desde el correo de Delipks
 7. Meta Pixel en el `<head>` de todas las páginas
 8. Alt text en español en todas las imágenes. Formato WebP preferido
 9. Diseño **mobile first** — clientes llegan desde Instagram/WhatsApp
