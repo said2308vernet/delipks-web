@@ -10,6 +10,8 @@ type CartItem = {
   planId: string;
   billing: Billing;
   note: string;
+  nombre: string;
+  correo: string;
 };
 
 type CartContextType = {
@@ -18,6 +20,7 @@ type CartContextType = {
   addToCart: (planId: string, billing: Billing) => void;
   updateBilling: (billing: Billing) => void;
   updateNote: (note: string) => void;
+  setIdentidad: (nombre: string, correo: string) => void;
   openCart: () => void;
   closeCart: () => void;
   clearCart: () => void;
@@ -31,7 +34,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const addToCart = (planId: string, billing: Billing) => {
-    setCart({ planId, billing, note: "" });
+    setCart({ planId, billing, note: "", nombre: "", correo: "" });
     setIsOpen(true);
   };
 
@@ -40,6 +43,9 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const updateNote = (note: string) =>
     setCart((c) => (c ? { ...c, note } : c));
+
+  const setIdentidad = (nombre: string, correo: string) =>
+    setCart((c) => (c ? { ...c, nombre, correo } : c));
 
   const whatsAppUrl = () => {
     if (!cart) return "";
@@ -58,12 +64,19 @@ export function CartProvider({ children }: { children: ReactNode }) {
     const lines = [
       "Hola, quiero hacer mi pedido en Delipks 🌿",
       "",
+    ];
+
+    if (cart.nombre) lines.push(`👤 ${cart.nombre}`);
+    if (cart.correo) lines.push(`✉️ ${cart.correo}`);
+    if (cart.nombre || cart.correo) lines.push("");
+
+    lines.push(
       `📦 ${plan.label} — ${plan.totalMeals} comidas`,
       ...plan.includes.map((i) => `   ✓ ${i}`),
       "",
       `📅 ${billingLabel}`,
       `💰 $${price.toLocaleString("es-MX")}/semana`,
-    ];
+    );
 
     if (cart.note.trim()) {
       lines.push("", `📝 ${cart.note}`);
@@ -84,6 +97,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         addToCart,
         updateBilling,
         updateNote,
+        setIdentidad,
         openCart: () => setIsOpen(true),
         closeCart: () => setIsOpen(false),
         clearCart: () => {

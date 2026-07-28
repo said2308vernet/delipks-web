@@ -2,6 +2,7 @@
 
 import { useCart } from "@/context/CartContext";
 import { plans } from "@/lib/content";
+import GoogleIdentityButton from "./GoogleIdentityButton";
 
 export default function CartDrawer() {
   const { cart, isOpen, closeCart, clearCart, updateBilling, updateNote, whatsAppUrl } =
@@ -74,6 +75,23 @@ export default function CartDrawer() {
                   <p className="mt-3 text-[11px] text-[#3B6D11]/70">
                     {plan.nutrition.kcal} · {plan.nutrition.protein} {plan.nutrition.label}
                   </p>
+                )}
+              </div>
+
+              {/* Identidad con Google */}
+              <div>
+                {cart.nombre || cart.correo ? (
+                  <div className="flex items-center gap-2 rounded-lg border border-primary/20 bg-primary/5 px-3.5 py-2.5 text-[13px] text-ink">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-4 w-4 shrink-0 text-primary">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>
+                      {cart.nombre || cart.correo}
+                      {cart.nombre && cart.correo && <span className="text-muted"> · {cart.correo}</span>}
+                    </span>
+                  </div>
+                ) : (
+                  <GoogleIdentityButton />
                 )}
               </div>
 
