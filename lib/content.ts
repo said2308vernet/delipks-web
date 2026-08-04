@@ -1,5 +1,5 @@
 export const site = {
-  name: "delipks",
+  name: "Delipks",
   whatsappNumber: "522216544335",
   deliveryZones: ["Puebla", "Cholula"],
 };

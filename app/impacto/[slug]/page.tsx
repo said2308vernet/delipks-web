@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { impactoPosts } from "@/lib/impacto";
 
@@ -54,11 +55,13 @@ export default async function ImpactoPostPage({ params }: { params: Promise<{ sl
         {post.title}
       </h1>
 
-      <div className="mb-8 aspect-[16/9] overflow-hidden rounded-2xl bg-bg-alt">
-        <img
+      <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-2xl bg-bg-alt">
+        <Image
           src={post.image}
           alt={post.title}
-          className="h-full w-full object-cover"
+          fill
+          sizes="(min-width: 1024px) 768px, 100vw"
+          className="object-cover"
         />
       </div>
 

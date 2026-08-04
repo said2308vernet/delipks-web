@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const benefits = [
   { bold: "Ingredientes frescos", rest: " y reales, preparados a diario" },
   { bold: "Nutriólogos certificados", rest: " diseñan cada menú" },
@@ -50,10 +52,12 @@ export default function WhyDelipks() {
           data-reveal=""
           className="relative hidden lg:block"
         >
-          <img
+          <Image
             src="/why-delipks.webp"
             alt="Contenedores de vidrio Delipks con pollo, salmón y verduras frescas listos para tu semana"
-            className="h-full w-full object-cover"
+            fill
+            sizes="45vw"
+            className="object-cover"
           />
           <div className="absolute inset-0 bg-primary/10" />
         </div>
@@ -65,11 +69,13 @@ export default function WhyDelipks() {
           className="px-6 py-12 lg:px-12 lg:py-16"
         >
           {/* Imagen en móvil */}
-          <div className="mb-8 aspect-[16/7] overflow-hidden rounded-xl lg:hidden">
-            <img
+          <div className="relative mb-8 aspect-[16/7] overflow-hidden rounded-xl lg:hidden">
+            <Image
               src="/why-delipks.webp"
               alt="Contenedores de vidrio Delipks con pollo, salmón y verduras frescas listos para tu semana"
-              className="h-full w-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
             />
           </div>
 

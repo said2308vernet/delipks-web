@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "DELIPKS — Comida saludable y lista, sin preocupaciones",
   description:
     "Platillos frescos, balanceados y preparados por nutriólogos. Entregamos en Puebla y Cholula.",
-  keywords: ["meal prep", "comida saludable", "Puebla", "Cholula", "alimentación", "delivery", "nutrición", "delipks"],
+  keywords: ["meal prep", "comida saludable", "Puebla", "Cholula", "alimentación", "delivery", "nutrición", "Delipks"],
   authors: [{ name: "Delipks" }],
   metadataBase: new URL("https://delipks.com"),
   openGraph: {
@@ -81,6 +81,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {pixelId && (
           <noscript>
+            {/* eslint-disable-next-line @next/next/no-img-element -- Meta Pixel exige un <img> plano aquí; next/image no funciona dentro de <noscript> */}
             <img
               height="1"
               width="1"

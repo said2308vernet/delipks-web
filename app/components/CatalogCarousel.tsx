@@ -1,17 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import type { Receta } from "@/lib/recetas";
 
 function DishCard({ dish }: { dish: Receta }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow duration-300 hover:shadow-md">
-      <div className="aspect-[4/5] overflow-hidden bg-bg-alt">
-        <img
+      <div className="relative aspect-[4/5] overflow-hidden bg-bg-alt">
+        <Image
           src={dish.image}
           alt={dish.nombre}
-          loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          fill
+          sizes="(min-width: 1024px) 23vw, (min-width: 640px) 30vw, 45vw"
+          className="object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>
       <div className="p-3.5">

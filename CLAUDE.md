@@ -94,6 +94,9 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 - Archivo: `L 1.2.png`
 - No deformar, no cambiar colores, no agregar sombras
 
+### Decisión — CTAs en verde (2026-08-03)
+Los botones de conversión (Elegir plan / Pedir ahora, Confirmar por WhatsApp) se quedan en **verde**, no en naranja. El verde a usar es específicamente **`#008548`** — el verde de la letra "D" del isotipo de Delipks (no el `#005C31` genérico de la tabla de paleta). El naranja `#F5812D` queda reservado para posibles usos futuros de urgencia/promociones puntuales, pero no es obligatorio en los CTAs principales. Esta decisión reemplaza lo indicado en la sección "CTAs principales" y en la regla 4 más abajo.
+
 ---
 
 ## 📱 CANALES DIGITALES
@@ -117,11 +120,11 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 2. **Cómo funciona** — 3-4 pasos (pide → preparamos → entregamos → disfruta)
 3. **Los 3 planes** — Básico, Equilibrado, Completo con descripción y precio
 4. **Muestra del menú** — ejemplo semana típica (fotos pendientes del chef)
-5. **Botón WhatsApp** — flotante, siempre visible en móvil y desktop
+5. **Botón WhatsApp** — flotante en **móvil**; en **desktop se oculta** y su lugar lo toma el CTA fijo de WhatsApp en el Header (decisión 2026-08-03)
 6. **Footer** — logo, redes, horarios, zona de entrega, aviso de privacidad
 
 ### Post-lanzamiento:
-7. Testimonios · 8. Sobre nosotros · 9. FAQ · 10. Blog/Recetas
+7. ~~Testimonios~~ — **quitados del home por ahora** (2026-08-03): los que había usaban avatares/fotos genéricas, no clientes reales. Reactivar solo con testimonios auténticos. · 8. Sobre nosotros · 9. FAQ · 10. Blog/Recetas
 
 ---
 
@@ -130,12 +133,16 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 **Personalidad:** cálida, cercana, profesional. No clínica. No pretenciosa.
 
 ✅ USAR: tuteo (tú/tu), "alimentación", "frescura", "sin cocinar", "entregamos a tu puerta"  
-❌ EVITAR: "usted", "dieta", "calorías", "bajar de peso", precios sin confirmar
+❌ EVITAR: "usted", precios sin confirmar
+
+**Regla de "dieta"/"calorías" (actualizada 2026-08-03):**
+- **Blog** (`lib/blog.ts`): sin restricción — son notas de contenido cultural/educativo, pueden usar "dieta", "calorías", "bajar de peso" libremente.
+- **Resto del sitio** (Hero, Planes, Carrito, etc.): evitar únicamente la palabra **"dieta"**. "Calorías"/"kcal" y "bajar de peso" ya están permitidos fuera del blog. Esta relajación es temporal, **hasta que Delipks entre en fase 2 y 3**, momento en el que se debe revisar de nuevo el criterio.
 
 **CTAs principales:**
 - Hero: `"Ver planes"` / `"Quiero empezar"`
-- Planes: `"Pedir ahora"` — siempre en naranja `#F5812D`
-- Flotante: botón WhatsApp
+- Planes: `"Pedir ahora"` — en verde `#008548` (ver decisión de CTAs en verde, arriba)
+- Flotante: botón WhatsApp (solo móvil)
 
 ---
 
@@ -175,9 +182,9 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 
 1. Los planes son siempre **Básico / Equilibrado / Completo** — nunca otra variante
 2. No hardcodear precios hasta tener confirmación del Doc 05
-3. Tono en tuteo — sin "usted", sin lenguaje médico
-4. Colores: todos se rigen por el manual de marca oficial (Doc 02 — Identidad de Marca). CTAs principales en verde primario `#005C31`; CTAs de precio/urgencia (ej. "Pedir ahora") en naranja `#F5812D` — ver paleta completa arriba
-5. Botón WhatsApp debe ser visible y funcional en todo momento
+3. Tono en tuteo — sin "usted", sin lenguaje médico. Evitar la palabra "dieta" fuera del blog (ver regla actualizada arriba); "calorías"/"kcal" sí están permitidas fuera del blog
+4. Colores: CTAs principales y de conversión (Elegir plan/Pedir ahora, Confirmar por WhatsApp) van en **verde `#008548`** (verde de la letra D del logo) — no en naranja, ver decisión 2026-08-03 arriba. El resto de la paleta sigue el manual de marca oficial (Doc 02)
+5. Botón WhatsApp: flotante y visible en móvil; en desktop se reemplaza por el CTA de WhatsApp fijo del Header
 6. No agregar formularios de suscripción/captura de leads (Mailchimp u otros) — la web no ofrece ningún punto de suscripción; los correos de clientes se recaban al comprar (WhatsApp) y los envíos se hacen manualmente desde el correo de Delipks
 7. Meta Pixel en el `<head>` de todas las páginas
 8. Alt text en español en todas las imágenes. Formato WebP preferido

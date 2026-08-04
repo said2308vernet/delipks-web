@@ -50,10 +50,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/suscribirse`,
+      url: `${baseUrl}/recetas`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/preguntas-frecuentes`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.6,
     },
     ...blogUrls,
     ...impactoPosts.map((post) => ({

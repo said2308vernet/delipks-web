@@ -1,4 +1,5 @@
-﻿import { site, whatsappLink } from "@/lib/content";
+﻿import Image from "next/image";
+import { site, whatsappLink } from "@/lib/content";
 import ZoneChecker from "./ZoneChecker";
 
 export default function Hero() {
@@ -26,7 +27,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="rounded-lg bg-primary px-6 py-3.5 text-center text-sm font-medium text-bg transition-colors hover:bg-primary-dark"
             >
-              Pedir por WhatsApp
+              Quiero empezar
             </a>
             <a
               href="#catalogo"
@@ -38,11 +39,14 @@ export default function Hero() {
           <ZoneChecker />
         </div>
 
-        <div className="animate-float aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt shadow-lg">
-          <img
+        <div className="animate-float relative aspect-[4/5] overflow-hidden rounded-2xl bg-bg-alt shadow-lg">
+          <Image
             src="/hero-delipks.jpg"
             alt="Mujer con meal prep Delipks"
-            className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+            fill
+            priority
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            className="object-cover transition-transform duration-700 hover:scale-105"
           />
         </div>
       </div>

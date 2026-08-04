@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { whatsappLink } from "@/lib/content";
 import CartIcon from "./CartIcon";
 
 const navItems = [
-  { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Menú", href: "#catalogo" },
-  { label: "Planes", href: "#planes" },
-  { label: "Objetivos", href: "#objetivos" },
-  { label: "Delipks Impacta", href: "#impacto" },
+  { label: "Cómo funciona", href: "/#como-funciona" },
+  { label: "Menú", href: "/#catalogo" },
+  { label: "Planes", href: "/#planes" },
+  { label: "Objetivos", href: "/#objetivos" },
+  { label: "Delipks Impacta", href: "/#impacto" },
   { label: "Blog de la vida saludable", href: "/blog" },
 ];
 
@@ -19,15 +21,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-10">
-        <a href="/">
-          <img src="/logo-delipks.png" alt="Delipks — Comida saludable" className="h-8" />
-        </a>
+        <Link href="/">
+          <Image src="/logo-delipks.png" alt="Delipks — Comida saludable" width={104} height={32} className="h-8 w-auto" priority />
+        </Link>
 
         <nav className="hidden items-center gap-7 text-sm text-ink lg:flex">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="transition-opacity hover:opacity-70">
+            <Link key={item.href} href={item.href} className="transition-opacity hover:opacity-70">
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -66,14 +68,14 @@ export default function Header() {
         <div className="border-t border-border bg-bg px-6 pb-6 pt-4 lg:hidden">
           <nav className="flex flex-col gap-1">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-bg-alt"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
           <a

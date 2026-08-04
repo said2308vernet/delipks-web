@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const testimonials = [
   {
     name: "Sofía M.",
@@ -11,7 +13,7 @@ const testimonials = [
     role: "Ingeniero, Cholula",
     avatar: "https://i.pravatar.cc/80?img=68",
     stars: 5,
-    text: "Al principio lo probé solo para ver cómo era. Llevámos varias semanas y ya no queremos volver a cocinar entre semana. La comida llega bien organizada, se calienta en minutos y la calidad es constante. Sin sorpresas.",
+    text: "Al principio lo probé solo para ver cómo era. Llevamos varias semanas y ya no queremos volver a cocinar entre semana. La comida llega bien organizada, se calienta en minutos y la calidad es constante. Sin sorpresas.",
   },
   {
     name: "Andrea R.",
@@ -56,9 +58,9 @@ export default function Testimonials() {
             className="flex flex-col gap-4 rounded-2xl border border-border bg-white p-7 transition-shadow duration-300 hover:shadow-md"
           >
             <Stars count={t.stars} />
-            <p className="flex-1 text-[14px] leading-relaxed text-ink">"{t.text}"</p>
+            <p className="flex-1 text-[14px] leading-relaxed text-ink">“{t.text}”</p>
             <div className="flex items-center gap-3 border-t border-border pt-4">
-              <img
+              <Image
                 src={t.avatar}
                 alt={t.name}
                 width={40}

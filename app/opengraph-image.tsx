@@ -24,8 +24,10 @@ export default async function OgImage() {
           padding: "80px",
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element -- ImageResponse (satori) no soporta next/image, requiere <img> plano */}
         <img
           src={logoBase64}
+          alt="Delipks"
           width={400}
           height={400}
           style={{ objectFit: "contain" }}

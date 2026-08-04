@@ -119,7 +119,7 @@ export default function Plans() {
                       : "border border-ink text-ink hover:bg-ink hover:text-bg"
                   }`}
                 >
-                  Elegir plan
+                  Pedir ahora
                 </button>
               </div>
             </div>

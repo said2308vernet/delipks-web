@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { whatsappLink } from "@/lib/content";
 
 export default function DelipksImpacta() {
@@ -30,16 +31,18 @@ export default function DelipksImpacta() {
             </p>
           </div>
 
-          <div className="mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-bg-alt">
-            <img
+          <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-bg-alt">
+            <Image
               src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80&auto=format&fit=crop"
               alt="Niños sonriendo junto a un perro"
-              loading="lazy" className="h-full w-full object-cover"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
             />
           </div>
 
           <p className="mb-5 text-center font-display text-lg font-bold italic leading-snug text-ink">
-            "No es solo comida. Es una cadena de bienestar que empieza contigo."
+            “No es solo comida. Es una cadena de bienestar que empieza contigo.”
           </p>
 
           <p className="mb-3 text-center text-sm font-medium text-ink">
@@ -89,16 +92,18 @@ export default function DelipksImpacta() {
             </p>
           </div>
 
-          <div className="mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-bg-alt">
-            <img
+          <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-xl bg-bg-alt">
+            <Image
               src="https://images.unsplash.com/photo-1552828488-282e3da17019?w=800&q=80&auto=format&fit=crop"
               alt="Bomberos combatiendo un incendio en equipo"
-              loading="lazy" className="h-full w-full object-cover"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
             />
           </div>
 
           <p className="mb-6 text-center font-display text-lg font-bold italic leading-snug text-ink">
-            "Ustedes cuidan de todos. Nosotros queremos cuidar de ustedes."
+            “Ustedes cuidan de todos. Nosotros queremos cuidar de ustedes.”
           </p>
 
           <a

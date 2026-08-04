@@ -37,9 +37,9 @@ export default function AboutUs() {
                 Nuestra misión
               </p>
               <p className="text-sm leading-relaxed text-ink">
-                "Hacer que comer bien sea fácil. Entregamos planes completos de alimentación
+                “Hacer que comer bien sea fácil. Entregamos planes completos de alimentación
                 semanales — listos para consumir, organizados por día — para que dediques tu
-                tiempo a lo que realmente importa."
+                tiempo a lo que realmente importa.”
               </p>
             </div>
           </div>
@@ -73,8 +73,8 @@ export default function AboutUs() {
             <div className="rounded-2xl bg-primary p-7">
               <p className="mb-2 text-sm font-semibold text-white/90">Promesa de marca</p>
               <p className="text-base font-medium leading-relaxed text-white">
-                "Delipks resuelve tu alimentación semanal para que puedas vivir sin esa
-                preocupación."
+                “Delipks resuelve tu alimentación semanal para que puedas vivir sin esa
+                preocupación.”
               </p>
             </div>
           </div>

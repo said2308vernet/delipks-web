@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { goals } from "@/lib/content";
 
 const icons: Record<string, React.ReactNode> = {
@@ -63,11 +64,13 @@ export default function Goals() {
             style={{ transitionDelay: `${i * 100}ms` }}
             className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow duration-300 hover:shadow-md"
           >
-            <div className="aspect-[4/3] overflow-hidden bg-bg-alt">
-              <img
+            <div className="relative aspect-[4/3] overflow-hidden bg-bg-alt">
+              <Image
                 src={goal.image}
                 alt={goal.title}
-                loading="lazy" className="h-full w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover"
               />
             </div>
             <div className="p-6">

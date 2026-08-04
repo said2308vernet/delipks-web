@@ -192,7 +192,7 @@ export default function CartDrawer() {
             </a>
 
             <p className="mt-2 text-center text-[11px] text-muted">
-              Sin pago por adelantado · Te contactamos en minutos
+              Confirmamos tu pedido al recibir el pago · Te contactamos en minutos
             </p>
           </div>
         )}

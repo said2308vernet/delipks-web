@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import { site, whatsappLink } from "@/lib/content";
 
 const legalLinks = [
@@ -7,11 +9,11 @@ const legalLinks = [
 ];
 
 const navLinks = [
-  { label: "Cómo funciona", href: "#como-funciona" },
-  { label: "Menú", href: "#catalogo" },
-  { label: "Planes", href: "#planes" },
-  { label: "Objetivos", href: "#objetivos" },
-  { label: "Delipks Impacta", href: "#impacto" },
+  { label: "Cómo funciona", href: "/#como-funciona" },
+  { label: "Menú", href: "/#catalogo" },
+  { label: "Planes", href: "/#planes" },
+  { label: "Objetivos", href: "/#objetivos" },
+  { label: "Delipks Impacta", href: "/#impacto" },
   { label: "Blog de la vida saludable", href: "/blog" },
   { label: "Preguntas frecuentes", href: "/preguntas-frecuentes" },
 ];
@@ -22,7 +24,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-10 lg:px-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <img src="/logo-delipks.png" alt="Delipks — Comida saludable" className="h-8" />
+            <Image src="/logo-delipks.png" alt="Delipks — Comida saludable" width={104} height={32} className="h-8 w-auto" />
             <p className="mt-3 text-[13px] leading-relaxed text-muted">
               Comida saludable y lista, entregada en {site.deliveryZones.join(" y ")}.
             </p>
@@ -33,9 +35,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-[13px] text-muted transition-opacity hover:opacity-70">
+                  <Link href={link.href} className="text-[13px] text-muted transition-opacity hover:opacity-70">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -46,9 +48,9 @@ export default function Footer() {
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-[13px] text-muted transition-opacity hover:opacity-70">
+                  <Link href={link.href} className="text-[13px] text-muted transition-opacity hover:opacity-70">
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -123,13 +125,13 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-border pt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-muted">
-            © {new Date().getFullYear()} delipks. Todos los derechos reservados.
+            © {new Date().getFullYear()} Delipks. Todos los derechos reservados.
           </p>
           <div className="flex flex-wrap items-center gap-4">
             {legalLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-[11px] text-muted transition-opacity hover:opacity-70">
+              <Link key={link.href} href={link.href} className="text-[11px] text-muted transition-opacity hover:opacity-70">
                 {link.label}
-              </a>
+              </Link>
             ))}
             <a
               href="https://admin.delipks.com"

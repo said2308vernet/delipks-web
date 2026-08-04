@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import type { Receta, TipoPlatillo } from "@/lib/recetas";
 
 const FILTROS: { value: TipoPlatillo | "todos"; label: string }[] = [
@@ -39,12 +40,13 @@ export default function RecetasGrid({ recetas }: { recetas: Receta[] }) {
             key={r.slug}
             className="overflow-hidden rounded-2xl border border-border bg-white transition-shadow duration-300 hover:shadow-md"
           >
-            <div className="aspect-[4/3] overflow-hidden bg-bg-alt">
-              <img
+            <div className="relative aspect-[4/3] overflow-hidden bg-bg-alt">
+              <Image
                 src={r.image}
                 alt={r.nombre}
-                loading="lazy"
-                className="h-full w-full object-cover"
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover"
               />
             </div>
             <div className="p-4">

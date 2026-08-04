@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/lib/blog";
 
@@ -65,11 +66,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {post.title}
       </h1>
 
-      <div className="mb-8 aspect-[16/9] overflow-hidden rounded-2xl bg-bg-alt">
-        <img
+      <div className="relative mb-8 aspect-[16/9] overflow-hidden rounded-2xl bg-bg-alt">
+        <Image
           src={post.image}
           alt={post.title}
-          className="h-full w-full object-cover"
+          fill
+          sizes="(min-width: 1024px) 768px, 100vw"
+          className="object-cover"
         />
       </div>
 
