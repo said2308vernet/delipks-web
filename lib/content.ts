@@ -97,7 +97,7 @@ export const plans = [
     totalMeals: 10,
     priceOneTime: 1650,
     priceSubscription: 1485,
-    popular: true,
+    popular: false,
     nutrition: { label: "por día aprox.", kcal: "~880 kcal", protein: "~57g prot" },
   },
   {
@@ -107,7 +107,7 @@ export const plans = [
     totalMeals: 15,
     priceOneTime: 2400,
     priceSubscription: 2160,
-    popular: false,
+    popular: true,
     nutrition: { label: "por día aprox.", kcal: "~1,240 kcal", protein: "~85g prot" },
   },
 ];

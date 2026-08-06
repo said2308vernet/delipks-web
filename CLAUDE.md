@@ -42,8 +42,8 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 | Plan | Comidas por semana | Descripción |
 |---|---|---|
 | **Plan Básico** | 5 comidas | Solo comida principal, lunes a viernes. |
-| **Plan Equilibrado** | 10 comidas | Desayuno + comida de lunes a viernes. El más popular. ⭐ |
-| **Plan Completo** | 15 comidas | Desayuno, comida y cena de lunes a viernes. |
+| **Plan Equilibrado** | 10 comidas | Desayuno + comida de lunes a viernes. |
+| **Plan Completo** | 15 comidas | Desayuno, comida y cena de lunes a viernes. El más popular. ⭐ |
 
 **Precios confirmados (suscripción / puntual):**
 
