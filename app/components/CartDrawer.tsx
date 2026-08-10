@@ -356,17 +356,18 @@ export default function CartDrawer() {
         {cart && plan && price !== undefined && !paidOrderId && (
           <div className="border-t border-border p-6">
             <div className="mb-4 flex items-baseline justify-between">
-              <div>
-                <p className="text-[13px] text-muted">
-                  {cart.billing === "subscription" ? "Total a pagar hoy · 4 semanas" : "Total a pagar hoy · 1 semana"}
+              <p className="text-[13px] text-muted">
+                {cart.billing === "subscription" ? "Suscripción · 4 semanas" : "Total por 1 semana"}
+              </p>
+              <div className="text-right">
+                <p className="font-display text-2xl font-semibold text-ink">
+                  ${price?.toLocaleString("es-MX")}
+                  <span className="ml-1 text-[13px] font-normal text-muted">/sem</span>
                 </p>
                 {cart.billing === "subscription" && (
-                  <p className="text-[11px] text-muted">
-                    ${price?.toLocaleString("es-MX")}/semana × 4 semanas
-                  </p>
+                  <p className="text-[11px] text-muted">${total?.toLocaleString("es-MX")} total, cobro único hoy</p>
                 )}
               </div>
-              <p className="font-display text-2xl font-semibold text-ink">${total?.toLocaleString("es-MX")}</p>
             </div>
 
             <a
