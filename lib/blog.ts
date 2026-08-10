@@ -16,6 +16,50 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "caminar-rapido-y-longevidad",
+    title: "Caminar rápido: el hábito de ejercicio que más alarga la vida, según la ciencia 2026",
+    excerpt:
+      "No hace falta correr un maratón. La evidencia más reciente confirma que la velocidad al caminar es uno de los mejores indicadores — y motores — de una vida más larga.",
+    image:
+      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=80&auto=format&fit=crop",
+    category: "Ejercicio",
+    date: "2026-08-10",
+    content: `Caminar es el ejercicio más accesible que existe: no requiere equipo, no cuesta nada y casi cualquier persona puede hacerlo. Y según varios estudios publicados en 2026, también podría ser uno de los hábitos con mayor impacto en cuántos años vives y en qué condición los vives.
+
+## Lo que encontró la ciencia este año
+
+Una investigación difundida en 2026 encontró una relación directa entre la velocidad al caminar y el riesgo de mortalidad: por cada 0.1 metros por segundo que aumenta el ritmo de la marcha de una persona, el riesgo de muerte se reduce cerca de un 12%. Es decir, no solo importa que camines — importa qué tan rápido lo haces.
+
+Otro hallazgo de este mismo año refuerza la idea: apenas 15 minutos diarios de caminata rápida ya se asocian con una reducción del riesgo de mortalidad de hasta un 20%, y caminar con intensidad durante al menos media hora mejora la función metabólica, reduce la inflamación y ayuda a retrasar el deterioro cognitivo.
+
+## El respaldo de décadas de investigación en Harvard
+
+La velocidad al caminar no es una moda pasajera de este año. Investigadores de Harvard, cuyos hallazgos se difundieron ampliamente en medios en 2026, llevan décadas vinculando el ejercicio cardiovascular constante — caminar incluido — con una esperanza de vida más larga. Lo nuevo es que ahora hay más evidencia de que la intensidad (el ritmo, no solo la distancia) es una variable clave que antes se subestimaba.
+
+## ¿Cuántos pasos necesitas realmente?
+
+Durante años la cifra de referencia fueron los famosos 10,000 pasos diarios — un número que en realidad nació de una campaña de marketing japonesa de los años 60, no de un estudio científico. La evidencia divulgada en 2026 confirma lo que investigaciones recientes ya venían mostrando: cifras bastante más alcanzables, cercanas a los 7,000-8,000 pasos diarios, ya se asocian con reducciones significativas en el riesgo de mortalidad. Más pasos siguen sumando beneficios, pero el salto más grande ocurre al pasar de una vida sedentaria a una moderadamente activa — no al perseguir un número redondo.
+
+## Por qué la velocidad importa más de lo que crees
+
+**Refleja tu condición cardiovascular** — caminar rápido exige más de tu corazón y tus pulmones que caminar despacio, así que sostenerlo es en sí mismo una señal de buena salud.
+
+**Fortalece músculo y equilibrio** — un paso más ágil requiere más fuerza en piernas y core, dos factores que se relacionan directamente con menor riesgo de caídas conforme se envejece.
+
+**Es más fácil de sostener que correr** — para la mayoría de las personas, caminar rápido es una intensidad que se puede mantener sin lesionarse, lo que la vuelve un hábito realista a largo plazo — a diferencia de rutinas intensas que muchos abandonan a las pocas semanas.
+
+## Cómo aplicarlo en tu día a día
+
+No necesitas un plan complicado. Camina rápido al ir por el pan, deja el coche un poco más lejos, sube por las escaleras en vez del elevador, o dedica 20-30 minutos seguidos a una caminata a paso firme — donde te cueste un poco sostener una conversación. La clave es la intensidad, no la duración extrema.
+
+Y si lo que te ha faltado hasta ahora es tiempo — porque llegas del trabajo sin ganas de cocinar ni de planear qué comer — resolver esa parte de tu semana con un plan de comidas listo deja más espacio real para lo que sí mueve la aguja: salir a caminar, aunque sea 20 minutos, todos los días.`,
+    sources: [
+      { name: "Infobae — Caminar rápido después de los 40 puede sumar años a la vida, según la ciencia (2026)", url: "https://www.infobae.com/salud/ciencia/2026/05/31/caminar-rapido-despues-de-los-40-puede-sumar-anos-a-la-vida-segun-la-ciencia/" },
+      { name: "National Geographic — El hábito de ejercicio que los científicos de Harvard vinculan con una vida más larga (2026)", url: "https://www.nationalgeographicla.com/salud/2026/02/el-habito-de-ejercicio-que-los-cientificos-de-harvard-vinculan-con-una-vida-mas-larga" },
+      { name: "Canal26 — El secreto de la longevidad: la OMS reveló cuántos pasos hay que caminar por día para vivir más años (2026)", url: "https://www.canal26.com/bienestar-y-salud/2026/05/25/el-secreto-de-la-longevidad-la-oms-revelo-cuantos-pasos-hay-que-caminar-por-dia-para-vivir-mas-anos/" },
+    ],
+  },
+  {
     slug: "tipos-de-pan",
     title: "Tipos de pan: del más saludable al menos nutritivo",
     excerpt:
