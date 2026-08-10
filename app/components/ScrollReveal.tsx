@@ -4,7 +4,8 @@ import { useEffect } from "react";
 
 export default function ScrollReveal() {
   useEffect(() => {
-    const els = Array.from(document.querySelectorAll("[data-reveal]"));
+    const els = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
+    if (els.length === 0) return;
 
     // Mark elements already in viewport BEFORE enabling the CSS,
     // so they never flash hidden on page load.
@@ -32,7 +33,19 @@ export default function ScrollReveal() {
     );
 
     els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
+
+    // Red de seguridad: si algun elemento nunca dispara la interseccion
+    // (layout shift, timing de hidratacion, etc.), no debe quedar oculto
+    // para siempre — mejor mostrarlo sin animacion que perder el contenido.
+    const fallback = window.setTimeout(() => {
+      els.forEach((el) => el.classList.add("is-visible"));
+      io.disconnect();
+    }, 2000);
+
+    return () => {
+      io.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   return null;
