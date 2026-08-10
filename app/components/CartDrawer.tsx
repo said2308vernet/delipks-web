@@ -168,12 +168,13 @@ export default function CartDrawer() {
                 <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
               </svg>
               <p className="text-sm text-muted">Tu carrito está vacío</p>
-              <button
+              <a
+                href="/#planes"
                 onClick={closeCart}
                 className="text-[13px] font-medium text-primary underline underline-offset-2"
               >
                 Ver planes
-              </button>
+              </a>
             </div>
           )}
         </div>
