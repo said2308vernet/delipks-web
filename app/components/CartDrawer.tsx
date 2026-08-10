@@ -248,7 +248,12 @@ export default function CartDrawer() {
 
               {/* Billing toggle */}
               <div>
-                <p className="mb-2 text-[13px] font-medium text-ink">Tipo de compra</p>
+                <div className="mb-2 flex items-center justify-between gap-2">
+                  <p className="text-[13px] font-medium text-ink">Tipo de compra</p>
+                  <p className="text-[12px] text-muted">
+                    {plan.label} · {plan.includes.join(", ")}
+                  </p>
+                </div>
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
