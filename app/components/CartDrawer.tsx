@@ -67,6 +67,11 @@ export default function CartDrawer() {
       ? plan?.priceSubscription
       : plan?.priceOneTime
     : null;
+  // Lo que realmente se cobra: la suscripcion es un pago unico por las 4
+  // semanas completas, no $price/semana -- mostrar solo el precio semanal
+  // aqui puede dar a entender que se cobra menos de lo que en realidad se
+  // le va a cargar en PayPal.
+  const total = price !== undefined && price !== null ? (cart?.billing === "subscription" ? price * 4 : price) : null;
 
   return (
     <>
@@ -264,7 +269,7 @@ export default function CartDrawer() {
                         : "border-border text-muted hover:border-primary/40"
                     }`}
                   >
-                    Suscripción
+                    Suscripción · 4 semanas
                     <span className={`ml-1 text-[11px] ${cart.billing === "subscription" ? "text-white/80" : "text-muted"}`}>
                       −10%
                     </span>
@@ -351,13 +356,17 @@ export default function CartDrawer() {
         {cart && plan && price !== undefined && !paidOrderId && (
           <div className="border-t border-border p-6">
             <div className="mb-4 flex items-baseline justify-between">
-              <p className="text-[13px] text-muted">
-                {cart.billing === "subscription" ? "Suscripción · paquete 4 semanas" : "Total por 1 semana"}
-              </p>
-              <p className="font-display text-2xl font-semibold text-ink">
-                ${price?.toLocaleString("es-MX")}
-                <span className="ml-1 text-[13px] font-normal text-muted">/sem</span>
-              </p>
+              <div>
+                <p className="text-[13px] text-muted">
+                  {cart.billing === "subscription" ? "Total a pagar hoy · 4 semanas" : "Total a pagar hoy · 1 semana"}
+                </p>
+                {cart.billing === "subscription" && (
+                  <p className="text-[11px] text-muted">
+                    ${price?.toLocaleString("es-MX")}/semana × 4 semanas
+                  </p>
+                )}
+              </div>
+              <p className="font-display text-2xl font-semibold text-ink">${total?.toLocaleString("es-MX")}</p>
             </div>
 
             <a
