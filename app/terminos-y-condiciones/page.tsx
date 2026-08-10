@@ -61,7 +61,7 @@ export default function TerminosCondiciones() {
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">6. Suscripciones</h2>
           <p>
-            Los planes de suscripción se renuevan semanalmente de forma automática hasta que el cliente solicite su cancelación. Para cancelar o pausar una suscripción, el cliente debe notificarlo por WhatsApp con al menos 48 horas de anticipación a la fecha de preparación del siguiente pedido. No se generarán cargos por cancelación. Los pagos realizados por semanas ya preparadas o en proceso de preparación no son reembolsables.
+            El plan de suscripción consiste en un pago único por adelantado que cubre 4 semanas de servicio. No se realizan cargos automáticos ni recurrentes: al finalizar las 4 semanas pagadas, el servicio se detiene y, si el cliente desea continuar, deberá realizar un nuevo pago para el siguiente paquete de 4 semanas. Una vez realizado el pago, el paquete de 4 semanas no es reembolsable, incluyendo las semanas que aún no hayan entrado en preparación, salvo casos excepcionales evaluados a criterio de Delipks. Para pausar o detener las entregas restantes de un paquete ya pagado, el cliente debe notificarlo por WhatsApp con al menos 48 horas de anticipación a la fecha de preparación del siguiente pedido.
           </p>
         </section>
 

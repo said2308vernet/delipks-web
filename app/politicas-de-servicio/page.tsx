@@ -57,14 +57,14 @@ export default function PoliticasServicio() {
             <li><strong className="text-ink">Plan Completo:</strong> 5 desayunos + 5 comidas + 5 cenas de lunes a viernes</li>
           </ul>
           <p className="mt-3">
-            Los planes pueden contratarse como compra puntual (una sola semana) o como suscripción semanal recurrente con descuento. Los menús pueden variar cada semana según disponibilidad de ingredientes y temporada.
+            Los planes pueden contratarse como compra puntual (una sola semana) o como paquete de suscripción de 4 semanas con descuento, pagado por adelantado en un solo cargo. La suscripción no se renueva ni se cobra automáticamente: al finalizar las 4 semanas pagadas, el cliente debe realizar un nuevo pago si desea continuar. Los menús pueden variar cada semana según disponibilidad de ingredientes y temporada.
           </p>
         </section>
 
         <section>
           <h2 className="mb-2 font-display text-lg font-semibold text-ink">6. Cancelación de suscripción</h2>
           <p>
-            Puedes cancelar o pausar tu suscripción en cualquier momento, sin penalización, notificándolo por WhatsApp con un mínimo de 48 horas de anticipación a la fecha de preparación del siguiente pedido. Si la notificación se recibe después de este plazo y el pedido ya se encuentra en preparación, el cobro de esa semana no será reembolsable. Al cancelar, tu suscripción se desactiva al finalizar la semana pagada.
+            El paquete de 4 semanas se paga por adelantado en un solo cargo y no se renueva automáticamente: al terminar las 4 semanas, el servicio se detiene por sí solo. Si deseas detener las entregas restantes antes de que concluya el paquete ya pagado, notifícalo por WhatsApp con un mínimo de 48 horas de anticipación a la fecha de preparación del siguiente pedido. El pago del paquete de 4 semanas no es reembolsable una vez realizado, incluyendo las semanas restantes no preparadas.
           </p>
         </section>
 

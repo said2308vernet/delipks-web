@@ -15,7 +15,7 @@ Preparamos la alimentación completa de lunes a viernes (desayunos, comidas y ce
 **Sitio web:** www.delipks.com  
 **Lanzamiento oficial:** 1 de agosto de 2026  
 **Zona de entrega:** Puebla de Zaragoza y zona metropolitana  
-**Modelo:** suscripción semanal renovable  
+**Modelo:** compra puntual (1 semana) o paquete de suscripción (4 semanas, pago único por adelantado — no hay cobro automático recurrente; al terminar las 4 semanas el cliente debe volver a pagar si quiere continuar)  
 **Stack:** Next.js + Vercel + GitHub
 
 ---
