@@ -9,6 +9,13 @@ type Props = {
   billing: Billing;
   nombre: string;
   correo: string;
+  telefono: string;
+  calle: string;
+  numero: string;
+  colonia: string;
+  codigoPostal: string;
+  referencia: string;
+  cobertura: "covered" | "uncovered";
   nota: string;
   onSuccess: (orderId: string) => void;
 };
@@ -23,18 +30,58 @@ declare global {
 
 const PAYPAL_CLIENT_ID = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
 
-export default function PaypalButton({ planId, billing, nombre, correo, nota, onSuccess }: Props) {
+export default function PaypalButton({
+  planId,
+  billing,
+  nombre,
+  correo,
+  telefono,
+  calle,
+  numero,
+  colonia,
+  codigoPostal,
+  referencia,
+  cobertura,
+  nota,
+  onSuccess,
+}: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   // Refs para que el widget de PayPal no se destruya/recree en cada tecleo
   // (nota, etc.); createOrder siempre lee el valor más reciente al hacer clic.
-  const detailsRef = useRef({ planId, billing, nombre, correo, nota });
+  const detailsRef = useRef({
+    planId,
+    billing,
+    nombre,
+    correo,
+    telefono,
+    calle,
+    numero,
+    colonia,
+    codigoPostal,
+    referencia,
+    cobertura,
+    nota,
+  });
   const onSuccessRef = useRef(onSuccess);
 
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    detailsRef.current = { planId, billing, nombre, correo, nota };
+    detailsRef.current = {
+      planId,
+      billing,
+      nombre,
+      correo,
+      telefono,
+      calle,
+      numero,
+      colonia,
+      codigoPostal,
+      referencia,
+      cobertura,
+      nota,
+    };
     onSuccessRef.current = onSuccess;
   });
 
@@ -50,11 +97,11 @@ export default function PaypalButton({ planId, billing, nombre, correo, nota, on
         .Buttons({
           style: { layout: "vertical", color: "blue", shape: "pill", label: "paypal" },
           createOrder: async () => {
-            const { planId, billing, nombre, correo, nota } = detailsRef.current;
+            const body = detailsRef.current;
             const res = await fetch("/api/paypal/create-order", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ planId, billing, nombre, correo, nota }),
+              body: JSON.stringify(body),
             });
             const data = await res.json();
             if (!res.ok) throw new Error(data.error || "No se pudo crear la orden.");

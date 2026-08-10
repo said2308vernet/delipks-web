@@ -1,5 +1,6 @@
 import { capturePaypalOrder } from "@/lib/paypal";
 import { sql } from "@/lib/db";
+import { procesarPagoCapturado } from "@/lib/pedidos";
 
 export async function POST(request: Request) {
   const body = await request.json();
@@ -22,6 +23,8 @@ export async function POST(request: Request) {
   if (!capturado) {
     return Response.json({ error: "El pago no se completó.", status: capture.status }, { status: 402 });
   }
+
+  await procesarPagoCapturado(orderId);
 
   return Response.json({ status: capture.status });
 }

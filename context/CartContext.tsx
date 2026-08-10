@@ -6,13 +6,25 @@ import { plans, site } from "@/lib/content";
 
 type Billing = "subscription" | "oneTime";
 
+type Direccion = {
+  calle: string;
+  numero: string;
+  colonia: string;
+  codigoPostal: string;
+  referencia: string;
+};
+
 type CartItem = {
   planId: string;
   billing: Billing;
   note: string;
   nombre: string;
   correo: string;
+  telefono: string;
+  direccion: Direccion;
 };
+
+const DIRECCION_VACIA: Direccion = { calle: "", numero: "", colonia: "", codigoPostal: "", referencia: "" };
 
 type CartContextType = {
   cart: CartItem | null;
@@ -21,6 +33,8 @@ type CartContextType = {
   updateBilling: (billing: Billing) => void;
   updateNote: (note: string) => void;
   setIdentidad: (nombre: string, correo: string) => void;
+  updateTelefono: (telefono: string) => void;
+  updateDireccion: (campo: keyof Direccion, valor: string) => void;
   openCart: () => void;
   closeCart: () => void;
   clearCart: () => void;
@@ -35,7 +49,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const addToCart = (planId: string, billing: Billing) => {
-    setCart({ planId, billing, note: "", nombre: "", correo: "" });
+    setCart({ planId, billing, note: "", nombre: "", correo: "", telefono: "", direccion: DIRECCION_VACIA });
     setIsOpen(true);
   };
 
@@ -47,6 +61,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const setIdentidad = (nombre: string, correo: string) =>
     setCart((c) => (c ? { ...c, nombre, correo } : c));
+
+  const updateTelefono = (telefono: string) =>
+    setCart((c) => (c ? { ...c, telefono } : c));
+
+  const updateDireccion = (campo: keyof Direccion, valor: string) =>
+    setCart((c) => (c ? { ...c, direccion: { ...c.direccion, [campo]: valor } } : c));
 
   const whatsAppUrl = () => {
     if (!cart) return "";
@@ -69,7 +89,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
     if (cart.nombre) lines.push(`Nombre: ${cart.nombre}`);
     if (cart.correo) lines.push(`Correo: ${cart.correo}`);
-    if (cart.nombre || cart.correo) lines.push("");
+    if (cart.telefono) lines.push(`Teléfono: ${cart.telefono}`);
+    const { calle, numero, colonia, codigoPostal } = cart.direccion;
+    if (calle) lines.push(`Dirección: ${calle} ${numero}, ${colonia}, CP ${codigoPostal}`);
+    if (cart.nombre || cart.correo || cart.telefono || calle) lines.push("");
 
     lines.push(
       `Plan: *${plan.label}* — ${plan.totalMeals} comidas`,
@@ -107,7 +130,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
     if (cart.nombre) lines.push(`Nombre: ${cart.nombre}`);
     if (cart.correo) lines.push(`Correo: ${cart.correo}`);
-    if (cart.nombre || cart.correo) lines.push("");
+    if (cart.telefono) lines.push(`Teléfono: ${cart.telefono}`);
+    const { calle, numero, colonia, codigoPostal } = cart.direccion;
+    if (calle) lines.push(`Dirección: ${calle} ${numero}, ${colonia}, CP ${codigoPostal}`);
+    if (cart.nombre || cart.correo || cart.telefono || calle) lines.push("");
 
     lines.push(
       `Plan: *${plan.label}* — ${plan.totalMeals} comidas`,
@@ -135,6 +161,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
         updateBilling,
         updateNote,
         setIdentidad,
+        updateTelefono,
+        updateDireccion,
         openCart: () => setIsOpen(true),
         closeCart: () => setIsOpen(false),
         clearCart: () => {

@@ -1,10 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { plans } from "@/lib/content";
 import GoogleIdentityButton from "./GoogleIdentityButton";
 import PaypalButton from "./PaypalButton";
+
+type Cobertura = "verificando" | "covered" | "uncovered" | "invalid";
 
 export default function CartDrawer() {
   const {
@@ -14,6 +17,9 @@ export default function CartDrawer() {
     clearCart,
     updateBilling,
     updateNote,
+    setIdentidad,
+    updateTelefono,
+    updateDireccion,
     whatsAppUrl,
     whatsAppUrlPaid,
   } = useCart();
@@ -21,6 +27,39 @@ export default function CartDrawer() {
   // nuevo (otro plan), deja de contar como "pagado" sin necesitar un efecto.
   const [paidOrder, setPaidOrder] = useState<{ planId: string; orderId: string } | null>(null);
   const paidOrderId = paidOrder && paidOrder.planId === cart?.planId ? paidOrder.orderId : null;
+
+  // "resultado" y "continuarSinCobertura" van con el CP al que corresponden:
+  // si el cliente cambia el CP, el resultado/checkbox anterior deja de
+  // aplicar automáticamente (comparando cp === cp), sin necesitar un efecto
+  // aparte solo para resetear estado.
+  const [resultado, setResultado] = useState<{ cp: string; valor: "covered" | "uncovered" | "invalid" } | null>(null);
+  const [continuarSinCobertura, setContinuarSinCobertura] = useState<{ cp: string; checked: boolean }>({
+    cp: "",
+    checked: false,
+  });
+  const cp = cart?.direccion.codigoPostal ?? "";
+  const cpValido = /^\d{5}$/.test(cp);
+
+  useEffect(() => {
+    if (!cpValido) return;
+    let cancelado = false;
+    const timeout = setTimeout(() => {
+      fetch(`/api/coverage?cp=${cp}`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (!cancelado) setResultado({ cp, valor: data.result === "covered" ? "covered" : "uncovered" });
+        })
+        .catch(() => {
+          if (!cancelado) setResultado(null);
+        });
+    }, 400);
+    return () => {
+      cancelado = true;
+      clearTimeout(timeout);
+    };
+  }, [cp, cpValido]);
+
+  const cobertura: Cobertura = !cpValido ? "invalid" : resultado?.cp === cp ? resultado.valor : "verificando";
 
   const plan = plans.find((p) => p.id === cart?.planId);
   const price = cart
@@ -92,20 +131,118 @@ export default function CartDrawer() {
                 )}
               </div>
 
-              {/* Identidad con Google */}
-              <div>
-                {cart.nombre || cart.correo ? (
-                  <div className="flex items-center gap-2 rounded-lg border border-primary/20 bg-primary/5 px-3.5 py-2.5 text-[13px] text-ink">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-4 w-4 shrink-0 text-primary">
+              {/* Identidad */}
+              <div className="flex flex-col gap-3">
+                <GoogleIdentityButton />
+
+                <div>
+                  <label className="mb-1.5 block text-[13px] font-medium text-ink">Nombre</label>
+                  <input
+                    type="text"
+                    value={cart.nombre}
+                    onChange={(e) => setIdentidad(e.target.value, cart.correo)}
+                    placeholder="Tu nombre completo"
+                    className="w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label className="mb-1.5 block text-[13px] font-medium text-ink">Correo</label>
+                  <input
+                    type="email"
+                    value={cart.correo}
+                    onChange={(e) => setIdentidad(cart.nombre, e.target.value)}
+                    placeholder="tu@correo.com"
+                    className="w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <label className="mb-1.5 block text-[13px] font-medium text-ink">Teléfono celular (WhatsApp)</label>
+                  <input
+                    type="tel"
+                    value={cart.telefono}
+                    onChange={(e) => updateTelefono(e.target.value)}
+                    placeholder="222 123 4567"
+                    className="w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                </div>
+              </div>
+
+              {/* Dirección de entrega */}
+              <div className="flex flex-col gap-3">
+                <p className="text-[13px] font-medium text-ink">Dirección de entrega</p>
+                <div className="grid grid-cols-3 gap-2">
+                  <input
+                    type="text"
+                    value={cart.direccion.calle}
+                    onChange={(e) => updateDireccion("calle", e.target.value)}
+                    placeholder="Calle"
+                    className="col-span-2 rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                  <input
+                    type="text"
+                    value={cart.direccion.numero}
+                    onChange={(e) => updateDireccion("numero", e.target.value)}
+                    placeholder="Número"
+                    className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    type="text"
+                    value={cart.direccion.colonia}
+                    onChange={(e) => updateDireccion("colonia", e.target.value)}
+                    placeholder="Colonia"
+                    className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    maxLength={5}
+                    value={cart.direccion.codigoPostal}
+                    onChange={(e) => updateDireccion("codigoPostal", e.target.value.replace(/\D/g, ""))}
+                    placeholder="Código postal"
+                    className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                  />
+                </div>
+                <input
+                  type="text"
+                  value={cart.direccion.referencia}
+                  onChange={(e) => updateDireccion("referencia", e.target.value)}
+                  placeholder="Referencia (opcional): color de fachada, entre calles..."
+                  className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-[13px] text-ink outline-none transition-colors placeholder:text-muted/50 focus:border-primary"
+                />
+
+                {cobertura === "verificando" && (
+                  <p className="text-[12px] text-muted">Verificando cobertura...</p>
+                )}
+                {cobertura === "invalid" && (
+                  <p className="text-[12px] text-muted">Ingresa un código postal válido de 5 dígitos.</p>
+                )}
+                {cobertura === "covered" && (
+                  <p className="flex items-center gap-1.5 text-[12px] font-medium text-primary">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-3.5 w-3.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>
-                      {cart.nombre || cart.correo}
-                      {cart.nombre && cart.correo && <span className="text-muted"> · {cart.correo}</span>}
-                    </span>
+                    ¡Sí llegamos a tu zona!
+                  </p>
+                )}
+                {cobertura === "uncovered" && (
+                  <div className="rounded-lg border border-amber-200 bg-amber-50 p-3">
+                    <p className="text-[12px] text-amber-800">
+                      Por ahora no tenemos cobertura confirmada en ese código postal. Podemos contactarte para
+                      confirmar antes de tu primera entrega.
+                    </p>
+                    <label className="mt-2 flex items-center gap-2 text-[12px] text-amber-900">
+                      <input
+                        type="checkbox"
+                        checked={continuarSinCobertura.cp === cp && continuarSinCobertura.checked}
+                        onChange={(e) => setContinuarSinCobertura({ cp, checked: e.target.checked })}
+                      />
+                      Quiero continuar de todas formas
+                    </label>
                   </div>
-                ) : (
-                  <GoogleIdentityButton />
                 )}
               </div>
 
@@ -168,13 +305,13 @@ export default function CartDrawer() {
                 <path d="M3 6h18M16 10a4 4 0 0 1-8 0" />
               </svg>
               <p className="text-sm text-muted">Tu carrito está vacío</p>
-              <a
+              <Link
                 href="/#planes"
                 onClick={closeCart}
                 className="text-[13px] font-medium text-primary underline underline-offset-2"
               >
                 Ver planes
-              </a>
+              </Link>
             </div>
           )}
         </div>
@@ -242,14 +379,46 @@ export default function CartDrawer() {
               <span className="h-px flex-1 bg-border" />
             </div>
 
-            <PaypalButton
-              planId={plan.id}
-              billing={cart.billing}
-              nombre={cart.nombre}
-              correo={cart.correo}
-              nota={cart.note}
-              onSuccess={(orderId) => setPaidOrder({ planId: cart.planId, orderId })}
-            />
+            {(() => {
+              const { calle, numero, colonia, codigoPostal, referencia } = cart.direccion;
+              const datosCompletos =
+                cart.nombre.trim() && cart.correo.trim() && cart.telefono.trim() && calle.trim() && numero.trim() && colonia.trim();
+              const coberturaLista =
+                cobertura === "covered" ||
+                (cobertura === "uncovered" && continuarSinCobertura.cp === cp && continuarSinCobertura.checked);
+
+              if (!datosCompletos) {
+                return (
+                  <p className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-center text-[12px] text-muted">
+                    Completa tus datos de contacto y dirección arriba para pagar con PayPal.
+                  </p>
+                );
+              }
+              if (!coberturaLista) {
+                return (
+                  <p className="rounded-lg border border-border bg-bg px-3.5 py-2.5 text-center text-[12px] text-muted">
+                    Confirma tu código postal arriba para pagar con PayPal.
+                  </p>
+                );
+              }
+              return (
+                <PaypalButton
+                  planId={plan.id}
+                  billing={cart.billing}
+                  nombre={cart.nombre}
+                  correo={cart.correo}
+                  telefono={cart.telefono}
+                  calle={calle}
+                  numero={numero}
+                  colonia={colonia}
+                  codigoPostal={codigoPostal}
+                  referencia={referencia}
+                  cobertura={cobertura === "covered" ? "covered" : "uncovered"}
+                  nota={cart.note}
+                  onSuccess={(orderId) => setPaidOrder({ planId: cart.planId, orderId })}
+                />
+              );
+            })()}
           </div>
         )}
       </div>

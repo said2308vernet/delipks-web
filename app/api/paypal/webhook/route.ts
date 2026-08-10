@@ -1,5 +1,6 @@
 import { verifyPaypalWebhookSignature } from "@/lib/paypal";
 import { sql } from "@/lib/db";
+import { procesarPagoCapturado } from "@/lib/pedidos";
 
 // Respaldo de confirmación: si el navegador del cliente se cierra justo
 // después de aprobar el pago (antes de que /api/paypal/capture-order
@@ -37,6 +38,7 @@ export async function POST(request: Request) {
         set estado = 'capturado', paypal_payload = ${JSON.stringify(body)}, capturado_at = now()
         where paypal_order_id = ${orderId} and estado != 'capturado'
       `;
+      await procesarPagoCapturado(orderId);
     }
   } else if (eventType === "PAYMENT.CAPTURE.DENIED") {
     const orderId = resource.supplementary_data?.related_ids?.order_id;
