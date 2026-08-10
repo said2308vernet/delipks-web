@@ -25,6 +25,7 @@ type CartContextType = {
   closeCart: () => void;
   clearCart: () => void;
   whatsAppUrl: () => string;
+  whatsAppUrlPaid: (paypalOrderId: string) => string;
 };
 
 const CartContext = createContext<CartContextType | null>(null);
@@ -89,6 +90,42 @@ export function CartProvider({ children }: { children: ReactNode }) {
     )}`;
   };
 
+  const whatsAppUrlPaid = (paypalOrderId: string) => {
+    if (!cart) return "";
+    const plan = plans.find((p) => p.id === cart.planId);
+    if (!plan) return "";
+
+    const billingLabel =
+      cart.billing === "subscription"
+        ? "Suscripción — paquete de 4 semanas"
+        : "Compra por 1 semana";
+
+    const lines = [
+      "Hola, ya pagué mi pedido en Delipks por PayPal ✅",
+      "",
+    ];
+
+    if (cart.nombre) lines.push(`👤 ${cart.nombre}`);
+    if (cart.correo) lines.push(`✉️ ${cart.correo}`);
+    if (cart.nombre || cart.correo) lines.push("");
+
+    lines.push(
+      `📦 ${plan.label} — ${plan.totalMeals} comidas`,
+      `📅 ${billingLabel}`,
+      `🔖 Orden PayPal: ${paypalOrderId}`,
+    );
+
+    if (cart.note.trim()) {
+      lines.push("", `📝 ${cart.note}`);
+    }
+
+    lines.push("", "¿Podemos coordinar mi primera entrega?");
+
+    return `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(
+      lines.join("\n")
+    )}`;
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -105,6 +142,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
           setIsOpen(false);
         },
         whatsAppUrl,
+        whatsAppUrlPaid,
       }}
     >
       {children}

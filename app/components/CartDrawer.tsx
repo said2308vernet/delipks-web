@@ -1,12 +1,26 @@
 "use client";
 
+import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { plans } from "@/lib/content";
 import GoogleIdentityButton from "./GoogleIdentityButton";
+import PaypalButton from "./PaypalButton";
 
 export default function CartDrawer() {
-  const { cart, isOpen, closeCart, clearCart, updateBilling, updateNote, whatsAppUrl } =
-    useCart();
+  const {
+    cart,
+    isOpen,
+    closeCart,
+    clearCart,
+    updateBilling,
+    updateNote,
+    whatsAppUrl,
+    whatsAppUrlPaid,
+  } = useCart();
+  // Se guarda junto con el planId al que pertenece: si se agrega un pedido
+  // nuevo (otro plan), deja de contar como "pagado" sin necesitar un efecto.
+  const [paidOrder, setPaidOrder] = useState<{ planId: string; orderId: string } | null>(null);
+  const paidOrderId = paidOrder && paidOrder.planId === cart?.planId ? paidOrder.orderId : null;
 
   const plan = plans.find((p) => p.id === cart?.planId);
   const price = cart
@@ -165,11 +179,37 @@ export default function CartDrawer() {
         </div>
 
         {/* Footer */}
-        {cart && plan && price !== undefined && (
+        {cart && plan && price !== undefined && paidOrderId && (
+          <div className="border-t border-border p-6">
+            <div className="mb-4 flex flex-col items-center gap-2 text-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-8 w-8 text-primary">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <p className="text-sm font-semibold text-ink">¡Pago recibido!</p>
+              <p className="text-[12px] text-muted">Ahora coordinemos tu primera entrega por WhatsApp.</p>
+            </div>
+
+            <a
+              href={whatsAppUrlPaid(paidOrderId)}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={clearCart}
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-3.5 text-sm font-semibold text-bg transition-colors hover:bg-primary-dark"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347Z" />
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2Zm0 18a7.96 7.96 0 0 1-4.106-1.138l-.294-.176-2.866.852.852-2.866-.176-.294A7.96 7.96 0 0 1 4 12c0-4.411 3.589-8 8-8s8 3.589 8 8-3.589 8-8 8Z" />
+              </svg>
+              Confirmar entrega por WhatsApp
+            </a>
+          </div>
+        )}
+
+        {cart && plan && price !== undefined && !paidOrderId && (
           <div className="border-t border-border p-6">
             <div className="mb-4 flex items-baseline justify-between">
               <p className="text-[13px] text-muted">
-                {cart.billing === "subscription" ? "Suscripción mensual · 4 semanas" : "Total por 1 semana"}
+                {cart.billing === "subscription" ? "Suscripción · paquete 4 semanas" : "Total por 1 semana"}
               </p>
               <p className="font-display text-2xl font-semibold text-ink">
                 ${price?.toLocaleString("es-MX")}
@@ -191,9 +231,24 @@ export default function CartDrawer() {
               Confirmar por WhatsApp
             </a>
 
-            <p className="mt-2 text-center text-[11px] text-muted">
+            <p className="mb-1 mt-2 text-center text-[11px] text-muted">
               Confirmamos tu pedido al recibir el pago · Te contactamos en minutos
             </p>
+
+            <div className="my-3 flex items-center gap-3 text-[11px] text-muted">
+              <span className="h-px flex-1 bg-border" />
+              o paga directo
+              <span className="h-px flex-1 bg-border" />
+            </div>
+
+            <PaypalButton
+              planId={plan.id}
+              billing={cart.billing}
+              nombre={cart.nombre}
+              correo={cart.correo}
+              nota={cart.note}
+              onSuccess={(orderId) => setPaidOrder({ planId: cart.planId, orderId })}
+            />
           </div>
         )}
       </div>
