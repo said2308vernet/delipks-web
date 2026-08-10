@@ -63,24 +63,24 @@ export function CartProvider({ children }: { children: ReactNode }) {
         : "Compra por 1 semana";
 
     const lines = [
-      "Hola, quiero hacer mi pedido en Delipks 🌿",
+      "Hola, quiero hacer mi pedido en Delipks",
       "",
     ];
 
-    if (cart.nombre) lines.push(`👤 ${cart.nombre}`);
-    if (cart.correo) lines.push(`✉️ ${cart.correo}`);
+    if (cart.nombre) lines.push(`Nombre: ${cart.nombre}`);
+    if (cart.correo) lines.push(`Correo: ${cart.correo}`);
     if (cart.nombre || cart.correo) lines.push("");
 
     lines.push(
-      `📦 ${plan.label} — ${plan.totalMeals} comidas`,
-      ...plan.includes.map((i) => `   ✓ ${i}`),
+      `Plan: *${plan.label}* — ${plan.totalMeals} comidas`,
+      ...plan.includes.map((i) => `  - ${i}`),
       "",
-      `📅 ${billingLabel}`,
-      `💰 $${price.toLocaleString("es-MX")}/semana`,
+      `Modalidad: ${billingLabel}`,
+      `Precio: $${price.toLocaleString("es-MX")}/semana`,
     );
 
     if (cart.note.trim()) {
-      lines.push("", `📝 ${cart.note}`);
+      lines.push("", `Nota: ${cart.note}`);
     }
 
     lines.push("", "¿Cómo procedo con el pago y la primera entrega?");
@@ -101,22 +101,22 @@ export function CartProvider({ children }: { children: ReactNode }) {
         : "Compra por 1 semana";
 
     const lines = [
-      "Hola, ya pagué mi pedido en Delipks por PayPal ✅",
+      "Hola, ya pagué mi pedido en Delipks por PayPal",
       "",
     ];
 
-    if (cart.nombre) lines.push(`👤 ${cart.nombre}`);
-    if (cart.correo) lines.push(`✉️ ${cart.correo}`);
+    if (cart.nombre) lines.push(`Nombre: ${cart.nombre}`);
+    if (cart.correo) lines.push(`Correo: ${cart.correo}`);
     if (cart.nombre || cart.correo) lines.push("");
 
     lines.push(
-      `📦 ${plan.label} — ${plan.totalMeals} comidas`,
-      `📅 ${billingLabel}`,
-      `🔖 Orden PayPal: ${paypalOrderId}`,
+      `Plan: *${plan.label}* — ${plan.totalMeals} comidas`,
+      `Modalidad: ${billingLabel}`,
+      `Orden PayPal: ${paypalOrderId}`,
     );
 
     if (cart.note.trim()) {
-      lines.push("", `📝 ${cart.note}`);
+      lines.push("", `Nota: ${cart.note}`);
     }
 
     lines.push("", "¿Podemos coordinar mi primera entrega?");
