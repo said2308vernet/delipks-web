@@ -37,12 +37,18 @@ export async function POST(request: Request) {
   // "subscription" = paquete de 4 semanas pagado por adelantado (pago único, no recurrente).
   const semanas = billing === "subscription" ? 4 : 1;
   const precioSemanal = billing === "subscription" ? plan.priceSubscription : plan.priceOneTime;
-  const monto = (precioSemanal * semanas).toFixed(2);
+
+  // TEMPORAL: prueba puntual de captura real en PayPal Live con monto mínimo.
+  // Quitar este bloque en cuanto se confirme que la captura funcionó (ver
+  // plan_integracion_paypal en memoria).
+  const pruebaToken = texto(body.pruebaToken, 100);
+  const esPrueba = pruebaToken === "delipks-prueba-paypal-live-2026-08-12";
+  const monto = esPrueba ? "20.00" : (precioSemanal * semanas).toFixed(2);
 
   const order = await createPaypalOrder({
     amount: monto,
     currency: "MXN",
-    description: `Delipks — ${plan.label} · ${semanas === 4 ? "paquete 4 semanas" : "1 semana"}`,
+    description: `Delipks — ${esPrueba ? "PRUEBA $20 — " : ""}${plan.label} · ${semanas === 4 ? "paquete 4 semanas" : "1 semana"}`,
   });
 
   await sql`
