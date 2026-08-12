@@ -1,5 +1,6 @@
 import "server-only";
 import { sql } from "@/lib/db";
+import { plans } from "@/lib/content";
 
 // Mismas reglas de semana que delipks-admin (app/(panel)/clientes/semanas.ts):
 // cobertura lunes-domingo aunque las comidas sean lunes-viernes.
@@ -105,6 +106,7 @@ type PedidoPaypalRow = {
   id: string;
   plan_id: string;
   semanas: number;
+  monto: string;
   nombre: string | null;
   correo: string | null;
   telefono: string | null;
@@ -144,4 +146,12 @@ export async function procesarPagoCapturado(paypalOrderId: string): Promise<void
   });
 
   await sql`update pedidos_paypal set cliente_id = ${clienteId} where id = ${pedido.id}`;
+
+  const plan = plans.find((p) => p.id === pedido.plan_id);
+  const categoria = pedido.semanas === 4 ? "Ventas de paquetes (suscripción)" : "Ventas puntuales";
+  const concepto = `Pago PayPal — ${plan?.label ?? pedido.plan_id} · ${pedido.semanas === 4 ? "paquete 4 semanas" : "1 semana"}`;
+  await sql`
+    insert into movimientos_financieros (tipo, concepto, categoria, monto, notas)
+    values ('ingreso', ${concepto}, ${categoria}, ${pedido.monto}, ${`Orden PayPal ${pedido.paypal_order_id}`})
+  `;
 }
