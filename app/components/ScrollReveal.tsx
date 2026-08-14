@@ -1,8 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
     const els = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
     if (els.length === 0) return;
@@ -46,7 +49,12 @@ export default function ScrollReveal() {
       io.disconnect();
       window.clearTimeout(fallback);
     };
-  }, []);
+    // Se re-ejecuta en cada cambio de ruta: al navegar del lado del cliente
+    // (ej. /blog -> /), este efecto no se remonta solo porque ScrollReveal
+    // vive en el layout raiz -- sin "pathname" en las dependencias, las
+    // secciones [data-reveal] de la pagina nueva nunca se registran y
+    // quedan invisibles para siempre (solo se arreglaba con un reload).
+  }, [pathname]);
 
   return null;
 }
