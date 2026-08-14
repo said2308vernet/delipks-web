@@ -9,17 +9,20 @@ import { procesarPagoCapturado } from "@/lib/pedidos";
 // decisión de 2026-08-09 (la "suscripción" es pago único de 4 semanas).
 export async function POST(request: Request) {
   const webhookId = process.env.PAYPAL_WEBHOOK_ID;
+  if (!webhookId) {
+    console.error("Falta la variable de entorno PAYPAL_WEBHOOK_ID -- webhook rechazado, no se puede verificar la firma.");
+    return new Response("Webhook no configurado.", { status: 500 });
+  }
+
   const body = await request.json();
 
-  if (webhookId) {
-    const valid = await verifyPaypalWebhookSignature({
-      headers: request.headers,
-      webhookId,
-      body,
-    });
-    if (!valid) {
-      return new Response("Firma de webhook inválida.", { status: 400 });
-    }
+  const valid = await verifyPaypalWebhookSignature({
+    headers: request.headers,
+    webhookId,
+    body,
+  });
+  if (!valid) {
+    return new Response("Firma de webhook inválida.", { status: 400 });
   }
 
   const eventType = body.event_type as string;

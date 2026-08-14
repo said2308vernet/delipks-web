@@ -1,8 +1,14 @@
 import { capturePaypalOrder } from "@/lib/paypal";
 import { sql } from "@/lib/db";
 import { procesarPagoCapturado } from "@/lib/pedidos";
+import { dentroDelLimite, ipDelRequest } from "@/lib/rate-limit";
 
 export async function POST(request: Request) {
+  const permitido = await dentroDelLimite(`paypal-capture:ip:${ipDelRequest(request)}`, 20, 10);
+  if (!permitido) {
+    return Response.json({ error: "Demasiadas solicitudes. Intenta de nuevo en unos minutos." }, { status: 429 });
+  }
+
   const body = await request.json();
   const orderId = String(body.orderID || "");
   if (!orderId) {

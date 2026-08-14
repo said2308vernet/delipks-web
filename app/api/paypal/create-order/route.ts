@@ -2,6 +2,7 @@ import { plans } from "@/lib/content";
 import { createPaypalOrder } from "@/lib/paypal";
 import { checkCoverageDb } from "@/lib/coverage-db";
 import { sql } from "@/lib/db";
+import { dentroDelLimite, ipDelRequest } from "@/lib/rate-limit";
 
 type Billing = "subscription" | "oneTime";
 
@@ -10,6 +11,11 @@ function texto(valor: unknown, max: number): string {
 }
 
 export async function POST(request: Request) {
+  const permitido = await dentroDelLimite(`paypal-create:ip:${ipDelRequest(request)}`, 15, 10);
+  if (!permitido) {
+    return Response.json({ error: "Demasiadas solicitudes. Intenta de nuevo en unos minutos." }, { status: 429 });
+  }
+
   const body = await request.json();
   const planId = String(body.planId || "");
   const billing: Billing = body.billing === "subscription" ? "subscription" : "oneTime";
