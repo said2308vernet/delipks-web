@@ -17,44 +17,6 @@ import type { BlogPost } from "./blog";
  */
 export const queuedBlogPosts: BlogPost[] = [
   {
-    slug: "ultraprocesados-y-salud-cardiovascular",
-    title: "Ultraprocesados y corazón: lo que revela la evidencia más reciente",
-    excerpt:
-      "Nueva evidencia científica de 2026 vincula los alimentos ultraprocesados con un mayor riesgo cardiovascular — pero el panorama completo es más matizado de lo que parece.",
-    image:
-      "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&q=80&auto=format&fit=crop",
-    category: "Nutrición",
-    date: "PENDING",
-    content: `Los alimentos ultraprocesados llevan años en la mira de la ciencia, pero la evidencia publicada en 2026 le puso números más concretos al problema — y también añadió matices importantes que vale la pena entender antes de sacar conclusiones apresuradas.
-
-## Lo que encontró la ciencia este año
-
-Datos publicados en el American Journal of Preventive Medicine y difundidos en 2026 estiman que entre el 23% y el 38% de los eventos cardíacos podrían estar relacionados con el consumo de alimentos ultraprocesados. Es un rango amplio, pero incluso en su extremo más bajo representa una proporción considerable de casos.
-
-Otro estudio de este año, publicado en la revista Radiology, encontró que una mayor ingesta de ultraprocesados se asocia con mayor infiltración de grasa en los músculos del muslo — una señal de que el impacto de estos alimentos va más allá del corazón y también afecta la calidad del tejido muscular.
-
-A esto se suma evidencia de tres estudios franceses recientes que encontraron que ciertos colorantes y conservantes presentes en productos ultraprocesados están asociados a un mayor riesgo de cáncer, diabetes, enfermedades cardiovasculares e hipertensión.
-
-## El matiz que cambia la conversación
-
-Aquí está la parte que muchos titulares dejaron fuera: otro estudio de 2026, también difundido este año, sugiere que la calidad general de la dieta podría importar más que el nivel de procesamiento por sí solo. Los investigadores encontraron que comer de forma saludable con alimentos mínimamente procesados redujo el riesgo de enfermedades cardíacas en un 18%, mientras que incluso las versiones "más saludables" de ultraprocesados redujeron el riesgo en un 14%.
-
-**La conclusión práctica** — no todo lo ultraprocesado es igual de dañino, y no toda comida "natural" es automáticamente mejor. Lo que más predice el riesgo sigue siendo el patrón general de tu alimentación: cuánta fibra, proteína de calidad y vegetales comes, frente a cuánto azúcar añadida, sodio y aditivos consumes regularmente.
-
-## ¿Qué significa esto en la práctica?
-
-No se trata de eliminar por completo todo lo que viene en empaque — eso es poco realista para la mayoría de las personas. Se trata de identificar los ultraprocesados que más pesan en tu dieta diaria: refrescos, botanas fritas, embutidos, pan dulce industrial, cereales azucarados. Esos son los que vale la pena reducir primero.
-
-## Cómo aplicarlo esta semana
-
-Revisa qué tan seguido aparecen ultraprocesados en tus comidas principales (no en antojos ocasionales, sino en lo que comes todos los días). Prioriza tener siempre a la mano una opción de comida hecha con ingredientes reconocibles — proteína, vegetales, carbohidratos complejos — para que no termines recurriendo a lo empacado por falta de tiempo. Ese es, al final, el problema que un plan de comidas semanal resuelve de raíz.`,
-    sources: [
-      { name: "Infobae — Nueva evidencia científica revela el impacto de los alimentos ultraprocesados en la salud cardiovascular (2026)", url: "https://www.infobae.com/salud/ciencia/2026/07/17/nueva-evidencia-cientifica-revela-el-impacto-de-los-alimentos-ultraprocesados-en-la-salud-cardiovascular/" },
-      { name: "Infobae — La comida saludable podría importar más que el nivel de procesamiento, sugiere un estudio (2026)", url: "https://www.infobae.com/salud/2026/07/30/la-comida-saludable-podria-importar-mas-que-el-nivel-de-procesamiento-sugiere-un-estudio/" },
-      { name: "Gastrolab — La ciencia lo confirma: estudio revela que alimentos ultraprocesados afectan grasa y salud muscular (2026)", url: "https://www.gastrolabweb.com/saludable/2026/4/15/la-ciencia-lo-confirma-estudio-revela-que-alimentos-ultraprocesados-afectan-grasa-salud-muscular-66650.html" },
-    ],
-  },
-  {
     slug: "sueno-y-metabolismo-2026",
     title: "Dormir mal sabotea tu metabolismo: lo que confirma la ciencia en 2026",
     excerpt:
