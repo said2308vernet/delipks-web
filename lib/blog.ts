@@ -16,6 +16,48 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sueno-y-metabolismo-2026",
+    title: "Dormir mal sabotea tu metabolismo: lo que confirma la ciencia en 2026",
+    excerpt:
+      "Antes de cambiar tu dieta o tu rutina de ejercicio, la evidencia más reciente sugiere revisar algo más básico: cuánto y qué tan bien estás durmiendo.",
+    image:
+      "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&q=80&auto=format&fit=crop",
+    category: "Bienestar",
+    date: "2026-08-24",
+    content: `Muchas personas intentan mejorar su energía, su peso o su rendimiento ajustando solo lo que comen o cuánto se ejercitan. Pero la evidencia publicada en 2026 pone el foco en un factor que suele quedar en último lugar: el sueño.
+
+## El hallazgo central de este año
+
+Una investigación de Columbia University Irving Medical Center, publicada en la revista Nature en mayo de 2026, analizó datos de miles de personas y encontró que los adultos que dormían menos de 6 horas o más de 8 horas por noche presentaban señales de envejecimiento acelerado en distintos sistemas del cuerpo. No se trata solo de sentirte cansado — dormir mal parece dejar huella medible en órganos y tejidos.
+
+## La conexión con el metabolismo
+
+Un especialista en sueño entrevistado en agosto de 2026 lo resume de forma directa: muchas personas intentan corregir alteraciones metabólicas u hormonales sin obtener resultados porque el verdadero problema está en la falta de descanso. La calidad del sueño, señala, debería formar parte de cualquier estrategia seria para mejorar la salud metabólica — no ser una idea de último momento.
+
+Esto coincide con lo que se sabe desde hace tiempo sobre la relación entre sueño y hambre: dormir poco altera las hormonas que regulan el apetito, aumentando la sensación de hambre y reduciendo la señal de saciedad. El resultado práctico es que, sin importar qué tan bien planees tus comidas, un mal descanso puede empujarte a comer de más.
+
+## Lo que se observó a nivel cerebral
+
+Investigación adicional presentada en México durante el Día Mundial del Sueño 2026, por la Clínica de Trastornos del Sueño de la Facultad de Medicina de la UNAM, encontró en estudios de metabolismo cerebral una disminución en la actividad de regiones asociadas a la regulación de recompensa y motivación cuando el sueño es insuficiente — lo que ayuda a explicar por qué, cansado, es más difícil resistir un antojo o mantener buenos hábitos.
+
+## ¿Cuánto es "suficiente"?
+
+La ciencia sigue apuntando al mismo rango que llevamos años escuchando: entre 7 y 8 horas por noche para la mayoría de los adultos. Lo nuevo en 2026 es la evidencia de que tanto dormir de menos como dormir de más de forma sostenida se asocian con peores marcadores de salud — el objetivo no es maximizar horas, sino sostener un rango consistente.
+
+## Tres ajustes simples
+
+**Un horario constante** — acostarte y despertar a la misma hora, incluso los fines de semana, ayuda más que perseguir una noche "perfecta" ocasional.
+
+**Menos pantallas antes de dormir** — la luz azul y la estimulación mental retrasan la liberación de melatonina, la hormona que te ayuda a conciliar el sueño.
+
+**Cenas más ligeras y más temprano** — cenar pesado justo antes de acostarte dificulta un sueño profundo y reparador. Si ya sabes qué vas a cenar y a qué hora, es más fácil sostener este hábito.`,
+    sources: [
+      { name: "Infobae — Un estudio revela cómo el sueño altera la edad biológica de tus órganos (2026)", url: "https://www.infobae.com/salud/ciencia/2026/05/14/un-estudio-revela-como-el-sueno-altera-la-edad-biologica-de-tus-organos/" },
+      { name: "Noticias de Álava — ¿Dormir mal engorda? Un experto en sueño desvela por qué no descansar puede hacerte ganar peso (2026)", url: "https://www.noticiasdealava.eus/buzz-on/2026/08/09/experto-sueno-desvela-dormir-mal-engorda-javier-albares-11422956.html" },
+      { name: "Gaceta FM UNAM — Día Mundial del Sueño 2026: Dormir bien, vivir mejor", url: "https://gaceta.facmed.unam.mx/index.php/2026/03/19/dia-mundial-del-sueno-2026-dormir-bien-vivir-mejor/" },
+    ],
+  },
+  {
     slug: "ultraprocesados-y-salud-cardiovascular",
     title: "Ultraprocesados y corazón: lo que revela la evidencia más reciente",
     excerpt:
