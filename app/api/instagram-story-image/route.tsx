@@ -3,11 +3,15 @@ import { blogPosts } from "@/lib/blog";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
-  const post = blogPosts[0];
+export async function GET(request: Request) {
+  const slug = new URL(request.url).searchParams.get("slug");
+  const post = slug ? blogPosts.find((p) => p.slug === slug) : blogPosts[0];
 
   if (!post) {
-    return new Response("No hay artículos en el blog", { status: 404 });
+    return new Response(
+      slug ? `No existe un artículo con slug "${slug}"` : "No hay artículos en el blog",
+      { status: 404 }
+    );
   }
 
   return new ImageResponse(
