@@ -16,6 +16,48 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "obesidad-en-mexico-2026",
+    title: "Obesidad en México 2026: qué dice la nueva estrategia nacional y cómo aplica en tu día a día",
+    excerpt:
+      "Más de 3 de cada 4 adultos en México viven con sobrepeso u obesidad. Así es la nueva estrategia del gobierno federal para atender el problema — y qué puedes hacer tú desde ya.",
+    image:
+      "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&auto=format&fit=crop",
+    category: "Bienestar",
+    date: "2026-08-31",
+    content: `México sigue enfrentando una de las crisis de sobrepeso y obesidad más altas del mundo. Los datos más recientes, difundidos en 2026, y la respuesta que está preparando el gobierno federal dan un panorama claro de dónde estamos parados.
+
+## Los números de 2026
+
+De acuerdo con datos recientes, el 76.2% de la población adulta en México vive con exceso de peso — una cifra que coloca al país entre los de mayor prevalencia a nivel mundial. Desglosado por la Encuesta Nacional de Salud y Nutrición (Ensanut), 37.3% de los adultos presenta sobrepeso y 38.9% obesidad.
+
+El problema tampoco se limita a los adultos. La prevalencia de sobrepeso y obesidad en adolescentes ya alcanza el 41%, y una de las tendencias más preocupantes es que la diferencia que solía existir entre zonas rurales y urbanas prácticamente desapareció — el problema ya no es exclusivo de las ciudades.
+
+Otro cambio notable de los últimos cinco años: la brecha de 10 puntos porcentuales que existía entre la obesidad en hombres y en mujeres adultas se redujo casi a cero, según la Ensanut 2020-2024.
+
+## La respuesta del gobierno federal
+
+El 4 de marzo de 2026, en el marco del Día Mundial de la Obesidad, el secretario de Salud federal presentó la Estrategia de Desaceleración del Sobrepeso y la Obesidad en México — un plan que busca frenar el ritmo de crecimiento de estas cifras a nivel nacional, con un llamado explícito a que la población se sume al esfuerzo.
+
+## ¿Por qué te debería importar aunque no tengas sobrepeso?
+
+Porque el problema no es solo individual — es estructural. Cuando 3 de cada 4 adultos a tu alrededor conviven con exceso de peso, el entorno completo (lo que se vende en la calle, lo que se sirve en el trabajo, lo que es "normal" comer) empuja en esa dirección. Entender la magnitud del problema ayuda a no normalizar patrones que, en el agregado, generan estas cifras.
+
+## Qué puedes controlar desde tu propia mesa
+
+Ninguna estrategia nacional reemplaza las decisiones diarias. Lo que sí puedes controlar, sin necesidad de una dieta extrema, es:
+
+**Reducir la fricción de comer bien** — si comer saludable requiere más esfuerzo que pedir comida rápida, la mayoría de los días pierde la opción más fácil. Planear tu semana (o resolverla con un servicio que ya lo haga por ti) cambia esa ecuación.
+
+**Priorizar porciones consistentes de proteína y vegetales** — los patrones que la evidencia relaciona con menor riesgo de obesidad no son dietas restrictivas, sino platos balanceados sostenidos en el tiempo.
+
+**No esperar una solución rápida** — las cifras de México se construyeron durante décadas. Los cambios individuales sostenibles también toman tiempo, y eso está bien.`,
+    sources: [
+      { name: "Milenio — Obesidad en México 2026: 76.2% de los adultos vive con exceso de peso", url: "https://www.milenio.com/content/salud-y-nutricion/mexico-emergencia-obesidad-adultos-3-de-cada-4-2026" },
+      { name: "Proceso — Secretaría de Salud presenta estrategia contra la obesidad y el sobrepeso en México (2026)", url: "https://www.proceso.com.mx/nacional/2026/3/5/secretaria-de-salud-presenta-estrategia-contra-la-obesidad-el-sobrepeso-en-mexico-369686.html" },
+      { name: "La Jornada — Sobrepeso y obesidad siguen al alza en México", url: "https://www.jornada.com.mx/noticia/2025/11/12/sociedad/sobrepeso-y-obesidad-siguen-al-alza-en-mexico" },
+    ],
+  },
+  {
     slug: "sueno-y-metabolismo-2026",
     title: "Dormir mal sabotea tu metabolismo: lo que confirma la ciencia en 2026",
     excerpt:
