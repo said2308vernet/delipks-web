@@ -17,44 +17,6 @@ import type { BlogPost } from "./blog";
  */
 export const queuedBlogPosts: BlogPost[] = [
   {
-    slug: "proteina-y-longevidad",
-    title: "¿Menos proteína, más vida? Lo que dice (y no dice) el nuevo estudio sobre longevidad",
-    excerpt:
-      "Un estudio de 2026 sobre restricción de proteína y envejecimiento se volvió viral. Antes de cambiar tus hábitos, esto es lo que realmente encontró la ciencia — y sus límites.",
-    image:
-      "https://images.unsplash.com/photo-1607532941433-304659e8198a?w=600&q=80&auto=format&fit=crop",
-    category: "Nutrición",
-    date: "PENDING",
-    content: `Un estudio publicado el 31 de julio de 2026 en la revista Cell Press Blue generó titulares llamativos: comer menos proteína podría ayudarte a vivir más. Pero como suele pasar con la ciencia de la nutrición, el mensaje completo es más matizado que el titular.
-
-## Lo que encontró la revisión
-
-Se trata de una revisión de más de 350 estudios sobre restricción de proteína y envejecimiento. El hallazgo central: en modelos animales, comer menos proteína se asoció de forma consistente con una vida más larga y saludable. En ratones, específicamente, los que llevaban dietas bajas en proteína vivieron entre 30% y 50% más que los que comían una dieta estándar.
-
-## Cómo explican el mecanismo
-
-Los investigadores señalan que la restricción de proteína activa una hormona llamada FGF21, que aumenta el gasto energético del cuerpo, mejora el control de azúcar en sangre y reduce la inflamación — tres factores estrechamente ligados al envejecimiento saludable.
-
-Un dato interesante: el efecto no parece depender de reducir toda la proteína por igual, sino específicamente de reducir ciertos aminoácidos, como la isoleucina y la metionina. Es decir, el "qué" importa tanto como el "cuánto".
-
-## Lo que el estudio NO dice
-
-Aquí está la parte que muchos titulares omitieron. La gran mayoría de la evidencia de esta revisión proviene de estudios en ratones, ratas, moscas y peces — no en personas. Científicos independientes consultados sobre la revisión fueron claros: extrapolar directamente estos resultados a humanos es prematuro.
-
-Los propios autores de la revisión reconocen esto y son explícitos en un punto clave: las recomendaciones de proteína deberían personalizarse según la edad, el nivel de actividad física y necesidades de salud específicas — por ejemplo, deportistas o personas embarazadas requieren más proteína, no menos.
-
-## ¿Qué significa esto para ti, hoy?
-
-No es una señal para bajar drásticamente tu consumo de proteína, especialmente si entrenas, si estás en un proceso de recuperación muscular, o si tu objetivo es mantener masa magra conforme envejeces — ahí la evidencia en humanos sigue siendo clara: la proteína adecuada protege el músculo y la función física.
-
-Lo que sí es un buen recordatorio es que "más proteína siempre es mejor" tampoco es la respuesta completa. Como con la mayoría de la nutrición, el objetivo realista es un rango adecuado a tu edad y actividad — ni en exceso ni en déficit — y no perseguir titulares que aún no tienen suficiente respaldo en estudios con personas.`,
-    sources: [
-      { name: "TIME — Eating Less Protein May Help You Age Better and Live Longer, Research Says (2026)", url: "https://time.com/article/2026/08/03/eat-less-protein-age-better-live-longer/" },
-      { name: "ScienceDaily — Eating less protein could slow aging, major review finds (2026)", url: "https://www.sciencedaily.com/releases/2026/08/260801042811.htm" },
-      { name: "USC Today — Low-protein, amino acid-supplemented 'longevity diet' linked to longer healthy lifespan, lower frailty risk, better metabolic health (2026)", url: "https://today.usc.edu/low-protein-amino-acid-supplemented-longevity-diet-linked-to-longer-healthy-lifespan-lower-frailty-risk-better-metabolic-health/" },
-    ],
-  },
-  {
     slug: "tendencias-de-nutricion-2026",
     title: "Tendencias de nutrición 2026: qué está cambiando en la forma en que comemos",
     excerpt:
