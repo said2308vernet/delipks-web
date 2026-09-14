@@ -16,6 +16,46 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tendencias-de-nutricion-2026",
+    title: "Tendencias de nutrición 2026: qué está cambiando en la forma en que comemos",
+    excerpt:
+      "De la salud digestiva a la sostenibilidad, así se ve el panorama de la nutrición este año, según los reportes y expertos más recientes.",
+    image:
+      "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-09-14",
+    content: `Cada año cambian las prioridades alrededor de la comida — no porque la nutrición básica cambie, sino porque la evidencia científica y los intereses de los consumidores evolucionan. Esto es lo que está marcando la conversación en 2026.
+
+## Salud digestiva, la gran protagonista
+
+Los alimentos fermentados están viviendo un momento importante: kéfir, kimchi, chucrut y otros fermentados están multiplicando sus ventas porque la evidencia sobre su impacto en la microbiota — y su relación con la energía diaria y la digestión — sigue creciendo. Las legumbres integrales, ricas en fibra prebiótica, también están al alza por la misma razón.
+
+## La proteína no pierde protagonismo
+
+La proteína se mantiene como el componente más buscado en la alimentación a nivel global, con innovaciones constantes en snacks y bebidas fortificadas. Lo que sí está cambiando es el enfoque: cada vez más personas buscan fuentes de proteína versátiles — tanto animales como vegetales — en lugar de depender de un solo tipo.
+
+## Comer pensando en el cerebro, no solo en el cuerpo
+
+Uno de los datos más llamativos de este año: más de la mitad de la generación Z busca activamente alimentos que impacten de forma positiva su bienestar mental, no solo su salud física. Esto está impulsando el interés en nutrientes como omega-3, antioxidantes y compuestos antiinflamatorios, tradicionalmente asociados a la salud cognitiva.
+
+## Envejecer bien, no solo vivir más años
+
+La conversación alrededor del "healthy aging" (envejecimiento saludable) sigue creciendo. Los consumidores buscan cada vez más productos ricos en antioxidantes, fibra, omega-3 y compuestos antiinflamatorios pensando en beneficios a largo plazo: salud cognitiva, inmunológica y metabólica — no solo en verse bien a corto plazo.
+
+## Una nueva forma de pensar el plato
+
+Este año también se habló de una actualización en cómo se representa visualmente una alimentación balanceada, con una base que se centra en frutas, verduras de temporada y fuentes de proteína de alta calidad — reforzando algo que la ciencia lleva años confirmando: la variedad y la calidad importan más que eliminar grupos completos de alimentos.
+
+## Lo que estas tendencias tienen en común
+
+Ninguna de estas tendencias es una moda pasajera de dieta extrema. Todas apuntan en la misma dirección: comer de forma más completa, con ingredientes reconocibles, pensando tanto en el cuerpo como en la mente, y sosteniendo el hábito en el tiempo en lugar de buscar resultados inmediatos.`,
+    sources: [
+      { name: "El Diario Ecuador — Descubre las 10 tendencias que definirán la nutrición en 2026", url: "https://www.eldiario.ec/salud-vida/las-10-tendencias-alimentarias-de-2026-nutricion-bienestar-y-el-futuro-de-tu-plato-13012026/" },
+      { name: "Diario en Positivo — Tendencias de nutrición en 2026: salud digestiva, proteínas y sostenibilidad al alza", url: "https://www.diarioenpositivo.com/articulo/nutricion/tendencias-nutricion-2026-salud-digestiva-proteinas-sostenibilidad-alza/20260322150541076855.html" },
+      { name: "Doestepa — Nueva pirámide alimentaria 2026, ¿Cómo afecta a tu dieta?", url: "https://www.doestepa.com/escueladelaceite/nueva-piramide-alimentaria/" },
+    ],
+  },
+  {
     slug: "proteina-y-longevidad",
     title: "¿Menos proteína, más vida? Lo que dice (y no dice) el nuevo estudio sobre longevidad",
     excerpt:
