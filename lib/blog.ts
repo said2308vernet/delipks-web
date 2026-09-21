@@ -16,6 +16,42 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "alcohol-y-salud-evidencia-2026",
+    title: "Una copa al día: lo que dice la evidencia más reciente sobre alcohol y salud",
+    excerpt:
+      "Durante años se creyó que una copa de vino diaria era inofensiva o hasta beneficiosa. La evidencia científica de 2026 dice algo distinto.",
+    image:
+      "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80&auto=format&fit=crop",
+    category: "Bienestar",
+    date: "2026-09-21",
+    content: `Por años circuló la idea de que una copa de vino al día era, en el peor de los casos, inofensiva — y en el mejor, buena para el corazón. La evidencia científica publicada en 2026 pone en duda esa idea de forma bastante contundente.
+
+## El estudio que cambió la conversación
+
+Un estudio publicado en el Journal of Studies on Alcohol and Drugs y ampliamente difundido en 2026 concluye que incluso una sola bebida alcohólica al día incrementa el riesgo de mortalidad. Se trata, según los propios investigadores, de la estimación más amplia hasta la fecha sobre el riesgo del consumo de alcohol a lo largo de la vida en términos de mortalidad y enfermedad.
+
+Los datos son específicos: el estudio encontró un mayor riesgo de mortalidad en 1 de cada 25 personas que consumen un promedio de 14 unidades de alcohol a la semana (aproximadamente 2 bebidas diarias), mientras que consumir la mitad — 7 unidades semanales, cerca de una copa al día — también se asocia con un incremento medible del riesgo en la mayoría de las condiciones de salud analizadas.
+
+## No solo es cantidad, también es tipo
+
+Otro estudio de 2026 encontró que el tipo de alcohol que eliges también influye en tu riesgo de mortalidad — no todas las bebidas alcohólicas tienen el mismo perfil de riesgo, aunque ninguna queda exenta.
+
+## ¿Y el mito del "consumo seguro"?
+
+Un investigador citado ampliamente este año lo resume así: dos bebidas alcohólicas al día — lo que socialmente se considera "moderado" — están asociadas a un riesgo elevado de muerte prematura. La conclusión de la evidencia reciente es clara: no existe un nivel de consumo de alcohol completamente libre de riesgo. Lo que existe son distintos niveles de riesgo, y ese riesgo se acelera notablemente después de una bebida al día.
+
+## ¿Qué significa esto en términos prácticos?
+
+No se trata de generar alarma sobre una copa ocasional en una celebración. Se trata de dejar de ver el consumo diario o casi diario como un hábito "saludable" o neutro — una idea que durante mucho tiempo se basó en estudios con limitaciones metodológicas importantes que la evidencia más reciente ha corregido.
+
+Si el alcohol es parte habitual de tu semana, la recomendación que se desprende de esta evidencia es simple: entre menos, mejor, y no hay una cantidad diaria que puedas considerar completamente segura. Reducir la frecuencia — no solo la cantidad por ocasión — parece ser la variable que más pesa en el riesgo a largo plazo.`,
+    sources: [
+      { name: "Infobae — Un estudio científico niega que una copa de vino al día pueda considerarse un consumo seguro de alcohol (2026)", url: "https://www.infobae.com/salud/2026/06/14/un-estudio-cientifico-niega-que-una-copa-de-vino-al-dia-pueda-considerarse-un-consumo-seguro-de-alcohol/" },
+      { name: "La Nación — Los riesgos para la salud por el alcohol se aceleran después de una bebida al día, según un estudio (2026)", url: "https://www.lanacion.com.ar/sociedad/los-riesgos-para-la-salud-por-el-alcohol-se-aceleran-despues-de-una-bebida-al-dia-segun-un-estudio-nid09062026/" },
+      { name: "COPE — Timothy Naimi: \"Dos bebidas alcohólicas al día están asociadas a un riesgo elevado de muerte prematura\" (2026)", url: "https://www.cope.es/actualidad/salud-bienestar/noticias/timothy-naimi-investigador-dos-bebidas-alcoholicas-dia-considerado-moderado-punto-vista-social-asociadas-riesgo-elevado-muerte-prematura-20260721_3381348.html" },
+    ],
+  },
+  {
     slug: "tendencias-de-nutricion-2026",
     title: "Tendencias de nutrición 2026: qué está cambiando en la forma en que comemos",
     excerpt:
