@@ -16,6 +16,50 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ejercicios-isometricos-para-bajar-la-presion-arterial",
+    title: "Ejercicios isométricos: el nuevo favorito de la ciencia para bajar la presión arterial",
+    excerpt:
+      "Plancha y sentadilla de pared, solo 10 minutos y una vez por semana: así es el protocolo que un estudio reciente en el Reino Unido vincula con una presión arterial más baja.",
+    image:
+      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=80&auto=format&fit=crop",
+    category: "Ejercicio",
+    date: "2026-10-05",
+    content: `Cuando pensamos en ejercicio para el corazón, casi siempre imaginamos correr, nadar o subir escaleras sin parar. Pero un estudio publicado a finales de septiembre de 2026 por investigadores de la Universidad Canterbury Christ Church, en el Reino Unido, pone el foco en algo mucho más estático — y sorprendentemente efectivo: los **ejercicios isométricos**.
+
+## ¿Qué son los ejercicios isométricos?
+
+A diferencia de una sentadilla normal o una plancha con movimiento, un ejercicio isométrico consiste en mantener una posición de tensión muscular sin que el músculo se alargue ni se acorte. Los ejemplos más comunes son la **plancha abdominal** y la **sentadilla de pared** (apoyar la espalda contra una pared y sostener la posición de sentadilla, sin silla, sin moverte). No requieren equipo, pesas ni membresía de gimnasio — solo una pared o un piso.
+
+## El protocolo que mostró resultados
+
+El estudio, publicado en la revista BMJ Open Sport & Exercise Medicine, reclutó a 100 adultos jóvenes (edad promedio de 37 años) con presión sistólica de entre 120 y 140 mmHg, es decir, sin hipertensión diagnosticada pero ya en el rango donde vale la pena prestar atención. El protocolo inicial fue simple: sentadilla de pared, en sesiones de unos 10 minutos, tres veces por semana. Tras el periodo de entrenamiento, los participantes que siguieron este régimen redujeron su presión sistólica en casi 14 mmHg — una caída que, en términos clínicos, es comparable a la que se consigue con algunos medicamentos antihipertensivos.
+
+## ¿Y si solo tienes tiempo para una sesión semanal?
+
+Aquí está la parte más práctica del hallazgo. Los investigadores dividieron a los participantes en grupos que, después de la fase inicial, continuaron entrenando con distinta frecuencia: tres veces por semana, un par de veces, o solo una vez. Quienes mantuvieron apenas **una sesión semanal** conservaron una reducción significativa en su presión sistólica y en la presión arterial media durante las ocho semanas que duró el seguimiento. Como era de esperarse, tres sesiones por semana produjo el mayor beneficio — pero una sola sesión fue suficiente para frenar el retroceso de lo ya ganado.
+
+## ¿Por qué funciona algo tan simple?
+
+La explicación tiene que ver con cómo se comportan los vasos sanguíneos bajo tensión sostenida. Mantener una contracción isométrica durante varios minutos exige un esfuerzo constante de los músculos grandes de las piernas, lo que entrena la capacidad de los vasos sanguíneos para dilatarse y contraerse de forma eficiente — un mecanismo distinto, pero complementario, al que activa el ejercicio cardiovascular tradicional. Por eso cada vez más guías de actividad física mencionan los isométricos como un complemento válido, no un sustituto, de caminar, correr o nadar.
+
+## Cómo incorporarlo a tu semana
+
+No necesitas rediseñar tu rutina. Si ya caminas o entrenas fuerza regularmente, puedes sumar:
+
+**Sentadilla de pared** — espalda apoyada en la pared, rodillas a 90°, sostener 1-2 minutos, descansar 2 minutos, repetir 4 veces. Son los 10 minutos del estudio.
+
+**Plancha abdominal** — apoyo en antebrazos y puntas de los pies, cuerpo alineado, sostener entre 30 y 60 segundos, varias rondas.
+
+Si tu presión arterial está en el límite alto o simplemente quieres cuidarla de forma preventiva, dos o tres sesiones a la semana — aunque sea viendo la tele mientras las haces — parecen ser suficientes para notar diferencia según esta evidencia. Como con cualquier cambio relacionado con la presión arterial, si ya tomas medicamento o tienes un diagnóstico de hipertensión, lo ideal es comentarlo primero con tu médico.
+
+Y como siempre, lo que entrenas en 10 minutos se sostiene mejor con lo que comes el resto del día: una alimentación con suficiente proteína, vegetales y sin exceso de sodio hace que cualquier esfuerzo por cuidar tu presión arterial rinda más.`,
+    sources: [
+      { name: "Infobae — Sin pesas ni gimnasio: el ejercicio que reduce la presión arterial con solo diez minutos por semana (2026)", url: "https://www.infobae.com/salud/ciencia/2026/10/04/sin-pesas-ni-gimnasio-el-ejercicio-que-reduce-la-presion-arterial-con-solo-diez-minutos-por-semana/" },
+      { name: "Canterbury Christ Church University — New study shows just one workout a week could benefit blood pressure (2026)", url: "https://www.canterbury.ac.uk/news/2026/new-study-shows-just-one-workout-a-week-could-benefit-blood-pressure" },
+      { name: "Nursing Times — Weekly isometric exercise training benefits for blood pressure (2026)", url: "https://www.nursingtimes.net/cardiovascular/weekly-isometric-exercise-training-benefits-for-blood-pressure-30-09-2026/" },
+    ],
+  },
+  {
     slug: "habitos-para-dormir-mejor-2026",
     title: "8 hábitos que sí funcionan para dormir mejor, según la ciencia más reciente",
     excerpt:
