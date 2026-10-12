@@ -16,6 +16,44 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "mate-beneficios-respaldados-por-la-ciencia-2026",
+    title: "Mate y salud: esto es lo que la ciencia realmente respalda",
+    excerpt:
+      "El mate tiene fama de mejorar el colesterol, bajar de peso y dar energía. Una revisión científica reciente y una nutricionista de Cleveland Clinic separan lo comprobado de lo que todavía es promesa.",
+    image:
+      "https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-10-12",
+    content: `El mate es, para millones de personas en Sudamérica, parte de la rutina diaria tanto como el café en otras partes del mundo. Y como pasa con casi cualquier bebida popular, con los años se le han atribuido todo tipo de beneficios: que mejora el colesterol, que ayuda a bajar de peso, que da energía sin los efectos negativos del café. Una nota publicada el 6 de octubre de 2026 por una nutricionista de Cleveland Clinic, junto con una revisión científica reciente, pone en orden qué de todo esto tiene respaldo real y qué sigue siendo más promesa que evidencia.
+
+## El beneficio mejor respaldado: el azúcar en sangre
+
+De todos los efectos que se le atribuyen al mate, el que tiene mayor apoyo científico es su impacto en el control de la glucosa después de comer. Una revisión sistemática y metaanálisis publicada en octubre de 2025 en la revista Frontiers in Endocrinology, que reunió ensayos clínicos controlados, encontró que el consumo de mate se asocia con una mejora modesta en el control glucémico — es decir, ayuda a que el azúcar en sangre no se dispare tanto después de comer, y podría tener un efecto favorable en la hemoglobina glucosilada (A1C), el marcador que refleja el control de glucosa a largo plazo.
+
+Según la nutricionista consultada por Infobae, este posible beneficio en la sensibilidad a la insulina es relevante sobre todo para personas con prediabetes o diabetes tipo 2 — aunque ella misma es clara en que todavía **se necesita más investigación** antes de considerarlo una recomendación establecida. Los propios autores de la revisión de Frontiers in Endocrinology califican la evidencia de "no concluyente" y apuntan a una posible explicación interesante: parte del efecto podría deberse no a un compuesto exclusivo del mate, sino al estímulo propio de las xantinas — la misma familia de compuestos que le da su efecto estimulante a la cafeína.
+
+## Colesterol y presión arterial: promesa, no certeza
+
+Aquí es donde conviene bajar las expectativas. La idea de que el mate "sube el colesterol bueno" o mejora la presión arterial circula desde hace años, pero la evidencia más rigurosa no la respalda con la misma fuerza. Un metaanálisis que combinó siete estudios experimentales no encontró cambios significativos en colesterol total, LDL, HDL ni triglicéridos al comparar el consumo de mate contra un grupo control. Algunos ensayos individuales sí reportan señales favorables en el LDL — incluso como complemento de tratamientos con estatinas — pero el conjunto de la evidencia todavía se describe como insuficiente para usar el mate como estrategia preventiva o de tratamiento.
+
+## ¿Y para bajar de peso o rendir más en el ejercicio?
+
+Esta es, según la nutricionista, la afirmación con menos sustento de todas. No hay evidencia sólida en humanos de que el mate ayude a adelgazar ni de que mejore el rendimiento deportivo de forma consistente. Algunos estudios en animales muestran reducciones de grasa corporal, pero los resultados no se replican de forma uniforme entre especies ni se traducen directamente a personas.
+
+## Entonces, ¿vale la pena tomar mate?
+
+Sí, pero con las expectativas correctas. La conclusión de la nutricionista es simple: el mate puede ser una **adición razonable** a una alimentación saludable, no un tratamiento para ninguna condición médica ni un atajo para bajar de peso. Como con cualquier bebida con cafeína, moderar la cantidad y poner atención a cómo se prepara importa — preparaciones muy cargadas o a temperaturas muy altas de forma sostenida se han relacionado en otros estudios con riesgos que vale la pena tener en cuenta si el consumo es diario y abundante.
+
+## La idea de fondo
+
+El mate no es mágico ni es inútil — es una infusión con algunos beneficios metabólicos modestos y razonablemente bien estudiados, y otros beneficios que siguen siendo más tradición que ciencia. Como con la nutrición en general, lo que más pesa en tu salud sigue siendo el patrón completo de lo que comes y bebes día a día, no una sola bebida aislada, por buena fama que tenga.`,
+    sources: [
+      { name: "Infobae — Cuáles son los beneficios avalados por la ciencia de tomar mate, según una nutricionista (2026)", url: "https://www.infobae.com/salud/2026/10/06/cuales-son-los-beneficios-avalados-por-la-ciencia-de-tomar-mate-segun-una-nutricionista/" },
+      { name: "Frontiers in Endocrinology — Yerba Maté and its impact on glycemic control and metabolic health: a systematic review and meta-analysis (2025)", url: "https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1641592/full" },
+      { name: "A24 — Mate y salud: qué beneficios tienen respaldo científico y cuáles conviene relativizar (2026)", url: "https://www.a24.com/trends/mate-y-salud-que-beneficios-tienen-respaldo-cientifico-y-cuales-conviene-relativizar-n1603534" },
+    ],
+  },
+  {
     slug: "ejercicios-isometricos-para-bajar-la-presion-arterial",
     title: "Ejercicios isométricos: el nuevo favorito de la ciencia para bajar la presión arterial",
     excerpt:
