@@ -16,6 +16,46 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "creatina-en-la-menopausia-evidencia-2026",
+    title: "Creatina en la menopausia: lo que confirma (y lo que no) la evidencia de 2026",
+    excerpt:
+      "La creatina dejó de ser solo un suplemento de gimnasio para hombres jóvenes. Una revisión científica de 2026 con más de 600 mujeres posmenopáusicas muestra qué tan real es su beneficio para el músculo y la fuerza — y qué todavía no respalda sobre los huesos.",
+    image:
+      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-10-19",
+    content: `La creatina pasó décadas asociada casi exclusivamente a gimnasios, hombres jóvenes y suplementos deportivos. Una revisión sistemática y metaanálisis publicada en 2026 en el Journal of the International Society of Sports Nutrition le da un giro distinto a la conversación: ¿qué tan útil es este suplemento, uno de los más estudiados que existen, para mujeres en la posmenopausia? La respuesta, según la evidencia reunida, es más matizada de lo que sugieren muchos titulares de bienestar.
+
+## Lo que encontró la revisión
+
+El metaanálisis reunió ensayos controlados con placebo en mujeres posmenopáusicas — en conjunto, más de 600 participantes repartidas en siete estudios — y concluyó que la creatina, especialmente en dosis de **5 gramos al día o más combinada con entrenamiento de fuerza**, produce ganancias pequeñas pero reales en masa muscular magra y fuerza, sin evidencia de daño. En términos prácticos, las mujeres que tomaron creatina junto con un programa de entrenamiento de resistencia ganaron, en promedio, algo más de músculo magro y mejoraron su fuerza en prensa de pierna en comparación con quienes solo entrenaron con placebo.
+
+## El punto clave: no funciona sin el entrenamiento
+
+Aquí está el matiz que más se repite entre los autores de la revisión: el beneficio no aparece por tomar creatina sola. El efecto se concentra en los estudios donde la suplementación acompañó un programa de entrenamiento de fuerza constante. Es decir, la creatina parece **amplificar** lo que el ejercicio de resistencia ya está construyendo — no sustituirlo.
+
+## ¿Y los huesos?
+
+Aquí conviene bajar las expectativas. Pese a que algunos sitios de bienestar presentan la creatina como protectora de la densidad ósea, el ensayo más grande y riguroso disponible — un estudio aleatorizado de dos años con 237 mujeres posmenopáusicas que combinó creatina con entrenamiento de fuerza y caminata — no encontró ningún efecto sobre la densidad mineral ósea en el cuello femoral, la cadera total ni la columna lumbar. La propia revisión de 2026 es clara en este punto: **el efecto sobre la densidad ósea sigue sin estar confirmado**, y la evidencia disponible hasta ahora no respalda usar creatina como estrategia para prevenir osteoporosis.
+
+## ¿Es segura?
+
+Hasta donde muestra esta evidencia, sí. Ninguno de los ensayos incluidos en la revisión reportó señales de daño renal o hepático asociadas al uso de creatina en las dosis estudiadas (generalmente entre 3 y 5 gramos diarios). Esto coincide con décadas de estudios en población más joven, donde la creatina es uno de los suplementos deportivos con mayor respaldo de seguridad.
+
+## ¿Qué significa esto en la práctica?
+
+Si estás en la posmenopausia y ya entrenas fuerza — o estás pensando en empezar — la evidencia de 2026 sugiere que la creatina puede ser un complemento razonable para sostener músculo y fuerza, dos factores cada vez más relevantes para la movilidad y la prevención de caídas con la edad. Lo que no debes esperar es que, por sí sola, proteja tus huesos o reemplace el entrenamiento de resistencia: el músculo que se gana requiere el estímulo del ejercicio, no solo el suplemento.
+
+## La idea de fondo
+
+La creatina para mujeres mayores no es una moda sin fundamento, pero tampoco es la solución completa que algunas narrativas de bienestar sugieren. Es una herramienta con beneficio modesto y bien documentado para músculo y fuerza, condicionado a que entrenes, y con preguntas todavía abiertas — sobre todo en huesos — que la ciencia sigue resolviendo.`,
+    sources: [
+      { name: "Journal of the International Society of Sports Nutrition — Creatine supplementation in postmenopausal women: a systematic review and meta-analysis (2026)", url: "https://pubmed.ncbi.nlm.nih.gov/42141930/" },
+      { name: "SupplySide SJ — Review shows creatine preserves muscle mass in older women (2026)", url: "https://supplysidesj.com/healthy-living/review-shows-creatine-preserves-muscle-mass-in-older-women" },
+      { name: "Abby Langer Nutrition — Creatine supplementation in menopause: what does the science say? (2026)", url: "https://abbylangernutrition.com/creatine-supplementation-in-menopause-what-does-the-science-say/" },
+    ],
+  },
+  {
     slug: "mate-beneficios-respaldados-por-la-ciencia-2026",
     title: "Mate y salud: esto es lo que la ciencia realmente respalda",
     excerpt:
