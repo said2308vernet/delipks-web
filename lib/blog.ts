@@ -16,6 +16,46 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "conservantes-alimentos-procesados-hipertension-2026",
+    title: "Lo que un estudio con más de 112 mil personas encontró sobre los conservantes y tu presión arterial",
+    excerpt:
+      "Un seguimiento de hasta 15 años a la cohorte francesa NutriNet-Santé vincula ciertos conservantes comunes en alimentos envasados con más riesgo de hipertensión y enfermedad cardiovascular. Esto es lo que muestra — y lo que todavía no prueba.",
+    image:
+      "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-10-26",
+    content: `Los conservantes llevan décadas en nuestros alimentos envasados sin generar demasiada alarma: cumplen una función real, evitar que la comida se descomponga o desarrolle bacterias peligrosas. Pero un estudio publicado en 2026 en la revista European Heart Journal, con datos de la cohorte francesa NutriNet-Santé, vuelve a poner el foco sobre ellos — esta vez con una pregunta más específica: ¿tienen estos aditivos algo que ver con la presión arterial y la salud del corazón?
+
+## Un seguimiento de hasta 15 años
+
+El equipo de investigadores, liderado por Hasenböhler y colaboradores, analizó a **112,395 adultos** reclutados entre 2009 y 2024. Para estimar con precisión lo que realmente comía cada persona, el estudio no se basó en un solo cuestionario: utilizó registros alimentarios repetidos de 24 horas — hasta 96 por participante — que luego se cruzaron con bases de datos de aditivos para calcular cuánto conservante consumía cada persona en su alimentación diaria. El seguimiento promedio fue de **7.9 años para enfermedad cardiovascular y 7.6 años para hipertensión**.
+
+## Lo que encontraron
+
+El estudio distinguió entre dos grandes familias de conservantes: los que actúan como **antioxidantes** (evitan que las grasas de un alimento se oxiden y se pongan rancias) y los que no tienen esa función, cuyo trabajo es frenar el crecimiento microbiano. Las personas con mayor consumo de conservantes **no antioxidantes** mostraron un riesgo alrededor de **29% mayor de desarrollar hipertensión** y **16% mayor de enfermedad cardiovascular**, comparadas con quienes consumían menos. Para los conservantes **antioxidantes**, el riesgo de hipertensión también apareció elevado, en un porcentaje cercano al 22%.
+
+## ¿Por qué podría pasar esto?
+
+Los propios autores son cautos: no proponen un mecanismo único y definitivo. Una hipótesis es que estos aditivos rara vez aparecen solos — suelen estar presentes en alimentos que, de por sí, ya tienen perfiles menos favorables para la salud cardiovascular, como embutidos, panes industriales o productos con alto contenido de sodio. Es decir, el conservante podría ser, en parte, una pista de qué tan procesado y qué tan alejado de su forma original está ese alimento, más que el único culpable directo.
+
+## Las limitaciones que hay que tener presentes
+
+Este es un estudio **observacional**, no un ensayo clínico: muestra una asociación estadística, no prueba que un conservante específico cause hipertensión por sí solo. Los propios investigadores son explícitos en este punto y evitan una conclusión alarmista. Lo que sí piden es algo distinto: que las autoridades sanitarias **reevalúen el balance de riesgos y beneficios** de estos aditivos con investigación adicional, sobre todo a dosis y combinaciones reales de consumo diario, algo que los estudios de seguridad original de cada aditivo —hechos por separado— no siempre capturan.
+
+## ¿Qué hacer con esta información?
+
+No se trata de entrar en pánico por cada etiqueta con una lista larga de ingredientes, pero sí de usar este hallazgo como un recordatorio práctico: entre más cerca esté tu comida de su forma natural — una pieza de fruta, una pechuga de pollo fresca, un vegetal sin envasar — menos conservantes de cualquier tipo estás consumiendo, casi por definición. Si una parte considerable de tu semana depende de alimentos envasados, listos para calentar o de larga vida de anaquel, revisar las etiquetas y priorizar opciones con menos aditivos — o directamente frescas — es una forma razonable de reducir esta exposición sin tener que memorizar qué conservante específico evitar.
+
+## La idea de fondo
+
+Este estudio no dice que los conservantes sean veneno ni que haya que evitarlos a toda costa — todavía hace falta investigación para entender mecanismos y dosis seguras. Pero sí refuerza algo que la nutrición basada en evidencia viene repitiendo hace años: mientras más ultraprocesada es tu alimentación habitual, más factores — conservantes incluidos — se acumulan en contra de tu presión arterial y tu corazón. Elegir alimentos frescos y mínimamente procesados la mayor parte de la semana sigue siendo, con lo que sabemos hoy, la apuesta más segura.`,
+    sources: [
+      { name: "Infobae — El lado oculto de los alimentos procesados: un estudio vinculó 8 conservantes con la hipertensión arterial (2026)", url: "https://www.infobae.com/salud/ciencia/2026/09/21/el-lado-oculto-de-los-alimentos-procesados-un-estudio-vinculo-8-conservantes-con-la-hipertension-arterial/" },
+      { name: "Hospital Healthcare Europe — Common food preservatives associated with higher hypertension and CVD incidence (2026)", url: "https://hospitalhealthcare.com/specialisms/cardiovascular/common-food-preservatives-associated-with-higher-hypertension-and-cvd-incidence/" },
+      { name: "Medical Dialogues — 8 common food additives linked to high blood pressure and heart disease, suggests research (2026)", url: "https://medicaldialogues.in/amp/cardiology-ctvs/news/8-common-food-additives-linked-to-high-blood-pressure-and-heart-disease-suggests-research-180063" },
+    ],
+  },
+  {
     slug: "creatina-en-la-menopausia-evidencia-2026",
     title: "Creatina en la menopausia: lo que confirma (y lo que no) la evidencia de 2026",
     excerpt:
