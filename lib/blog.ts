@@ -16,6 +16,46 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ultraprocesados-cancer-colorrectal-mujeres-jovenes-2026",
+    title: "Cáncer colorrectal antes de los 50: lo que un estudio encontró sobre los ultraprocesados en mujeres jóvenes",
+    excerpt:
+      "El cáncer colorrectal crece entre adultos menores de 50 años y nadie tiene una explicación completa. Un estudio con casi 30 mil mujeres suma una pista dietética: los ultraprocesados y las lesiones que preceden a este cáncer.",
+    image:
+      "https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=600&q=80&auto=format&fit=crop",
+    category: "Nutrición",
+    date: "2026-11-02",
+    content: `El cáncer colorrectal dejó de ser, desde hace años, una enfermedad asociada casi exclusivamente a personas mayores de 50 años. Su aumento entre adultos más jóvenes es una de las tendencias que más preocupa a la oncología actual, y todavía no hay una explicación completa de por qué está pasando. Un estudio liderado por investigadores de Mass General Brigham, publicado en la revista JAMA Oncology, suma ahora una pista dietética concreta: la relación entre el consumo de alimentos ultraprocesados y las lesiones que preceden a este tipo de cáncer en mujeres menores de 50 años.
+
+## Casi 30 mil mujeres seguidas durante 24 años
+
+El estudio utilizó datos del Nurses' Health Study II, una de las cohortes más grandes y longevas en investigación de salud femenina, con **29,105 enfermeras** seguidas durante un promedio de 24 años. A diferencia de un sondeo puntual, esta cohorte permitió a los investigadores reconstruir con detalle los hábitos alimentarios de cada participante a lo largo de dos décadas, incluyendo qué proporción de sus calorías diarias provenía de alimentos ultraprocesados — en promedio, cerca del **34.8%** del total.
+
+## Lo que encontraron: más adenomas, no más lesiones serradas
+
+El hallazgo central tiene un matiz importante. Las mujeres con mayor consumo de ultraprocesados mostraron un **45% más de probabilidad** de desarrollar adenomas de aparición precoz (razón de momios ajustada de 1.45) — el tipo de pólipo que con más frecuencia evoluciona hacia cáncer colorrectal a través de lo que se conoce como la secuencia adenoma-carcinoma. En cambio, no se encontró una asociación significativa entre los ultraprocesados y las lesiones serradas, otro tipo de pólipo precursor con un comportamiento biológico distinto. Es decir, el vínculo no aparece con cualquier lesión precancerosa, sino específicamente con la ruta más común hacia este cáncer.
+
+## Por qué los investigadores no pudieron medir el cáncer directamente
+
+Una limitación que el propio equipo reconoce: no fue posible evaluar directamente el cáncer colorrectal de aparición precoz como tal, porque hubo muy pocos casos dentro de la cohorte a esas edades para sacar conclusiones estadísticamente sólidas. Por eso el estudio se enfocó en las lesiones precursoras — el paso previo, más frecuente y más fácil de observar con suficiente poder estadístico.
+
+## Lo que el estudio no explica
+
+Conviene ser igual de claro sobre los límites de este hallazgo. Es un estudio **observacional**, no puede probar causa y efecto. La cohorte está compuesta únicamente por mujeres, en su mayoría del personal de enfermería en Estados Unidos, así que no sabemos qué tan bien se traduce a hombres o a otras poblaciones. El sistema de clasificación NOVA, usado para definir qué cuenta como "ultraprocesado", también tiene críticas conocidas por su falta de precisión en ciertos alimentos. El propio autor principal del estudio, Andrew Chan, fue enfático en un punto: "la dieta no es una explicación completa de por qué estamos viendo esta tendencia" — muchos pacientes con cáncer colorrectal de aparición precoz tienen, de hecho, hábitos alimentarios saludables.
+
+## ¿Qué significa esto en la práctica?
+
+No se trata de entrar en pánico por un paquete de galletas ocasional, sino de mirar la proporción general de tu semana. Si una parte considerable de lo que comes a diario son productos listos para abrir y consumir — con listas largas de ingredientes, azúcares y grasas añadidas, poca fibra — este estudio es un argumento más, entre varios ya existentes, para inclinar esa proporción hacia alimentos frescos y mínimamente procesados: vegetales, frutas, proteína preparada desde el ingrediente original, legumbres. Nada de esto sustituye el tamizaje médico recomendado para cáncer colorrectal a partir de los 45 años, pero sí es algo que está completamente bajo tu control desde ya.
+
+## La idea de fondo
+
+Este estudio no dice que los ultraprocesados causen cáncer colorrectal por sí solos, y los propios autores piden cautela antes de sacar esa conclusión. Lo que sí refuerza es un patrón que la evidencia nutricional viene repitiendo en distintos frentes de salud: entre menos dependa tu alimentación diaria de productos ultraprocesados y más se acerque a su forma fresca y reconocible, menos factores de riesgo se acumulan en contra de tu salud a largo plazo — el colon incluido.`,
+    sources: [
+      { name: "Mass General Brigham — Ultra-processed foods linked to early-onset colorectal cancer precursors study (2025)", url: "https://www.massgeneralbrigham.org/en/about/newsroom/press-releases/ultra-processed-foods-early-onset-colorectal-cancer-study" },
+      { name: "PubMed — Ultraprocessed Food Consumption and Risk of Early-Onset Colorectal Cancer Precursors Among Women, JAMA Oncology (2025)", url: "https://pubmed.ncbi.nlm.nih.gov/41231486/" },
+      { name: "Intramed — Ultraprocesados y riesgo de cáncer colorrectal de aparición precoz (2026)", url: "https://www.intramed.net/content/ultraprocesados-y-riesgo-de-cancer-colorrectal-de-aparicion-precoz" },
+    ],
+  },
+  {
     slug: "conservantes-alimentos-procesados-hipertension-2026",
     title: "Lo que un estudio con más de 112 mil personas encontró sobre los conservantes y tu presión arterial",
     excerpt:
