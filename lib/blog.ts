@@ -16,6 +16,44 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "oms-actividad-fisica-adolescentes-2026",
+    title: "1 de cada 4 adolescentes no se mueve ni un día a la semana: el nuevo reporte global de la OMS",
+    excerpt:
+      "Un reporte publicado en noviembre de 2026 en The Lancet Global Health, con datos de más de 3.2 millones de adolescentes en 140 países, encontró que la inactividad física casi no se ha movido en 15 años — y la brecha entre chicas y chicos sigue intacta.",
+    image:
+      "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&q=80&auto=format&fit=crop",
+    category: "Ejercicio",
+    date: "2026-11-16",
+    content: `La Organización Mundial de la Salud (OMS) publicó a inicios de noviembre de 2026 nuevas estimaciones globales sobre actividad física en adolescentes, y el panorama que describen no es alentador. El reporte, elaborado junto con la revista The Lancet Global Health, encontró que **1 de cada 4 adolescentes en el mundo** — alrededor de 240 millones de jóvenes de entre 11 y 17 años — no tuvo ni un solo día de actividad física de intensidad moderada a vigorosa durante al menos 60 minutos en la semana previa a la encuesta.
+
+## Una radiografía de 140 países
+
+Las estimaciones se construyeron a partir de 389 encuestas poblacionales realizadas entre 2010 y 2025, con datos de más de 3.2 millones de adolescentes en 140 países y territorios. Es, hasta ahora, uno de los análisis más amplios sobre el tema, y permite comparar tendencias de los últimos 15 años en lugar de depender de una sola fotografía puntual. El resultado de esa comparación es, quizás, el dato más preocupante de todo el reporte: **los niveles de actividad física entre adolescentes prácticamente no han cambiado desde 2010**.
+
+## La brecha entre chicas y chicos sigue intacta
+
+El reporte confirma algo que estudios previos ya habían señalado: las chicas se mueven menos que los chicos en todas las regiones analizadas por la OMS. En números globales, cerca del **28% de las adolescentes** reportó no tener ningún día activo en la semana, frente a **22% de los adolescentes** varones. La diferencia no es pequeña, y según la propia OMS, cerrar esta brecha es una de sus cuatro áreas prioritarias de acción hacia 2030.
+
+## Por qué esto también importa para los adultos
+
+Es tentador leer este reporte como un problema exclusivo de la infancia y la adolescencia, pero los hábitos de movimiento — o la falta de ellos — no aparecen de la nada en la edad adulta. Buena parte de la inactividad que arrastra un adulto con jornadas laborales largas tiene raíces en patrones que se instalan mucho antes: la falta de espacios seguros para caminar o andar en bicicleta, clases de educación física reducidas, y una vida cada vez más sedentaria dentro y fuera de la escuela. La OMS lo plantea justamente así: pide repensar el transporte, el urbanismo, el deporte escolar y la salud pública de forma conjunta, no como esfuerzos aislados.
+
+## Qué puedes hacer tú, aunque el reporte hable de adolescentes
+
+No hace falta esperar una política pública para actuar en lo propio. Si en casa hay adolescentes, los especialistas consultados en la cobertura de este reporte insisten en lo mismo que repiten desde hace años: la actividad física no tiene que ser estructurada ni competitiva para contar. Caminar o ir en bicicleta a la escuela, jugar en la calle o en un parque, bailar, o simplemente moverse con otros jóvenes suma hacia esos 60 minutos diarios recomendados.
+
+Y si eres un adulto con una agenda apretada, el mismo principio aplica en espejo: no necesitas una hora de gimnasio para que el movimiento cuente. Subir escaleras en vez de usar el elevador, caminar al mandado, estacionarte más lejos a propósito, o simplemente levantarte de tu escritorio cada hora son formas reales de romper el sedentarismo que este tipo de reportes identifica como el verdadero enemigo — más que la falta de un plan de ejercicio perfecto.
+
+## La idea de fondo
+
+Este reporte de la OMS no es una noticia sobre adolescentes en abstracto: es un recordatorio de que la inactividad física se construye con el tiempo, con el entorno que rodea a cada persona desde joven, y que revertirla toma años de hábitos sostenidos, no un esfuerzo aislado. Moverte más — sin importar tu edad — sigue siendo una de las decisiones de salud con mayor respaldo científico que existen, y una que puedes empezar a practicar hoy mismo, sin esperar a que cambien las políticas públicas a tu alrededor.`,
+    sources: [
+      { name: "PAHO/OMS — One in four adolescents worldwide reported no active days in the previous week (2026)", url: "https://www.paho.org/en/news/9-11-2026-one-four-adolescents-worldwide-reported-no-active-days-previous-week" },
+      { name: "Emol — La OMS alerta por los bajos niveles de actividad física entre adolescentes de todo el mundo (2026)", url: "https://www.emol.com/noticias/Tendencias/2026/11/04/1216146/oms-alerta-jovenes-poco-ejercicio.html" },
+      { name: "Health Policy Watch — 1 in 4 Adolescents Worldwide Get Less than One Hour of Physical Activity a Week (2026)", url: "https://healthpolicy-watch.news/1-in-4-adolescents-worldwide-get-less-than-one-hour-of-physical-activity-a-week/" },
+    ],
+  },
+  {
     slug: "caminar-despues-de-comer-glucosa-grasa-2026",
     title: "Caminar 2 minutos después de comer: lo que un estudio de 2026 descubrió sobre el azúcar en sangre",
     excerpt:
